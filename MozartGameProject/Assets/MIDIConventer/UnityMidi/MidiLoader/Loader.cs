@@ -14,15 +14,16 @@ namespace MidiLoader {
 		public HeaderInfo headerInfo;
 		public TrackInfo[] trackInfos;
 
-		public Loader( string path ) {
-
+		public Loader( string path )
+		{
+		    
 			TimeSpanLogger.Begin();
-
-			FileStream stream = File.OpenRead( path );
+		    Debug.Log("Load: " + path);
+            FileStream stream = File.OpenRead( path );
 			stream.Position = 0;
 			streamName = stream.Name;
-
-			try {
+            Debug.Log(path);
+            try {
 				headerInfo = HeaderParser.Parse( stream );
 
 				trackInfos = new TrackInfo[ headerInfo.tracksCount ];

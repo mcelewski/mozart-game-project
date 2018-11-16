@@ -21,11 +21,7 @@ public class KeyboardController : MonoBehaviour
         {
             noteKeys.Add(keysCodes[i], keyboardObjects[i]);
         }
-        if (noteKeys != null)
-        {
-            Debug.Log("Dictionary created:");
-        }
-        else
+        if (noteKeys == null)
         {
             Debug.Log("Something went wrong:");
         }
