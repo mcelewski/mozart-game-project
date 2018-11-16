@@ -1,99 +1,73 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using MidiLoader;
 using UnityEngine;
 
 public class NoteInfo : MonoBehaviour
 {
-    public int noteNumber;
-    public float noteLenght;
-    public bool isWhite = false;
-    public Object midiFile;
-    public MidiLoader.Loader load;
-
+    /// <summary>
+    /// Set Note info where false == black note, true == white note
+    /// </summary>
+    
+    #region Variables
     private Dictionary<int, bool> noteDict = new Dictionary<int, bool>();
-    public int NoteNumber
-    {
-        get { return noteNumber;} set { noteNumber = value; }
-    }
+    private GameObject _note;
+    private Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
+    private Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
+    #endregion
 
-    public float NoteLenght
-    {
-        get { return noteLenght; } set { noteLenght = value; }
-    }
-
-    public bool IsWhite
-    {
-        get { return isWhite; } set { isWhite = value; }
-    }
-
+    #region Private Methods
     void Start()
     {
-        GetMidiFilePath();
         SetNoteDictionary();
-
-        foreach (var item in noteDict)
-        {
-            Debug.Log(item);
-        }
-    }
-
-    void GetMidiFilePath()
-    {
-        string path = Path.GetFullPath(midiFile.name);
-        //path += ".mid";
-        //Debug.Log(path);
-        //load = new Loader(path);
-        FileStream file = new FileStream(midiFile.name , FileMode.Open);
     }
 
     void SetNoteDictionary()
     {
         for (int i = 48; i < 73; i++)
         {
-            if (i == 49)
-            {
-               noteDict.Add(i,false);
-            }
-            else if(i == 51)
+            if (i == 49 || i == 51 || i == 54 || i == 56 ||
+                i == 58 || i == 61 || i == 63 || i == 66 ||
+                i == 68 || i == 70)
             {
                 noteDict.Add(i, false);
             }
-            else if (i == 54)
+            else
             {
-                noteDict.Add(i, false);
+                noteDict.Add(i, true);
             }
-            else if (i == 56)
-            {
-                noteDict.Add(i, false);
-            }
-            else if (i == 58)
-            {
-                noteDict.Add(i, false);
-            }
-            else if (i == 61)
-            {
-                noteDict.Add(i, false);
-            }
-            else if (i == 63)
-            {
-                noteDict.Add(i, false);
-            }
-            else if (i == 66)
-            {
-                noteDict.Add(i, false);
-            }
-            else if (i == 68)
-            {
-                noteDict.Add(i, false);
-            }
-            else if (i == 70)
-            {
-                noteDict.Add(i, false);
-            }
-            noteDict.Add(i, false);
-            
         }
     }
+    #endregion
+
+    #region Public Methods
+    public void ChangeNoteScale(float x, bool c)
+    {
+        if (c == true)
+        {
+            this._blackNoteScale.z = x;
+        }
+        else
+        {
+            this._whiteNoteScale.z = x;
+        }
+    }
+
+    public void SetNoteLocation(int n)
+    {
+
+    }
+
+    #endregion
+
+    #region Accesors
+    public Vector3 GetWhiteNoteScale
+    {
+        get { return _whiteNoteScale; }
+    }
+    public Vector3 GetBlackNoteScale
+    {
+        get { return _blackNoteScale; }
+    }
+    #endregion
 }
