@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Experimental.UIElements;
 using UnityEngine;
 
 public class NoteInfo : MonoBehaviour
@@ -53,11 +54,10 @@ public class NoteInfo : MonoBehaviour
         }
     }
 
-    public void SetNoteLocation(int n)
+    public void SetNoteLocation(float n)
     {
-
+        _note.transform.position = new Vector3(n, transform.position.y, transform.position.z);
     }
-
     #endregion
 
     #region Accesors
