@@ -13,8 +13,6 @@ public class NoteInfo : MonoBehaviour
     #region Variables
     private Dictionary<int, bool> noteDict = new Dictionary<int, bool>();
     private GameObject _note;
-    private Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
-    private Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
     #endregion
 
     #region Private Methods
@@ -42,32 +40,11 @@ public class NoteInfo : MonoBehaviour
     #endregion
 
     #region Public Methods
-    public void ChangeNoteScale(float x, bool c)
-    {
-        if (c == true)
-        {
-            this._blackNoteScale.z = x;
-        }
-        else
-        {
-            this._whiteNoteScale.z = x;
-        }
-    }
+    
 
     public void SetNoteLocation(float n)
     {
         _note.transform.position = new Vector3(n, transform.position.y, transform.position.z);
-    }
-    #endregion
-
-    #region Accesors
-    public Vector3 GetWhiteNoteScale
-    {
-        get { return _whiteNoteScale; }
-    }
-    public Vector3 GetBlackNoteScale
-    {
-        get { return _blackNoteScale; }
     }
     #endregion
 }
