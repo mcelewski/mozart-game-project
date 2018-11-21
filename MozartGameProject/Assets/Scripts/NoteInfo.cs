@@ -38,13 +38,16 @@ public class NoteInfo : MonoBehaviour
         }
     }
     #endregion
-
-    #region Public Methods
     
-
-    public void SetNoteLocation(float n)
+    public Dictionary<int,bool> GetNotesInfo(int search, out int number, out bool color)
     {
-        _note.transform.position = new Vector3(n, transform.position.y, transform.position.z);
+        if (noteDict.ContainsKey(search))
+        {
+            /*
+            number = noteDict.Keys;
+            color = noteDict.Values;
+            */
+        }
     }
-    #endregion
+    
 }
