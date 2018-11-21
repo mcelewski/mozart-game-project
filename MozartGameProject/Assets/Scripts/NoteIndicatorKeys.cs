@@ -58,7 +58,6 @@ public class NoteIndicatorKeys : MonoBehaviour
         if (keyState == KeyState.Down)
         {
             audioSource.Play(0);
-            Debug.Log("GetKeyDown");
         }
     }
 
@@ -72,5 +71,19 @@ public class NoteIndicatorKeys : MonoBehaviour
         GetComponent<Renderer>().material.color = color;
     }
 
+    public int GetNoteNumber
+    {
+        get { return noteNumber; }
+    }
 
+    public float GetXNotePosition()
+    {
+        return this.gameObject.transform.position.x;
+    }
+    // to test
+    public void GetNoteInfo(out int num, out float xPos)
+    {
+        num = this.noteNumber;
+        xPos = this.gameObject.transform.position.x;
+    }
 }

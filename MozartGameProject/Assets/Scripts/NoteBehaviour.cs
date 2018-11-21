@@ -5,18 +5,34 @@ using UnityEngine;
 public class NoteBehaviour : MonoBehaviour
 {
     /// <summary>
-    /// Set Note info where false == black note, true == white note
-    /// Single note all info
+    /// Set note info:
+    ///     IsWhite false == black color note, 
+    ///             true == white color note
+    ///     Change note scale:
+    ///             for white _whiteNoteScale,
+    ///             for black _blackNoteScale
+    ///     Set note lenght:
+    ///             change transform local scale z
+    ///     Set note number:
+    ///             set note number to later determine global position
+    ///     Set note position:
+    ///             set position depend on in scene note position
+    /// In method SetNote
     /// </summary>
+   
     public delegate void OnNoteChanges();
     public static event OnNoteChanges ChangeNoteStatus;
 
-    public int noteNumber;
-    public float noteLenght;
+    #region Default values
+    public int noteNumber = 0;
+    public float noteLenght = 1.0f;
     public bool isWhite = false;
 
     private Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
     private Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
+    #endregion
+
+    #region Accessors
 
     public int NoteNumber
     {
@@ -36,7 +52,11 @@ public class NoteBehaviour : MonoBehaviour
         set { isWhite = value; }
     }
 
-    public void ChangeNoteScale(bool c)
+    #endregion
+
+    #region Private Methods
+
+    private void ChangeNoteScale(bool c)
     {
         if (c == true)
         {
@@ -47,24 +67,48 @@ public class NoteBehaviour : MonoBehaviour
             this.gameObject.transform.localScale += _blackNoteScale;
         }
     }
-    public void SetNoteLocation(float n)
+    private void SetNoteLocation(float n)
     {
         this.gameObject.transform.position = new Vector3(n, transform.position.y, transform.position.z);
     }
 
-    // Set all info
-    public void SetNote(bool color, int number, float lenght, float position)
+    private void SetNoteLenght(float l)
     {
-        ChangeNoteScale(color);
-        IsWhite = color;
-        NoteNumber = number;
-        NoteLenght = lenght;
-        SetNoteLocation(position);
-        ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
+        this.gameObject.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, l);
+    }
+
+    private void SetNoteColor(bool color)
+    {
+        // if false = black else white
+        if (!color)
+            this.gameObject.GetComponent<MeshRenderer>().material.color = Color.black;
+        else
+            this.gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
     }
 
     private void NoteBehaviour_ChangeNoteStatus()
     {
         // send message was created
+        Debug.Log("Note Created or disabled");
+    }
+
+    #endregion
+
+    // Set all info
+    public void SetNote(bool color, int number, float lenght, float position)
+    {
+        SetNoteColor(color);
+        ChangeNoteScale(color);
+        SetNoteLenght(lenght);
+        NoteNumber = number;
+        SetNoteLocation(position);
+        ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
+    }
+
+    public bool DisableNote()
+    {
+        this.gameObject.SetActive(false);
+        ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
+        return true;
     }
 }
