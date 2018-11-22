@@ -67,9 +67,9 @@ public class NoteBehaviour : MonoBehaviour
             this.gameObject.transform.localScale += _blackNoteScale;
         }
     }
-    private void SetNoteLocation(float n)
+    private void SetNoteLocationX(float x)
     {
-        this.gameObject.transform.position = new Vector3(n, transform.position.y, transform.position.z);
+        this.gameObject.transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
 
     private void SetNoteLenght(float l)
@@ -101,7 +101,7 @@ public class NoteBehaviour : MonoBehaviour
         ChangeNoteScale(color);
         SetNoteLenght(lenght);
         NoteNumber = number;
-        SetNoteLocation(position);
+        SetNoteLocationX(position);
         ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2095,7 +2095,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe1dbbfbd886bd4fbca4aba57510849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _notePositionList: []
+  _notePositionList:
+  - {fileID: 40557612}
+  - {fileID: 1538590726}
+  - {fileID: 1340857830}
+  - {fileID: 1748296182}
+  - {fileID: 150703110}
+  - {fileID: 1182422540}
+  - {fileID: 913449299}
+  - {fileID: 1362506560}
+  - {fileID: 1688558940}
+  - {fileID: 1345587588}
+  - {fileID: 92036098}
+  - {fileID: 168293416}
+  - {fileID: 1455178553}
+  - {fileID: 2087010082}
+  - {fileID: 967236164}
+  - {fileID: 1631037968}
+  - {fileID: 1001531451}
+  - {fileID: 1369609362}
+  - {fileID: 1655131619}
+  - {fileID: 97251979}
+  - {fileID: 685266005}
+  - {fileID: 1496142698}
+  - {fileID: 267193545}
+  - {fileID: 156536132}
+  - {fileID: 2009122958}
+  - {fileID: 1104341130}
   _main: {fileID: 40557611}
 --- !u!4 &316314674
 Transform:
@@ -7083,7 +7109,7 @@ GameObject:
   - component: {fileID: 1924072553}
   - component: {fileID: 1924072557}
   m_Layer: 0
-  m_Name: NotePref
+  m_Name: GameNotePref
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

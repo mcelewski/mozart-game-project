@@ -35,16 +35,17 @@ public class NoteInfo : MonoBehaviour
         {
             GetSceneNotesTransforms();
         }
-        CheckNotesList();
+
+        //CheckNotesList();
     }
 
     private void SetNoteDictionary()
     {
         NotesInScene singleNote = new NotesInScene();
+        // j = 1 to skip parent from list
         for (int i = 48, j = 1; i < 73; i++, j++)
         {
             singleNote.number = i;
-            // pos from parent
             singleNote.xPosition = _notePositionList[j].transform.localPosition.x;
             if (i == 49 || i == 51 || i == 54 || i == 56 ||
                 i == 58 || i == 61 || i == 63 || i == 66 ||
@@ -67,11 +68,12 @@ public class NoteInfo : MonoBehaviour
             var childTransforms = _main.GetComponentsInChildren<Transform>();
             foreach (var trans in childTransforms)
             {
-                // At 0 index elem is parent
+                // Element at 0 index is parent
                 _notePositionList.Add(trans);
             }
         }
     }
+    // Run in Start() if needed
     private void CheckNotesList()
     {
         foreach (var item in _noteFull)
