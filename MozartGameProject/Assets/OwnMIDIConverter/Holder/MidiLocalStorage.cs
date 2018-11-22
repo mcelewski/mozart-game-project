@@ -4,25 +4,28 @@ using UnityEngine;
 
 /// <summary>
 /// Hold midi file information
+///
 /// Information type:
-/// 
+///
 ///     Header;
 ///     Track info;
 ///     Track lenght;
 ///     Over midi lenght;
 ///     Channel ID;
 ///     Note number;
-///     
+///
 /// Require info:
-/// 
+///
 ///     Midi file lenght
 ///     Note on tick
 ///     Note off tick
 ///     Note number
 ///     Note velocity
 ///     Note duration
+///     All notes count
+///
 /// Mechanic:
-/// 
+///
 ///     - Add to map only notes witch velocity is less or equal 70
 ///     - Set object info as notes
 ///     - Set map lenght as lenght of midi file
@@ -30,20 +33,27 @@ using UnityEngine;
 
 public class MidiLocalStorage : MonoBehaviour
 {
+    #region Other scrips
+    public ProjectMidiFilesStorage _midStorage;
+    public NoteBehaviour _nBehaviour;
+    public NoteInfo _everyNInfo;
+
+    #endregion
     public struct MidiTempStruct
     {
-        public float midiFileTotalLenght;
+        public float midiFileTotalLenght; // midi duration
         public float noteOnTick;
         public float noteOffTick;
         public int noteNumber;
         public int noteVelocity;
+        public int noteCount;
     }
-
     public enum MidiSelect
     {
         Special = 1,
         Random = 2
     }
+    #region Some methods
     private void SelectMidi(int ch)
     {
         if (ch == (int)MidiSelect.Special)
@@ -63,4 +73,9 @@ public class MidiLocalStorage : MonoBehaviour
     {
         // Random select from base
     }
+    #endregion
+
+    #region Setting methods
+
+    #endregion
 }
