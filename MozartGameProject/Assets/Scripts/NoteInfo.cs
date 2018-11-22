@@ -11,7 +11,7 @@ public class NoteInfo : MonoBehaviour
     ///     Number; Color; LocalPosition x;
     /// </summary>
     
-    // use own struct
+    // own struct
     public struct NotesInScene
     {
         public int number;
@@ -31,7 +31,7 @@ public class NoteInfo : MonoBehaviour
     void Start()
     {
         SetNoteDictionary();
-        if (_notePositionList == null)
+        if (_notePositionList.Count < 25)
         {
             GetSceneNotesTransforms();
         }
@@ -40,27 +40,24 @@ public class NoteInfo : MonoBehaviour
 
     private void SetNoteDictionary()
     {
-        Debug.Log("size: " + _notePositionList.Count);
-        foreach (var item in _notePositionList)
+        NotesInScene singleNote = new NotesInScene();
+        for (int i = 48, j = 1; i < 73; i++, j++)
         {
-            NotesInScene singleNote = new NotesInScene();
-            for (int i = 48, j = 1; i < 73; i++, j++)
+            singleNote.number = i;
+            // pos from parent
+            singleNote.xPosition = _notePositionList[j].transform.localPosition.x;
+            if (i == 49 || i == 51 || i == 54 || i == 56 ||
+                i == 58 || i == 61 || i == 63 || i == 66 ||
+                i == 68 || i == 70)
             {
-                singleNote.number = i;
-                singleNote.xPosition = item.transform.position.x;
-                if (i == 49 || i == 51 || i == 54 || i == 56 ||
-                    i == 58 || i == 61 || i == 63 || i == 66 ||
-                    i == 68 || i == 70)
-                {
-                    singleNote.isWhite = false;
-                }
-                else
-                {
-                    singleNote.isWhite = true;
-                }
-
-                _noteFull.Add(i, singleNote);
+                singleNote.isWhite = false;
             }
+            else
+            {
+                singleNote.isWhite = true;
+            }
+
+            _noteFull.Add(i, singleNote);
         }
     }
     private void GetSceneNotesTransforms()
