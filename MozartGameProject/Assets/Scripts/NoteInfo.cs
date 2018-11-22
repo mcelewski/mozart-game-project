@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class NoteInfo : MonoBehaviour
 {
     /// <summary>

@@ -7,10 +7,8 @@ using Object = System.Object;
 
 /// <summary>
 /// Getting all files contained in midi files folder and hold them
-/// 
 /// Without update files option
 /// </summary>
-
 
 public class ProjectMidiFilesStorage : MonoBehaviour
 {
@@ -63,5 +61,16 @@ public class ProjectMidiFilesStorage : MonoBehaviour
             Debug.Log("Couldn't find any files in list");
     }
 
+    #endregion
+
+    #region Accessor
+    // Only get list
+    public List<Object> GetMidiFiles
+    {
+        get
+        {
+            return _midiFiles;
+        }
+    }
     #endregion
 }
