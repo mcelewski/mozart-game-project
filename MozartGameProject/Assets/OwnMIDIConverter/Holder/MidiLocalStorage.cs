@@ -5,15 +5,6 @@ using UnityEngine;
 /// <summary>
 /// Hold midi file information
 ///
-/// Information type:
-///
-///     Header;
-///     Track info;
-///     Track lenght;
-///     Over midi lenght;
-///     Channel ID;
-///     Note number;
-///
 /// Require info:
 ///
 ///     Midi file lenght
@@ -24,21 +15,12 @@ using UnityEngine;
 ///     Note duration
 ///     All notes count
 ///
-/// Mechanic:
-///
-///     - Add to map only notes witch velocity is less or equal 70
-///     - Set object info as notes
-///     - Set map lenght as lenght of midi file
 /// </summary>
 
 public class MidiLocalStorage : MonoBehaviour
 {
-    #region Other scrips
-    public ProjectMidiFilesStorage _midStorage;
-    public NoteBehaviour _nBehaviour;
-    public NoteInfo _everyNInfo;
+    public List<MidiTempStruct> MidiStorage = new List<MidiTempStruct>();
 
-    #endregion
     public struct MidiTempStruct
     {
         public float midiFileTotalLenght; // midi duration
@@ -47,35 +29,23 @@ public class MidiLocalStorage : MonoBehaviour
         public int noteNumber;
         public int noteVelocity;
         public int noteCount;
-    }
-    public enum MidiSelect
-    {
-        Special = 1,
-        Random = 2
-    }
-    #region Some methods
-    private void SelectMidi(int ch)
-    {
-        if (ch == (int)MidiSelect.Special)
-            SelectSpecialMidi();
-        else if (ch == (int)MidiSelect.Random)
-            SelectRandomMidi();
-        else
-            Debug.Log("Nothing happen.");
+        public bool readyToSet;
     }
 
-    private void SelectSpecialMidi()
+    public MidiLocalStorage(float midiLenght, float noteOnTick, float noteOffTick, int noteNumber, int noteVelocity, int noteCount, bool readyToSet)
     {
-        // Choose special track
+        MidiTempStruct midiTemp = new MidiTempStruct();
+
+        midiTemp.midiFileTotalLenght = midiLenght;
+        midiTemp.noteOnTick = noteOnTick;
+        midiTemp.noteOffTick = noteOffTick;
+        midiTemp.noteNumber = noteNumber;
+        midiTemp.noteVelocity = noteVelocity;
+        midiTemp.noteCount = noteCount;
+        midiTemp.readyToSet = readyToSet;
+
+        MidiStorage.Add(midiTemp);
     }
 
-    private void SelectRandomMidi()
-    {
-        // Random select from base
-    }
-    #endregion
-
-    #region Setting methods
-
-    #endregion
+    public List<MidiTempStruct> GetMidiTempStruct { get { return MidiStorage; } }
 }

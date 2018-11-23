@@ -44,7 +44,7 @@ public class ProjectMidiFilesStorage : MonoBehaviour
         {
             _midiFiles.Add(_fNames[i]);
         }
-        
+
     }
 
     private void CheckFiles()

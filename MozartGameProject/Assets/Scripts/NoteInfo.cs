@@ -19,7 +19,6 @@ public class NoteInfo : MonoBehaviour
     }
     
     #region Variables
-    //private Dictionary<int, bool> _noteDict = new Dictionary<int, bool>();
     private Dictionary<int, NotesInScene> _noteFull = new Dictionary<int, NotesInScene>();
     public List<Transform> _notePositionList = new List<Transform>();
 
@@ -34,7 +33,7 @@ public class NoteInfo : MonoBehaviour
         {
             GetSceneNotesTransforms();
         }
-
+        
         //CheckNotesList();
     }
 
@@ -81,4 +80,9 @@ public class NoteInfo : MonoBehaviour
         }
     }
     #endregion
+
+    public Dictionary<int, NotesInScene> GetNoteFullList
+    {
+        get { return _noteFull; }
+    }
 }
