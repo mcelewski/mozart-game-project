@@ -86,3 +86,20 @@ public class NoteInfo : MonoBehaviour
         get { return _noteFull; }
     }
 }
+
+/*
+ * Rozmiar tego etapu gry max 200 mb
+ * 
+ * 1. Plik midi:
+ *     ładowanie do obiektu na scenie
+ *     informacje z obiektu chce wykorzystać do ustawienia na scenie już obiektów tj.
+ *     start(pozycja od 0), długość nuty, Id (numer nuty) względem wyciszenia :) ustawiam tylko nuty z głośnością 70%.
+ * 
+ *     muszę też przekonać unity żeby puszczało mi inny midi gdzie nie będzie wyciszonych dźwięków (dobra albo w werjsi wav puszczać)
+ * 
+ * 2. Pointing system
+ *     zepsułem, mam detekcje na cube na trigger: enter, stay, exit ale nie wiem jak to zgrac z klawiszami przypisanymi z klawiatury.
+ *     przy keyboardzie jest to łatwe do zrobienia bo keyboard daje dźwięk z cube o tym samym numerze,
+ *     problem pojawia sie przy sterowaniu klawiaturą gdzie dźwięki są ustawione na sztywno (chyba że moge jakoś przypisać keycode do cube na scenie)
+ * 
+ */
