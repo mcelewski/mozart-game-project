@@ -2279,9 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a020db0b6dad04e9438a77d138a2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteSettings: {fileID: 0}
-  noteKeys: {fileID: 0}
-  pcNoteKey: {fileID: 0}
+  noteSettings: {fileID: 1654448806}
 --- !u!1 &497100500
 GameObject:
   m_ObjectHideFlags: 0
@@ -6326,6 +6324,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1648572737}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1654448806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114253389768280236, guid: 7ad8e96171a5b12449983009b9f11633,
+    type: 2}
+  m_PrefabInternal: {fileID: 868181470}
+  m_Script: {fileID: 11500000, guid: af41dee04bb86d24ea6b4678d12f3cff, type: 3}
 --- !u!1 &1655131615
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,11 +9,17 @@ using UnityEngine;
 public class NoteActivated : MonoBehaviour 
 {
     public NoteBehaviour noteSettings;
+    
     private int _notePressedNumber;
     public int Number
     {
         get { return _notePressedNumber;}
         set { _notePressedNumber = value; }
+    }
+
+    private void Update()
+    {
+        Debug.Log("Clicked key at number: " + Number);
     }
 
     private void OnTriggerEnter(Collider other)

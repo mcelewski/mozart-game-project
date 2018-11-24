@@ -10,8 +10,6 @@ using System;
 public class NoteIndicatorKeys : MonoBehaviour
 {
     public NoteActivated noteActivate;
-    public delegate void ActivateNote();
-    public static event ActivateNote ChangeNoteStatus;
     
     public int noteNumber;
     public bool isWhite;
@@ -26,6 +24,7 @@ public class NoteIndicatorKeys : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
+        noteActivate = GameObject.FindGameObjectWithTag("Finish").GetComponent<NoteActivated>();
     }
 
     void Update()
@@ -63,7 +62,8 @@ public class NoteIndicatorKeys : MonoBehaviour
     {
         if (key == KeyState.Down)
         {
-           // ChangeNoteStatus += new ActualNote_ActivateNote();
+            //ChangeNoteStatus += OnChangeNoteStatus;
+            OnChangeNoteStatus();
             audioSource.Play(0);
         }
     }
@@ -94,8 +94,9 @@ public class NoteIndicatorKeys : MonoBehaviour
         xPos = this.gameObject.transform.position.x;
     }
 
-    void ActualNote_ActivateNote()
+    private void OnChangeNoteStatus()
     {
         noteActivate.Number = GetNoteNumber;
     }
+
 }
