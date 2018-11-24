@@ -2,12 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// PC keyboard:
+///     Get elemnts from scene,
+///     Assign to them keycode,
+///     Play different sount depend on keycode
+/// </summary>
+/// 
 public class KeyboardController : MonoBehaviour
 {
     public List<GameObject> keyboardObjects;
     public List<KeyCode> keysCodes = new List<KeyCode>();
     // 1st string nazwa klawisza 2nd gameobject z przypisanym juz dzwiekiem
     public Dictionary<KeyCode, GameObject> noteKeys = new Dictionary<KeyCode, GameObject>();
+    
 
     void Start()
     {
@@ -31,7 +39,8 @@ public class KeyboardController : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                noteKeys[key].GetComponent<AudioSource>().Play();
+                //noteKeys[key].GetComponent<AudioSource>().Play();
+                noteKeys[key].GetComponent<NoteIndicatorKeys>().PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
             }
         }
     }

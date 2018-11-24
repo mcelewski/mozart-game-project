@@ -2,9 +2,17 @@
 using MidiJack;
 using System;
 
+/// <summary>
+/// MIDI Keyboard controller
+///     Detecting midi keys pressed, released, holded
+/// </summary>
 [RequireComponent(typeof(AudioSource))]
 public class NoteIndicatorKeys : MonoBehaviour
 {
+    public NoteActivated noteActivate;
+    public delegate void ActivateNote();
+    public static event ActivateNote ChangeNoteStatus;
+    
     public int noteNumber;
     public bool isWhite;
     public AudioSource audioSource;
@@ -29,15 +37,13 @@ public class NoteIndicatorKeys : MonoBehaviour
     {
         if (WasJustReleased())
         {
-            keyState = KeyState.Up;
             SetProperColor();
-            PlaySoundOnPress();
+            PlaySoundOnPress(KeyState.Up);
         }
         if (WasJustPressed())
         {
-            keyState = KeyState.Down;
             SetProperColor();
-            PlaySoundOnPress();
+            PlaySoundOnPress(KeyState.Down);
         }
     }
 
@@ -53,10 +59,11 @@ public class NoteIndicatorKeys : MonoBehaviour
         return MidiMaster.GetKeyDown(noteNumber);
     }
 
-    void PlaySoundOnPress()
+    public void PlaySoundOnPress(KeyState key)
     {
-        if (keyState == KeyState.Down)
+        if (key == KeyState.Down)
         {
+           // ChangeNoteStatus += new ActualNote_ActivateNote();
             audioSource.Play(0);
         }
     }
@@ -85,5 +92,10 @@ public class NoteIndicatorKeys : MonoBehaviour
     {
         num = this.noteNumber;
         xPos = this.gameObject.transform.position.x;
+    }
+
+    void ActualNote_ActivateNote()
+    {
+        noteActivate.Number = GetNoteNumber;
     }
 }

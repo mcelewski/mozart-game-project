@@ -290,7 +290,6 @@ MonoBehaviour:
   - {fileID: 2009122954}
   - {fileID: 1104341126}
   keysCodes: 63000000660000007600000067000000620000006e0000006a0000006d0000006b0000002c0000006c0000002e00000065000000340000007200000035000000740000007900000037000000750000003800000069000000390000006f00000070000000
-  keyState: 0
 --- !u!1 &48883202
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 57
   isWhite: 1
   audioSource: {fileID: 0}
@@ -671,6 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 66
   isWhite: 0
   audioSource: {fileID: 0}
@@ -868,6 +869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 51
   isWhite: 0
   audioSource: {fileID: 0}
@@ -1065,6 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 70
   isWhite: 0
   audioSource: {fileID: 0}
@@ -1442,6 +1445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 58
   isWhite: 0
   audioSource: {fileID: 0}
@@ -1884,6 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 69
   isWhite: 1
   audioSource: {fileID: 0}
@@ -2230,6 +2235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447390065}
   - component: {fileID: 447390066}
+  - component: {fileID: 447390067}
   m_Layer: 0
   m_Name: DeathZone
   m_TagString: Finish
@@ -2262,6 +2268,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &447390067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447390064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a020db0b6dad04e9438a77d138a2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteSettings: {fileID: 0}
+  noteKeys: {fileID: 0}
+  pcNoteKey: {fileID: 0}
 --- !u!1 &497100500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 67
   isWhite: 1
   audioSource: {fileID: 0}
@@ -2931,6 +2952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 53
   isWhite: 1
   audioSource: {fileID: 0}
@@ -3213,6 +3235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 61
   isWhite: 0
   audioSource: {fileID: 0}
@@ -3410,6 +3433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 63
   isWhite: 0
   audioSource: {fileID: 0}
@@ -3674,6 +3698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 72
   isWhite: 1
   audioSource: {fileID: 0}
@@ -3956,6 +3981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 52
   isWhite: 1
   audioSource: {fileID: 0}
@@ -4474,6 +4500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 49
   isWhite: 0
   audioSource: {fileID: 0}
@@ -4671,6 +4698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 56
   isWhite: 0
   audioSource: {fileID: 0}
@@ -4868,6 +4896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 54
   isWhite: 0
   audioSource: {fileID: 0}
@@ -5065,6 +5094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 64
   isWhite: 1
   audioSource: {fileID: 0}
@@ -5262,6 +5292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 59
   isWhite: 1
   audioSource: {fileID: 0}
@@ -5544,6 +5575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 68
   isWhite: 0
   audioSource: {fileID: 0}
@@ -5759,6 +5791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 48
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6108,6 +6141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 62
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6390,6 +6424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 65
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6587,6 +6622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 55
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6869,6 +6905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 50
   isWhite: 1
   audioSource: {fileID: 0}
@@ -7361,6 +7398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 71
   isWhite: 1
   audioSource: {fileID: 0}
@@ -7643,6 +7681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829d7d05e1628944baf68398e3a5948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteActivate: {fileID: 0}
   noteNumber: 60
   isWhite: 1
   audioSource: {fileID: 0}

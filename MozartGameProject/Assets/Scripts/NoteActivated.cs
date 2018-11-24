@@ -8,28 +8,29 @@ using UnityEngine;
 
 public class NoteActivated : MonoBehaviour 
 {
-    public delegate void ActivateNote();
-    public static event ActivateNote ChangeNoteStatus;
-
     public NoteBehaviour noteSettings;
-    public NoteIndicatorKeys noteKeys;
-    public KeyboardController pcNoteKey;
+    private int _notePressedNumber;
+    public int Number
+    {
+        get { return _notePressedNumber;}
+        set { _notePressedNumber = value; }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Finish") && noteSettings.NoteNumber == noteKeys.GetNoteNumber)
+        if(other.CompareTag("Finish") && noteSettings.NoteNumber == Number)
             Debug.Log("Enter death zone");
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Finish"))
+        if(other.CompareTag("Finish") && noteSettings.NoteNumber == Number)
             Debug.Log("In death zone");
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Finish"))
+        if(other.CompareTag("Finish") && noteSettings.NoteNumber == Number)
             Debug.Log("Over death zone");
     }
 }
