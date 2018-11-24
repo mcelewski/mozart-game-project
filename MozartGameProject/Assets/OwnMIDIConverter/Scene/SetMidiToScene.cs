@@ -39,7 +39,7 @@ public class SetMidiToScene : MonoBehaviour
             lenght = CalculateLenght(item.noteOnTick, item.noteOffTick);
             if (setToUse)
             {
-                SetPrefabToScene(number, lenght);
+                SetPrefabToScene(number, lenght, item.noteOnTick);
             }
         }
     }
@@ -55,7 +55,7 @@ public class SetMidiToScene : MonoBehaviour
         return end - start;
     }
 
-    void SetPrefabToScene(int noteNumber, float noteLenght)
+    void SetPrefabToScene(int noteNumber, float noteLenght, float noteStartPos)
     {
         /*
          * Get note to play number
@@ -67,11 +67,9 @@ public class SetMidiToScene : MonoBehaviour
         {
             if (noteNumber == item.Key)
             {
-                var gameObject = new GameObject{name = "go"}; // name + tag
+                var gameObject = new GameObject{name = "note", tag = "Enemy"}; // name + tag
                 var noteBehaviour = gameObject.AddComponent<NoteBehaviour>();
-                // add to game object
-                noteBehaviour.SetNote(item.Value.isWhite,item.Value.number,noteLenght,item.Value.xPosition);
-                prefabToInsert.Add(gameObject);
+                noteBehaviour.SetNote(item.Value.isWhite,item.Value.number,noteLenght,item.Value.xPosition,noteStartPos);
             }
         }
      }

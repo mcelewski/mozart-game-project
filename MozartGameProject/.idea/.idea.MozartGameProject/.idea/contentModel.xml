@@ -146,6 +146,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="KeyboardController.cs" t="Include" />
+          <e p="NoteActivated.cs" t="Include" />
           <e p="NoteBehaviour.cs" t="Include" />
           <e p="NoteIndicatorKeys.cs" t="Include" />
           <e p="NoteInfo.cs" t="Include" />

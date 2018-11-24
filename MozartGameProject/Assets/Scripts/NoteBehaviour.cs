@@ -24,9 +24,10 @@ public class NoteBehaviour : MonoBehaviour
     public static event OnNoteChanges ChangeNoteStatus;
 
     #region Default values
-    public int noteNumber = 0;
-    public float noteLenght = 1.0f;
-    public bool isWhite = false;
+    private int noteNumber = 0;
+    private float noteLenght = 1.0f;
+    private float startPosition = 0.0f;
+    private bool isWhite = false;
 
     private Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
     private Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
@@ -67,9 +68,9 @@ public class NoteBehaviour : MonoBehaviour
             this.gameObject.transform.localScale += _blackNoteScale;
         }
     }
-    private void SetNoteLocationX(float x)
+    private void SetNoteLocation(float x, float p)
     {
-        this.gameObject.transform.position = new Vector3(x, transform.position.y, transform.position.z);
+        this.gameObject.transform.position = new Vector3(x, transform.position.y, p);
     }
 
     private void SetNoteLenght(float l)
@@ -95,13 +96,13 @@ public class NoteBehaviour : MonoBehaviour
     #endregion
 
     // Set all info
-    public void SetNote(bool color, int number, float lenght, float position)
+    public void SetNote(bool color, int number, float lenght, float position, float start)
     {
         SetNoteColor(color);
         ChangeNoteScale(color);
         SetNoteLenght(lenght);
         NoteNumber = number;
-        SetNoteLocationX(position);
+        SetNoteLocation(position, start);
         ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
     }
 

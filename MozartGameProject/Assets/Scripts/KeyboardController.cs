@@ -6,14 +6,8 @@ public class KeyboardController : MonoBehaviour
 {
     public List<GameObject> keyboardObjects;
     public List<KeyCode> keysCodes = new List<KeyCode>();
-    public KeyState keyState = KeyState.Up;
     // 1st string nazwa klawisza 2nd gameobject z przypisanym juz dzwiekiem
     public Dictionary<KeyCode, GameObject> noteKeys = new Dictionary<KeyCode, GameObject>();
-
-    public enum KeyState
-    {
-        Up, Down, Pressed
-    }
 
     void Start()
     {
