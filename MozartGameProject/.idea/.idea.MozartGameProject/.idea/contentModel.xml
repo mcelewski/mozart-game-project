@@ -21,6 +21,32 @@
           </e>
         </e>
         <e p="MIDIConventer" t="Include">
+          <e p="UnityMidiExample" t="Include">
+            <e p="Editor" t="Include">
+              <e p="MidiAssetFileCreatorEditorWindow.cs" t="Include" />
+            </e>
+            <e p="ExampleBehaviour.cs" t="Include" />
+            <e p="SimpleBeatListener.cs" t="Include" />
+          </e>
+        </e>
+        <e p="MidiJack" t="Include">
+          <e p="Editor" t="Include">
+            <e p="MidiJackWindow.cs" t="Include" />
+          </e>
+          <e p="Midi.cs" t="Include" />
+          <e p="MidiDriver.cs" t="Include" />
+          <e p="MidiMaster.cs" t="Include" />
+          <e p="MidiStateUpdater.cs" t="Include" />
+        </e>
+        <e p="OwnMIDIConverter" t="Include">
+          <e p="Holder" t="Include">
+            <e p="ConvertMidiToStorage.cs" t="Include" />
+            <e p="MidiLocalStorage.cs" t="Include" />
+            <e p="ProjectMidiFilesStorage.cs" t="Include" />
+          </e>
+          <e p="Scene" t="Include">
+            <e p="SetMidiToScene.cs" t="Include" />
+          </e>
           <e p="UnityMidi" t="Include">
             <e p="MidiFakeSequencer" t="Include">
               <e p="Exceptions" t="Include">
@@ -117,31 +143,6 @@
             <e p="MidiUtils" t="Include">
               <e p="TimeSpanLogger.cs" t="Include" />
             </e>
-          </e>
-          <e p="UnityMidiExample" t="Include">
-            <e p="Editor" t="Include">
-              <e p="MidiAssetFileCreatorEditorWindow.cs" t="Include" />
-            </e>
-            <e p="ExampleBehaviour.cs" t="Include" />
-            <e p="SimpleBeatListener.cs" t="Include" />
-          </e>
-        </e>
-        <e p="MidiJack" t="Include">
-          <e p="Editor" t="Include">
-            <e p="MidiJackWindow.cs" t="Include" />
-          </e>
-          <e p="Midi.cs" t="Include" />
-          <e p="MidiDriver.cs" t="Include" />
-          <e p="MidiMaster.cs" t="Include" />
-          <e p="MidiStateUpdater.cs" t="Include" />
-        </e>
-        <e p="OwnMIDIConverter" t="Include">
-          <e p="Holder" t="Include">
-            <e p="MidiLocalStorage.cs" t="Include" />
-            <e p="ProjectMidiFilesStorage.cs" t="Include" />
-          </e>
-          <e p="Scene" t="Include">
-            <e p="SetMidiToScene.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">

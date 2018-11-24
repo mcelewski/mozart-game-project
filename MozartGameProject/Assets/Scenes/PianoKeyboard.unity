@@ -7103,6 +7103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799856737}
   - component: {fileID: 1799856738}
+  - component: {fileID: 1799856739}
   m_Layer: 0
   m_Name: Testowy
   m_TagString: Untagged
@@ -7134,6 +7135,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3100e0f46f8a54cb51af70d5b92d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1799856739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799856736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3b52cf1b56bc940bb44135afec47e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  midiFilesList: {fileID: 1799856738}
+  midiInfoToStore: {fileID: 0}
 --- !u!1 &1883294900
 GameObject:
   m_ObjectHideFlags: 0

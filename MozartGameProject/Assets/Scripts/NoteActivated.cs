@@ -17,10 +17,12 @@ public class NoteActivated : MonoBehaviour
         set { _notePressedNumber = value; }
     }
 
-    private void Update()
+    /*
+     * private void Update()
     {
         Debug.Log("Clicked key at number: " + Number);
     }
+     */
 
     private void OnTriggerEnter(Collider other)
     {
