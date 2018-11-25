@@ -19,8 +19,6 @@ using UnityEngine;
 
 public class MidiLocalStorage : MonoBehaviour
 {
-    public List<MidiTempStruct> MidiStorage = new List<MidiTempStruct>();
-
     public struct MidiTempStruct
     {
         public float midiFileTotalLenght; // midi duration
@@ -43,9 +41,5 @@ public class MidiLocalStorage : MonoBehaviour
         midiTemp.noteVelocity = noteVelocity;
         midiTemp.noteCount = noteCount;
         midiTemp.readyToSet = readyToSet;
-
-        MidiStorage.Add(midiTemp);
     }
-
-    public List<MidiTempStruct> GetMidiTempStruct { get { return MidiStorage; } }
 }

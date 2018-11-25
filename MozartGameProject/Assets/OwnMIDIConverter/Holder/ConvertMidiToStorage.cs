@@ -20,12 +20,10 @@ public class ConvertMidiToStorage : MonoBehaviour
 
     void ConvertFileToObject()
     {
-        header = new HeaderParser();
-        info = new HeaderInfo();
         string[] fName;
         int size = midiFilesList.GetMidiFiles.Capacity;
         
-        Debug.Log("Total tracks: " + miditotal);
+        Debug.Log("Total tracks: " );
         fName = new string[size];
         size = 0;
 
@@ -49,7 +47,7 @@ public class ConvertMidiToStorage : MonoBehaviour
     {
         for(int i = 0; i < loader.trackInfos.Length; i++)
         {
-            Debug.Log("Item at: " + i + "is: " + tracks.ToString());
+            Debug.Log("Item at: " + i + "is: " );
         }
     }
 }
