@@ -19,7 +19,7 @@ using UnityEngine;
 
 public class MidiLocalStorage : MonoBehaviour
 {
-    public struct MidiTempStruct
+    private struct MidiTempStruct
     {
         public float midiFileTotalLenght; // midi duration
         public float noteOnTick;
@@ -32,7 +32,7 @@ public class MidiLocalStorage : MonoBehaviour
 
     public MidiLocalStorage(float midiLenght, float noteOnTick, float noteOffTick, int noteNumber, int noteVelocity, int noteCount, bool readyToSet)
     {
-        MidiTempStruct midiTemp = new MidiTempStruct();
+        MidiTempStruct midiTemp;
 
         midiTemp.midiFileTotalLenght = midiLenght;
         midiTemp.noteOnTick = noteOnTick;

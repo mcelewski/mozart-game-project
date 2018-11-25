@@ -22,40 +22,41 @@ public class SetMidiToScene : MonoBehaviour
     public NoteInfo noteInScene;
     public NoteBehaviour notePrefab;
     public MidiLocalStorage midiLocalStorage;
-    public List<GameObject> prefabToInsert = new List<GameObject>();
     
     /*
      * Get info and set in scene
      */
 
-    void MakeAction(MidiLocalStorage midiLocal)
+    private void MakeAction(MidiLocalStorage midiLocal)
     {
         bool setToUse = false;
         int number = 0;
         float lenght;
-        foreach (var item in midiLocal.GetMidiTempStruct)
+        // while i < total in midi note count
+        for (int i = 0; i < 200; i++)
         {
-            number = CheckNoteVelocity(item.noteVelocity, out setToUse, item.noteNumber);
+            number = CheckNoteVelocity(70, out setToUse, 23);
             lenght = CalculateLenght(item.noteOnTick, item.noteOffTick);
             if (setToUse)
             {
                 SetPrefabToScene(number, lenght, item.noteOnTick);
             }
         }
+        
     }
-
-    int CheckNoteVelocity(int velocity, out bool set, int number)
+    
+    private int CheckNoteVelocity(int velocity, out bool set, int number)
     {
         set = 70 <= velocity ? set = true : set = false;
         return number;
     }
 
-    float CalculateLenght(float start, float end)
+    private float CalculateLenght(float start, float end)
     {
         return end - start;
     }
 
-    void SetPrefabToScene(int noteNumber, float noteLenght, float noteStartPos)
+    private void SetPrefabToScene(int noteNumber, float noteLenght, float noteStartPos)
     {
         /*
          * Get note to play number
@@ -69,6 +70,10 @@ public class SetMidiToScene : MonoBehaviour
             {
                 var gameObject = new GameObject{name = "note", tag = "Enemy"}; // name + tag
                 var noteBehaviour = gameObject.AddComponent<NoteBehaviour>();
+                
+                var noteCollider = gameObject.AddComponent<BoxCollider>();
+                noteCollider.isTrigger = true;
+                
                 noteBehaviour.SetNote(item.Value.isWhite,item.Value.number,noteLenght,item.Value.xPosition,noteStartPos);
             }
         }
