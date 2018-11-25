@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MidiLoader;
 using MidiLoader.Parser;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ConvertMidiToStorage : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class ConvertMidiToStorage : MonoBehaviour
     //public MidiLocalStorage midiInfoToStore;
 
     public MidiLoader.Loader loader;
-    public MidiLoader.Parser.HeaderInfo header;
-    public MidiLoader.Parser.TrackInfo tracks;
+    
 
     private void Start()
     {
@@ -20,10 +20,11 @@ public class ConvertMidiToStorage : MonoBehaviour
 
     void ConvertFileToObject()
     {
-        header = new HeaderInfo();
+        header = new HeaderParser();
+        info = new HeaderInfo();
         string[] fName;
         int size = midiFilesList.GetMidiFiles.Capacity;
-        int miditotal = header.tracksCount;
+        
         Debug.Log("Total tracks: " + miditotal);
         fName = new string[size];
         size = 0;
