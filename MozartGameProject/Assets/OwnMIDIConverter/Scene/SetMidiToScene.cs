@@ -43,8 +43,7 @@ public class SetMidiToScene : MonoBehaviour
             {
                 SetPrefabToScene(number, lenght, noteBeign);
             }
-        }
-        
+        }        
     }
     
     private int CheckNoteVelocity(int velocity, out bool set, int number)

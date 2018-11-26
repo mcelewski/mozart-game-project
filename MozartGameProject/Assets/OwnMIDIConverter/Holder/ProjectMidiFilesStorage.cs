@@ -12,7 +12,7 @@ using Object = System.Object;
 
 public class ProjectMidiFilesStorage : MonoBehaviour
 {
-    private string _fdName = "Assets/MidiFiles";
+    private string _fdName = "Assets\\MidiFiles";
     private List<Object> _midiFiles = new List<Object>();
     private string[] _fNames;
 
