@@ -31,15 +31,17 @@ public class SetMidiToScene : MonoBehaviour
     {
         bool setToUse = false;
         int number = 0;
-        float lenght;
+        float lenght = 0f;
+        float noteBeign = 0f;
+        float noteOver = 0f;
         // while i < total in midi note count
         for (int i = 0; i < 200; i++)
         {
             number = CheckNoteVelocity(70, out setToUse, 23);
-            lenght = CalculateLenght(item.noteOnTick, item.noteOffTick);
+            lenght = CalculateLenght(noteBeign, noteOver);
             if (setToUse)
             {
-                SetPrefabToScene(number, lenght, item.noteOnTick);
+                SetPrefabToScene(number, lenght, noteBeign);
             }
         }
         
