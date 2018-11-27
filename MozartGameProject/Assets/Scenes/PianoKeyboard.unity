@@ -7147,7 +7147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   midiFilesList: {fileID: 1799856738}
-  midiInfoToStore: {fileID: 0}
 --- !u!1 &1883294900
 GameObject:
   m_ObjectHideFlags: 0

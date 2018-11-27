@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +16,6 @@ public class KeyboardController : MonoBehaviour
     public List<KeyCode> keysCodes = new List<KeyCode>();
     // 1st string nazwa klawisza 2nd gameobject z przypisanym juz dzwiekiem
     public Dictionary<KeyCode, GameObject> noteKeys = new Dictionary<KeyCode, GameObject>();
-    
 
     void Start()
     {
@@ -39,8 +39,8 @@ public class KeyboardController : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                //noteKeys[key].GetComponent<AudioSource>().Play();
-                noteKeys[key].GetComponent<NoteIndicatorKeys>().PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
+                var singleNote = noteKeys[key].GetComponent<NoteIndicatorKeys>(); //.PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
+                singleNote.PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
             }
         }
     }

@@ -44,6 +44,9 @@
             <e p="MidiLocalStorage.cs" t="Include" />
             <e p="ProjectMidiFilesStorage.cs" t="Include" />
           </e>
+          <e p="MidiConverter" t="Include">
+            <e p="FileReader.cs" t="Include" />
+          </e>
           <e p="Scene" t="Include">
             <e p="SetMidiToScene.cs" t="Include" />
           </e>

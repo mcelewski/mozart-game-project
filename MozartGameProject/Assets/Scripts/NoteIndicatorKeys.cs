@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using MidiJack;
 using System;
+using UnityEngine.Experimental.UIElements;
 
 /// <summary>
 /// MIDI Keyboard controller
@@ -18,7 +19,7 @@ public class NoteIndicatorKeys : MonoBehaviour
 
     public enum KeyState
     {
-        Up, Down, Pressed
+        Up, Down,
     }
 
     void Start()
@@ -29,26 +30,28 @@ public class NoteIndicatorKeys : MonoBehaviour
 
     void Update()
     {
-        UpdateKeyState();
+       UpdateKeyState();
     }
-
+    
     void UpdateKeyState()
     {
         if (WasJustReleased())
         {
+            keyState = KeyState.Up;
             SetProperColor();
-            PlaySoundOnPress(KeyState.Up);
+            PlaySoundOnPress(keyState);
         }
-        if (WasJustPressed())
+        if (WasPres())
         {
+            keyState = KeyState.Down;
             SetProperColor();
-            PlaySoundOnPress(KeyState.Down);
+            PlaySoundOnPress(keyState);
         }
     }
 
     private bool WasJustReleased()
     {
-        return MidiMaster.GetKeyUp(noteNumber) || MidiMaster.GetKey(noteNumber) < 0.01f;
+        return MidiMaster.GetKeyUp(noteNumber); //  || MidiMaster.GetKey(noteNumber) < 0.01f
     }
 
     private bool WasJustPressed()
@@ -58,17 +61,21 @@ public class NoteIndicatorKeys : MonoBehaviour
         return MidiMaster.GetKeyDown(noteNumber);
     }
 
+    private bool WasPres()
+    {
+        return MidiMaster.GetKeyDown(noteNumber);
+    }
+
     public void PlaySoundOnPress(KeyState key)
     {
         if (key == KeyState.Down)
         {
-            //ChangeNoteStatus += OnChangeNoteStatus;
             OnChangeNoteStatus();
             audioSource.Play(0);
         }
     }
 
-    void SetProperColor()
+    private void SetProperColor()
     {
         Color color;
         if (!isWhite)
@@ -87,16 +94,14 @@ public class NoteIndicatorKeys : MonoBehaviour
     {
         return this.gameObject.transform.position.x;
     }
-    // to test
-    public void GetNoteInfo(out int num, out float xPos)
-    {
-        num = this.noteNumber;
-        xPos = this.gameObject.transform.position.x;
-    }
 
     private void OnChangeNoteStatus()
     {
         noteActivate.Number = GetNoteNumber;
     }
 
+    public bool IsWhiteKeyboard
+    {
+        get { return isWhite; }
+    }
 }
