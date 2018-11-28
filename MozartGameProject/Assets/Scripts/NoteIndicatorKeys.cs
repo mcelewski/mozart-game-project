@@ -52,13 +52,6 @@ public class NoteIndicatorKeys : MonoBehaviour
         }
         keyboard.DetectKey();
     }
-
-    private void UpdateStatus(KeyState state)
-    {
-        SetProperColor();
-        PlaySoundOnPress(state);
-    }
-
     private bool WasJustReleased()
     {
         return MidiMaster.GetKeyUp(noteNumber); //  || MidiMaster.GetKey(noteNumber) < 0.01f
