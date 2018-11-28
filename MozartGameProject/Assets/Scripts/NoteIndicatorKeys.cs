@@ -4,7 +4,7 @@ using System;
 using UnityEngine.Experimental.UIElements;
 
 /// <summary>
-/// MIDI Keyboard controller
+/// MIDI Keyboard controller supporting PC keyboard controller
 ///     Detecting midi keys pressed, released, holded
 /// </summary>
 [RequireComponent(typeof(AudioSource))]
@@ -20,7 +20,7 @@ public class NoteIndicatorKeys : MonoBehaviour
 
     public enum KeyState
     {
-        Up, Down, None
+        Up, Down
     }
 
     void Start()
@@ -56,16 +56,16 @@ public class NoteIndicatorKeys : MonoBehaviour
     {
         return MidiMaster.GetKeyUp(noteNumber); //  || MidiMaster.GetKey(noteNumber) < 0.01f
     }
-
+    
+    private bool WasPres()
+    {
+        return MidiMaster.GetKeyDown(noteNumber);
+    }
+    
     private bool WasJustPressed()
     {
         if (MidiMaster.GetKey(noteNumber) > 0.5f && keyState == KeyState.Up)
             return true;
-        return MidiMaster.GetKeyDown(noteNumber);
-    }
-
-    private bool WasPres()
-    {
         return MidiMaster.GetKeyDown(noteNumber);
     }
 
@@ -80,7 +80,6 @@ public class NoteIndicatorKeys : MonoBehaviour
 
     public void SetProperColor()
     {
-        Debug.Log("set color");
         Color color;
         if (!isWhite)
             color = (keyState == KeyState.Down) ? Color.red : Color.black;

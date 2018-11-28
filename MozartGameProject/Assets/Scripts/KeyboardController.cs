@@ -8,6 +8,8 @@ using UnityEngine;
 ///     Get elemnts from scene,
 ///     Assign to them keycode,
 ///     Play different sount depend on keycode
+///     Set keystate
+///     Set note color
 /// </summary>
 /// 
 public class KeyboardController : MonoBehaviour
@@ -45,27 +47,5 @@ public class KeyboardController : MonoBehaviour
                 singleNote.SetProperColor();
             }
         }
-    }
-
-    public void KeyDown(out bool down)
-    {
-        foreach (var key in keysCodes)
-        {
-            if (Input.GetKeyDown(key))
-                down = true;
-            Debug.Log("if");
-        }
-        down = false;
-    }
-    
-    public void KeyUp(out bool up)
-    {
-        foreach (var key in keysCodes)
-        {
-            if (Input.GetKeyUp(key))
-                up = true;
-            Debug.Log("if");
-        }
-        up = false;
     }
 }
