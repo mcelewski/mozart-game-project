@@ -41,6 +41,7 @@ public class KeyboardController : MonoBehaviour
             {
                 var singleNote = noteKeys[key].GetComponent<NoteIndicatorKeys>(); //.PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
                 singleNote.PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
+                singleNote.SetProperColor();
             }
         }
     }

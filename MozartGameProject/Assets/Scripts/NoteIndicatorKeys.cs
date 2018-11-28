@@ -19,7 +19,7 @@ public class NoteIndicatorKeys : MonoBehaviour
 
     public enum KeyState
     {
-        Up, Down,
+        Up, Down, None
     }
 
     void Start()
@@ -49,6 +49,26 @@ public class NoteIndicatorKeys : MonoBehaviour
         }
     }
 
+    private void UpdateStatus(KeyState state)
+    {
+        SetProperColor();
+        PlaySoundOnPress(state);
+    }
+
+    private KeyState MidiPressed()
+    {
+        if (MidiMaster.GetKeyDown(noteNumber))
+            return KeyState.Down;
+        return KeyState.Up;
+    }
+
+    private KeyState MidiReleassed()
+    {
+        if (MidiMaster.GetKeyUp(noteNumber))
+            return KeyState.Up;
+        return KeyState.None;
+    }
+    
     private bool WasJustReleased()
     {
         return MidiMaster.GetKeyUp(noteNumber); //  || MidiMaster.GetKey(noteNumber) < 0.01f
@@ -75,8 +95,9 @@ public class NoteIndicatorKeys : MonoBehaviour
         }
     }
 
-    private void SetProperColor()
+    public void SetProperColor()
     {
+        Debug.Log("set color");
         Color color;
         if (!isWhite)
             color = (keyState == KeyState.Down) ? Color.red : Color.black;
