@@ -11,6 +11,7 @@ using UnityEngine.Experimental.UIElements;
 public class NoteIndicatorKeys : MonoBehaviour
 {
     public NoteActivated noteActivate;
+    public KeyboardController keyboard;
     
     public int noteNumber;
     public bool isWhite;
@@ -26,6 +27,7 @@ public class NoteIndicatorKeys : MonoBehaviour
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         noteActivate = GameObject.FindGameObjectWithTag("Finish").GetComponent<NoteActivated>();
+        keyboard = GameObject.FindGameObjectWithTag("Player").GetComponent<KeyboardController>();
     }
 
     void Update()
@@ -35,18 +37,20 @@ public class NoteIndicatorKeys : MonoBehaviour
     
     void UpdateKeyState()
     {
+        
         if (WasJustReleased())
         {
             keyState = KeyState.Up;
-            SetProperColor();
             PlaySoundOnPress(keyState);
+            SetProperColor();
         }
         if (WasPres())
         {
             keyState = KeyState.Down;
-            SetProperColor();
             PlaySoundOnPress(keyState);
+            SetProperColor();
         }
+        keyboard.DetectKey();
     }
 
     private void UpdateStatus(KeyState state)
@@ -55,20 +59,6 @@ public class NoteIndicatorKeys : MonoBehaviour
         PlaySoundOnPress(state);
     }
 
-    private KeyState MidiPressed()
-    {
-        if (MidiMaster.GetKeyDown(noteNumber))
-            return KeyState.Down;
-        return KeyState.Up;
-    }
-
-    private KeyState MidiReleassed()
-    {
-        if (MidiMaster.GetKeyUp(noteNumber))
-            return KeyState.Up;
-        return KeyState.None;
-    }
-    
     private bool WasJustReleased()
     {
         return MidiMaster.GetKeyUp(noteNumber); //  || MidiMaster.GetKey(noteNumber) < 0.01f
@@ -124,5 +114,10 @@ public class NoteIndicatorKeys : MonoBehaviour
     public bool IsWhiteKeyboard
     {
         get { return isWhite; }
+    }
+
+    public void SetKeyState(KeyState key)
+    {
+        keyState = key;
     }
 }

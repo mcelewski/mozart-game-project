@@ -28,21 +28,44 @@ public class KeyboardController : MonoBehaviour
             Debug.Log("Something went wrong:");
         }
     }
-    void Update()
+    public void DetectKey()
     {
-        DetectKey();
-    }
-    void DetectKey()
-    {
-
         foreach (var key in keysCodes)
         {
+            var singleNote = noteKeys[key].GetComponent<NoteIndicatorKeys>();
             if (Input.GetKeyDown(key))
             {
-                var singleNote = noteKeys[key].GetComponent<NoteIndicatorKeys>(); //.PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
                 singleNote.PlaySoundOnPress(NoteIndicatorKeys.KeyState.Down);
+                singleNote.SetKeyState(NoteIndicatorKeys.KeyState.Down);
+                singleNote.SetProperColor();
+            }
+            if (Input.GetKeyUp(key))
+            {
+                singleNote.SetKeyState(NoteIndicatorKeys.KeyState.Up);
                 singleNote.SetProperColor();
             }
         }
+    }
+
+    public void KeyDown(out bool down)
+    {
+        foreach (var key in keysCodes)
+        {
+            if (Input.GetKeyDown(key))
+                down = true;
+            Debug.Log("if");
+        }
+        down = false;
+    }
+    
+    public void KeyUp(out bool up)
+    {
+        foreach (var key in keysCodes)
+        {
+            if (Input.GetKeyUp(key))
+                up = true;
+            Debug.Log("if");
+        }
+        up = false;
     }
 }

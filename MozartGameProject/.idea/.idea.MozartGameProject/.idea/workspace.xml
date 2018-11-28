@@ -76,22 +76,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="435" />
+          <entry key="cs" value="1346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="435" />
+          <entry key="C#" value="1346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="8" />
+          <entry key="cs" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="8" />
+          <entry key="C#" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -119,170 +119,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/KeyboardController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+            <state relative-caret-position="731">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
-                <marker date="1543360461286" expanded="false" signature="6:83" ph="..." />
-                <marker date="1543360461286" expanded="true" signature="85:246" ph="/// PC keyboard: ... " />
-                <marker date="1543360461286" expanded="true" signature="294:1307" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="586:835" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="651:731" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="761:829" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="853:886" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="907:1305" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="953:1299" ph="{...}" />
-                <marker date="1543360461286" expanded="true" signature="1002:1289" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-              <folding>
-                <marker date="1543361492914" expanded="false" signature="6:91" ph="..." />
-                <marker date="1543361492914" expanded="true" signature="93:204" ph="/// MIDI Keyboard controller ... " />
-                <marker date="1543361492914" expanded="true" signature="291:2868" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="495:530" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="548:719" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="738:775" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="806:1126" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="843:969" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="992:1120" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="1173:1244" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="1280:1401" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="1439:1558" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="1598:1703" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="1738:1902" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="1930:1992" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2040:2173" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2080:2167" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2207:2514" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2544:2591" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2628:2693" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2732:2789" ph="{...}" />
-                <marker date="1543361492914" expanded="true" signature="2822:2866" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-              <folding>
-                <marker date="1543359989582" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-                <marker date="1543359989582" expanded="true" signature="1210:3804" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="1247:3802" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="1349:1487" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="1554:1694" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="1755:1889" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="2022:2110" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="2162:2258" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="2408:2500" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="2555:2655" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="2799:2889" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="2942:3040" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="3145:3229" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="3275:3367" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="3505:3608" ph="{...}" />
-                <marker date="1543359989582" expanded="true" signature="3685:3796" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="111" column="27" selection-start-line="111" selection-start-column="15" selection-end-line="111" selection-end-column="27" />
-              <folding>
-                <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-                <marker date="1541927709439" expanded="false" signature="1177:1261" ph="..." />
-                <marker date="1541927709439" expanded="true" signature="1281:9319" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1311:9317" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1326:2108" ph="Internal Data" />
-                <marker date="1541927709439" expanded="true" signature="1375:1957" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1398:1641" ph="/* Note state array ... */" />
-                <marker date="1541927709439" expanded="true" signature="1817:1947" ph="{...}" />
-                <marker date="1541927709439" expanded="false" signature="2118:3425" ph="Accessor Methods" />
-                <marker date="1541927709439" expanded="true" signature="2208:2425" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="2494:2619" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="2686:2811" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="2869:3100" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="3187:3405" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="3435:3921" ph="Event Delegates" />
-                <marker date="1541927709439" expanded="true" signature="3931:4827" ph="Editor Support" />
-                <marker date="1541927709439" expanded="true" signature="4120:4397" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="4274:4361" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="4500:4620" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="4518:4610" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="4736:4791" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="4837:5172" ph="Public Methods" />
-                <marker date="1541927709439" expanded="true" signature="4881:5152" ph="{...}" />
-                <marker date="1541927709439" expanded="false" signature="5182:8597" ph="Private Methods" />
-                <marker date="1541927709439" expanded="true" signature="5236:5653" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="5285:5489" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="5386:5475" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="5506:5643" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="5676:8577" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="5776:6134" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="5836:6120" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="6202:8392" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="6663:7092" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="7210:7548" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="7619:8194" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="8607:8797" ph="Native Plugin Interface" />
-                <marker date="1541927709439" expanded="true" signature="8807:9311" ph="Singleton Class Instance" />
-                <marker date="1541927709439" expanded="true" signature="8921:9291" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="8939:9281" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="8980:9233" ph="{...}" />
+                <marker date="1543399738703" expanded="false" signature="6:83" ph="..." />
+                <marker date="1543399738703" expanded="true" signature="85:246" ph="/// PC keyboard: ... " />
+                <marker date="1543399738703" expanded="true" signature="294:1912" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="586:835" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="651:731" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="761:829" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="863:1456" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="908:1450" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="1035:1259" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="1296:1440" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="1496:1686" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="1541:1658" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="1726:1910" ph="{...}" />
+                <marker date="1543399738703" expanded="true" signature="1771:1884" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+            <state relative-caret-position="513">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
               <folding>
-                <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-                <marker date="1541927709439" expanded="false" signature="1177:1246" ph="..." />
-                <marker date="1541927709439" expanded="true" signature="1266:3326" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1308:3324" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1323:2264" ph="Custom Editor Window Code" />
-                <marker date="1541927709439" expanded="true" signature="1436:1521" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1543:2244" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1730:1920" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="2274:2753" ph="Update And Repaint" />
-                <marker date="1541927709439" expanded="true" signature="2423:2733" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="2590:2676" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="2763:3318" ph="Native Plugin Interface" />
-                <marker date="1541927709439" expanded="true" signature="3214:3298" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-              <folding>
-                <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-                <marker date="1541927709439" expanded="true" signature="1209:1757" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1261:1755" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1372:1652" ph="{...}" />
-                <marker date="1541927709439" expanded="true" signature="1704:1749" ph="{...}" />
+                <marker date="1543399755551" expanded="false" signature="6:91" ph="..." />
+                <marker date="1543399755551" expanded="true" signature="93:204" ph="/// MIDI Keyboard controller ... " />
+                <marker date="1543399755551" expanded="true" signature="291:2746" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="535:570" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="588:857" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="876:913" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="944:1243" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="990:1086" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1109:1207" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1290:1361" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1397:1502" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1537:1701" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1729:1791" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1839:1972" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="1879:1966" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="2006:2313" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="2343:2390" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="2427:2492" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="2531:2588" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="2621:2665" ph="{...}" />
+                <marker date="1543399755551" expanded="true" signature="2708:2744" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -311,6 +196,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteActivated.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECB5D8E2-0A91-44BC-A4F2-58317D1E56F9/f1/f55a9225/DriveInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiUtils/TimeSpanLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Loader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/LoaderLogger.cs" root0="FORCE_HIGHLIGHTING" />
@@ -346,6 +232,7 @@
         <option value="$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ConvertMidiToStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs" />
         <option value="$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverter/FileReader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiLPKController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KeyboardController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs" />
       </list>
@@ -437,12 +324,12 @@
       <workItem from="1543316560050" duration="8716000" />
       <workItem from="1543327174090" duration="422000" />
       <workItem from="1543344392527" duration="1666000" />
-      <workItem from="1543360329484" duration="2343000" />
+      <workItem from="1543360329484" duration="7066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42033000" />
+    <option name="totallyTimeSpent" value="46756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,6 +411,32 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs" initialLine="38">
+            <startOffsets>
+              <option value="1550" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1600" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs" initialLine="33">
+            <startOffsets>
+              <option value="1395" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1435" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -725,7 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverter/FileReader.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderParser.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -734,71 +646,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverterInfo.css" />
-    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Loader.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <marker date="1543141865549" expanded="false" signature="6:159" ph="..." />
-            <marker date="1543141865549" expanded="true" signature="182:956" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="206:953" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="333:949" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="559:792" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="718:786" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="824:866" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KeyboardController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-          <folding>
-            <marker date="1543360461286" expanded="false" signature="6:83" ph="..." />
-            <marker date="1543360461286" expanded="true" signature="85:246" ph="/// PC keyboard: ... " />
-            <marker date="1543360461286" expanded="true" signature="294:1307" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="586:835" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="651:731" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="761:829" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="853:886" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="907:1305" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="953:1299" ph="{...}" />
-            <marker date="1543360461286" expanded="true" signature="1002:1289" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <marker date="1543361492914" expanded="false" signature="6:91" ph="..." />
-            <marker date="1543361492914" expanded="true" signature="93:204" ph="/// MIDI Keyboard controller ... " />
-            <marker date="1543361492914" expanded="true" signature="291:2868" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="495:530" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="548:719" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="738:775" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="806:1126" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="843:969" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="992:1120" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="1173:1244" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="1280:1401" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="1439:1558" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="1598:1703" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="1738:1902" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="1930:1992" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2040:2173" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2080:2167" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2207:2514" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2544:2591" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2628:2693" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2732:2789" ph="{...}" />
-            <marker date="1543361492914" expanded="true" signature="2822:2866" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverter/FileReader.cs">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -827,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
           <folding>
             <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
             <marker date="1541927709439" expanded="true" signature="1209:1757" ph="{...}" />
@@ -839,10 +688,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+          <folding>
+            <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
+            <marker date="1541927709439" expanded="false" signature="1177:1246" ph="..." />
+            <marker date="1541927709439" expanded="true" signature="1266:3326" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="1308:3324" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="1323:2264" ph="Custom Editor Window Code" />
+            <marker date="1541927709439" expanded="true" signature="1436:1521" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="1543:2244" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="1730:1920" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="2274:2753" ph="Update And Repaint" />
+            <marker date="1541927709439" expanded="true" signature="2423:2733" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="2590:2676" ph="{...}" />
+            <marker date="1541927709439" expanded="true" signature="2763:3318" ph="Native Plugin Interface" />
+            <marker date="1541927709439" expanded="true" signature="3214:3298" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="111" column="27" selection-start-line="111" selection-start-column="15" selection-end-line="111" selection-end-column="27" />
+        <state relative-caret-position="1380">
+          <caret line="277" column="41" selection-start-line="277" selection-start-column="33" selection-end-line="277" selection-end-column="41" />
           <folding>
             <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
             <marker date="1541927709439" expanded="false" signature="1177:1261" ph="..." />
@@ -888,24 +759,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MidiLPKController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECB5D8E2-0A91-44BC-A4F2-58317D1E56F9/f1/f55a9225/DriveInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1227">
+          <caret line="134" column="30" selection-start-line="134" selection-start-column="30" selection-end-line="134" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KeyboardController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
-            <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-            <marker date="1541927709439" expanded="false" signature="1177:1246" ph="..." />
-            <marker date="1541927709439" expanded="true" signature="1266:3326" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1308:3324" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1323:2264" ph="Custom Editor Window Code" />
-            <marker date="1541927709439" expanded="true" signature="1436:1521" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1543:2244" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1730:1920" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2274:2753" ph="Update And Repaint" />
-            <marker date="1541927709439" expanded="true" signature="2423:2733" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2590:2676" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2763:3318" ph="Native Plugin Interface" />
-            <marker date="1541927709439" expanded="true" signature="3214:3298" ph="{...}" />
+            <marker date="1543399738703" expanded="false" signature="6:83" ph="..." />
+            <marker date="1543399738703" expanded="true" signature="85:246" ph="/// PC keyboard: ... " />
+            <marker date="1543399738703" expanded="true" signature="294:1912" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="586:835" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="651:731" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="761:829" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="863:1456" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="908:1450" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="1035:1259" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="1296:1440" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="1496:1686" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="1541:1658" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="1726:1910" ph="{...}" />
+            <marker date="1543399738703" expanded="true" signature="1771:1884" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Loader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <marker date="1543141865549" expanded="false" signature="6:159" ph="..." />
+            <marker date="1543141865549" expanded="true" signature="182:956" ph="{...}" />
+            <marker date="1543141865549" expanded="true" signature="206:953" ph="{...}" />
+            <marker date="1543141865549" expanded="true" signature="333:949" ph="{...}" />
+            <marker date="1543141865549" expanded="true" signature="559:792" ph="{...}" />
+            <marker date="1543141865549" expanded="true" signature="718:786" ph="{...}" />
+            <marker date="1543141865549" expanded="true" signature="824:866" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <marker date="1543399755551" expanded="false" signature="6:91" ph="..." />
+            <marker date="1543399755551" expanded="true" signature="93:204" ph="/// MIDI Keyboard controller ... " />
+            <marker date="1543399755551" expanded="true" signature="291:2746" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="535:570" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="588:857" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="876:913" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="944:1243" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="990:1086" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1109:1207" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1290:1361" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1397:1502" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1537:1701" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1729:1791" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1839:1972" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="1879:1966" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="2006:2313" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="2343:2390" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="2427:2492" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="2531:2588" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="2621:2665" ph="{...}" />
+            <marker date="1543399755551" expanded="true" signature="2708:2744" ph="{...}" />
           </folding>
         </state>
       </provider>

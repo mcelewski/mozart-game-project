@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 57
   isWhite: 1
   audioSource: {fileID: 0}
@@ -672,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 66
   isWhite: 0
   audioSource: {fileID: 0}
@@ -870,6 +872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 51
   isWhite: 0
   audioSource: {fileID: 0}
@@ -1068,6 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 70
   isWhite: 0
   audioSource: {fileID: 0}
@@ -1446,6 +1450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 58
   isWhite: 0
   audioSource: {fileID: 0}
@@ -1889,6 +1894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 69
   isWhite: 1
   audioSource: {fileID: 0}
@@ -2626,6 +2632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 67
   isWhite: 1
   audioSource: {fileID: 0}
@@ -2951,6 +2958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 53
   isWhite: 1
   audioSource: {fileID: 0}
@@ -3234,6 +3242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 61
   isWhite: 0
   audioSource: {fileID: 0}
@@ -3432,6 +3441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 63
   isWhite: 0
   audioSource: {fileID: 0}
@@ -3697,6 +3707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 72
   isWhite: 1
   audioSource: {fileID: 0}
@@ -3980,6 +3991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 52
   isWhite: 1
   audioSource: {fileID: 0}
@@ -4499,6 +4511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 40557613}
   noteNumber: 49
   isWhite: 0
   audioSource: {fileID: 0}
@@ -4697,6 +4710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 56
   isWhite: 0
   audioSource: {fileID: 0}
@@ -4895,6 +4909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 54
   isWhite: 0
   audioSource: {fileID: 0}
@@ -5093,6 +5108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 64
   isWhite: 1
   audioSource: {fileID: 0}
@@ -5291,6 +5307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 59
   isWhite: 1
   audioSource: {fileID: 0}
@@ -5574,6 +5591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 68
   isWhite: 0
   audioSource: {fileID: 0}
@@ -5790,6 +5808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 40557613}
   noteNumber: 48
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6140,6 +6159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 62
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6429,6 +6449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 65
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6627,6 +6648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 55
   isWhite: 1
   audioSource: {fileID: 0}
@@ -6910,6 +6932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 40557613}
   noteNumber: 50
   isWhite: 1
   audioSource: {fileID: 0}
@@ -7416,6 +7439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 71
   isWhite: 1
   audioSource: {fileID: 0}
@@ -7699,6 +7723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteActivate: {fileID: 0}
+  keyboard: {fileID: 0}
   noteNumber: 60
   isWhite: 1
   audioSource: {fileID: 0}
