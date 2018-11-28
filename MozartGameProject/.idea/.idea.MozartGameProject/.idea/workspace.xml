@@ -68,36 +68,87 @@
     <session id="-193933193">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.14" value="2" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1459" />
+          <entry key="cs" value="2511" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1459" />
+          <entry key="C#" value="2511" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="12" />
+          <entry key="cs" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="12" />
+          <entry key="C#" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/OpenStream.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <marker date="1543406683951" expanded="true" signature="6:53" ph="..." />
+                <marker date="1543406683951" expanded="true" signature="55:141" ph="/// Simplify open midi file stream and send it to analyse ... " />
+                <marker date="1543406683951" expanded="true" signature="181:967" ph="{...}" />
+                <marker date="1543406683951" expanded="true" signature="281:324" ph="{...}" />
+                <marker date="1543406683951" expanded="true" signature="389:965" ph="{...}" />
+                <marker date="1543406683951" expanded="true" signature="413:518" ph="/* Open stream ... */" />
+                <marker date="1543406683951" expanded="true" signature="551:616" ph="{...}" />
+                <marker date="1543406683951" expanded="true" signature="629:718" ph="{...}" />
+                <marker date="1543406683951" expanded="true" signature="756:928" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1543407101920" expanded="true" signature="6:109" ph="..." />
+                <marker date="1543407101920" expanded="true" signature="155:522" ph="{...}" />
+                <marker date="1543407101920" expanded="true" signature="265:520" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectHeader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <marker date="1543407156700" expanded="false" signature="6:78" ph="..." />
+                <marker date="1543407156700" expanded="true" signature="79:176" ph="/// Detecting mask for header info file ... " />
+                <marker date="1543407156700" expanded="true" signature="219:340" ph="{...}" />
+                <marker date="1543407156700" expanded="true" signature="269:276" ph="{...}" />
+                <marker date="1543407156700" expanded="true" signature="331:338" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -106,6 +157,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/OpenStream.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemRealTime/StartMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/ParseUtils.cs" root0="FORCE_HIGHLIGHTING" />
@@ -122,7 +174,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECB5D8E2-0A91-44BC-A4F2-58317D1E56F9/f1/f55a9225/DriveInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiUtils/TimeSpanLogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Loader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectHeader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/LoaderLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/ChannelVoice/NoteOffMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/SequenceAsset.cs" root0="FORCE_HIGHLIGHTING" />
@@ -159,6 +213,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiLPKController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KeyboardController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs" />
+        <option value="$PROJECT_DIR$/Assets/GimpyParser/OpenStream.cs" />
+        <option value="$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs" />
+        <option value="$PROJECT_DIR$/Assets/GimpyParser/DetectHeader.cs" />
       </list>
     </option>
   </component>
@@ -180,13 +237,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,11 +306,12 @@
       <workItem from="1543327174090" duration="422000" />
       <workItem from="1543344392527" duration="1666000" />
       <workItem from="1543360329484" duration="8135000" />
+      <workItem from="1543404973617" duration="2749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47825000" />
+    <option name="totallyTimeSpent" value="50574000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -266,8 +324,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1088" y="-8" width="1096" height="1896" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2084942" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21235521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -562,31 +621,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverterInfo.css" />
-    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverter/FileReader.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/MidiConverter/FileReader.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
           <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding>
-            <marker date="1543359989582" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-            <marker date="1543359989582" expanded="true" signature="1210:3804" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="1247:3802" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="1349:1487" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="1554:1694" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="1755:1889" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="2022:2110" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="2162:2258" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="2408:2500" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="2555:2655" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="2799:2889" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="2942:3040" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="3145:3229" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="3275:3367" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="3505:3608" ph="{...}" />
-            <marker date="1543359989582" expanded="true" signature="3685:3796" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,21 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-            <marker date="1541927709439" expanded="false" signature="1177:1246" ph="..." />
-            <marker date="1541927709439" expanded="true" signature="1266:3326" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1308:3324" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1323:2264" ph="Custom Editor Window Code" />
-            <marker date="1541927709439" expanded="true" signature="1436:1521" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1543:2244" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1730:1920" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2274:2753" ph="Update And Repaint" />
-            <marker date="1541927709439" expanded="true" signature="2423:2733" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2590:2676" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2763:3318" ph="Native Plugin Interface" />
-            <marker date="1541927709439" expanded="true" signature="3214:3298" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,58 +654,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="277" column="41" selection-start-line="277" selection-start-column="33" selection-end-line="277" selection-end-column="41" />
-          <folding>
-            <marker date="1541927709439" expanded="true" signature="0:1170" ph="/* MidiJack - MIDI Input Plugin for Unity ... */" />
-            <marker date="1541927709439" expanded="false" signature="1177:1261" ph="..." />
-            <marker date="1541927709439" expanded="true" signature="1281:9319" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1311:9317" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1326:2108" ph="Internal Data" />
-            <marker date="1541927709439" expanded="true" signature="1375:1957" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="1398:1641" ph="/* Note state array ... */" />
-            <marker date="1541927709439" expanded="true" signature="1817:1947" ph="{...}" />
-            <marker date="1541927709439" expanded="false" signature="2118:3425" ph="Accessor Methods" />
-            <marker date="1541927709439" expanded="true" signature="2208:2425" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2494:2619" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2686:2811" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="2869:3100" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="3187:3405" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="3435:3921" ph="Event Delegates" />
-            <marker date="1541927709439" expanded="true" signature="3931:4827" ph="Editor Support" />
-            <marker date="1541927709439" expanded="true" signature="4120:4397" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="4274:4361" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="4500:4620" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="4518:4610" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="4736:4791" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="4837:5172" ph="Public Methods" />
-            <marker date="1541927709439" expanded="true" signature="4881:5152" ph="{...}" />
-            <marker date="1541927709439" expanded="false" signature="5182:8597" ph="Private Methods" />
-            <marker date="1541927709439" expanded="true" signature="5236:5653" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="5285:5489" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="5386:5475" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="5506:5643" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="5676:8577" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="5776:6134" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="5836:6120" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="6202:8392" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="6663:7092" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="7210:7548" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="7619:8194" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="8607:8797" ph="Native Plugin Interface" />
-            <marker date="1541927709439" expanded="true" signature="8807:9311" ph="Singleton Class Instance" />
-            <marker date="1541927709439" expanded="true" signature="8921:9291" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="8939:9281" ph="{...}" />
-            <marker date="1541927709439" expanded="true" signature="8980:9233" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MidiLPKController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MidiLPKController.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECB5D8E2-0A91-44BC-A4F2-58317D1E56F9/f1/f55a9225/DriveInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1227">
@@ -693,15 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <marker date="1543141865549" expanded="false" signature="6:159" ph="..." />
-            <marker date="1543141865549" expanded="true" signature="182:956" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="206:953" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="333:949" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="559:792" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="718:786" ph="{...}" />
-            <marker date="1543141865549" expanded="true" signature="824:866" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,28 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding>
-            <marker date="1543400753370" expanded="true" signature="6:91" ph="..." />
-            <marker date="1543400753370" expanded="true" signature="93:238" ph="/// MIDI Keyboard controller supporting PC keyboard controller ... " />
-            <marker date="1543400753370" expanded="true" signature="325:2691" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="569:598" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="616:885" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="904:941" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="972:1331" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1018:1144" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1167:1295" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1366:1471" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1503:1565" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1604:1768" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1816:1949" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1856:1943" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="1983:2258" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="2288:2335" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="2372:2437" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="2476:2533" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="2566:2610" ph="{...}" />
-            <marker date="1543400753370" expanded="true" signature="2653:2689" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,18 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <marker date="1543400550040" expanded="false" signature="6:83" ph="..." />
-            <marker date="1543400550040" expanded="true" signature="85:290" ph="/// PC keyboard: ... " />
-            <marker date="1543400550040" expanded="true" signature="338:1502" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="630:879" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="695:775" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="805:873" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="907:1500" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="952:1494" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="1079:1303" ph="{...}" />
-            <marker date="1543400550040" expanded="true" signature="1340:1484" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,25 +690,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/OpenStream.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
-            <marker date="1543141865609" expanded="false" signature="6:78" ph="..." />
-            <marker date="1543141865609" expanded="true" signature="122:3072" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="129:704" ph="/// Set note info: ... " />
-            <marker date="1543141865609" expanded="true" signature="812:1121" ph="Default values" />
-            <marker date="1543141865609" expanded="false" signature="1127:1484" ph="Accessors" />
-            <marker date="1543141865609" expanded="true" signature="1171:1254" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="1283:1366" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="1391:1468" ph="{...}" />
-            <marker date="1543141865609" expanded="false" signature="1490:2557" ph="Private Methods" />
-            <marker date="1543141865609" expanded="true" signature="1555:1781" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="1584:1673" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="1686:1775" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="1832:1930" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="1971:2094" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="2137:2395" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="2446:2541" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="2669:2904" ph="{...}" />
-            <marker date="1543141865609" expanded="true" signature="2935:3070" ph="{...}" />
+            <marker date="1543406683951" expanded="true" signature="6:53" ph="..." />
+            <marker date="1543406683951" expanded="true" signature="55:141" ph="/// Simplify open midi file stream and send it to analyse ... " />
+            <marker date="1543406683951" expanded="true" signature="181:967" ph="{...}" />
+            <marker date="1543406683951" expanded="true" signature="281:324" ph="{...}" />
+            <marker date="1543406683951" expanded="true" signature="389:965" ph="{...}" />
+            <marker date="1543406683951" expanded="true" signature="413:518" ph="/* Open stream ... */" />
+            <marker date="1543406683951" expanded="true" signature="551:616" ph="{...}" />
+            <marker date="1543406683951" expanded="true" signature="629:718" ph="{...}" />
+            <marker date="1543406683951" expanded="true" signature="756:928" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1543407101920" expanded="true" signature="6:109" ph="..." />
+            <marker date="1543407101920" expanded="true" signature="155:522" ph="{...}" />
+            <marker date="1543407101920" expanded="true" signature="265:520" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1543407156700" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543407156700" expanded="true" signature="79:176" ph="/// Detecting mask for header info file ... " />
+            <marker date="1543407156700" expanded="true" signature="219:340" ph="{...}" />
+            <marker date="1543407156700" expanded="true" signature="269:276" ph="{...}" />
+            <marker date="1543407156700" expanded="true" signature="331:338" ph="{...}" />
           </folding>
         </state>
       </provider>
