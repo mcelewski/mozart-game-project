@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using UnityEngine;
+
+/// <summary>
+///     Converting file to byte array
+///         - Send array to forward analyse
+/// 
+/// </summary>
 
 public class ConvertToBytes : MonoBehaviour 
 {
     private static byte[] fileInfo;
-    public void CopyToByteArray(FileStream fileStream, out bool copied)
+    public int CopyToByteArray(FileStream fileStream, out bool copied)
     {
         fileInfo = new byte[fileStream.Length +1];
         while (fileStream.Read(fileInfo, 0, (int) fileStream.Length) > -1)
@@ -15,7 +18,10 @@ public class ConvertToBytes : MonoBehaviour
 
         if (fileInfo.Length >= fileStream.Length)
             copied = true;
-
+        
+        
+        
         copied = false;
+        return fileInfo.Length;
     }
 }

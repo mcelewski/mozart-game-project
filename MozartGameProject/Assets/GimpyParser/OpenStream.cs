@@ -1,14 +1,17 @@
 ﻿using System.IO;
-using System.Net;
 using UnityEngine;
 
 /// <summary>
 /// Simplify open midi file stream and send it to analyse
+///     - Show info about bytes read in int format
+/// 
 /// </summary>
+
 public class OpenStream : MonoBehaviour
 {
     private string fPath = "";
-    bool openAndCopied = false;
+    private int bReaded = 0;
+    private bool openAndCopied = false;
     
     public string SetMidiPath
     {
@@ -32,6 +35,7 @@ public class OpenStream : MonoBehaviour
         }
         else
         {
+            Debug.Log("File at: " + fPath + " doesn't exist.");
             openAndCopied = false;
             return openAndCopied;
         }
@@ -40,9 +44,11 @@ public class OpenStream : MonoBehaviour
         {
             fStream.Position = 0;
             ConvertToBytes step = new ConvertToBytes();
-            step.CopyToByteArray(fStream, out openAndCopied);
+            bReaded = step.CopyToByteArray(fStream, out openAndCopied);
         }
-
+        
+        Debug.Log("Bytes readed: " + bReaded);    // Show number of bytes readed in int format
+        fStream.Close();    // Always remember to close stream
         return openAndCopied;
     }
 }

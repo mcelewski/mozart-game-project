@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectTrack : MonoBehaviour {
+/// <summary>
+///		Detect all track infos
+/// 		- Set it into a package and send back
+/// </summary>
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class DetectTrack : MonoBehaviour 
+{
+
 }
