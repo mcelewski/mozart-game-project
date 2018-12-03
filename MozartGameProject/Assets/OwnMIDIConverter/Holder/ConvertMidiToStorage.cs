@@ -17,13 +17,12 @@ public class ConvertMidiToStorage : MonoBehaviour
     private void Start()
     {
         ShowMeTheWay();
-        SetMidiLocal();
     }
 
     void ShowMeTheWay()
     {
         OpenStream oStream = new OpenStream();
-        oStream.SetMidiPath = GetFileToParse(2);
+        oStream.SetMidiPath = GetFileToParse(0);
         
         if (false == oStream.OpenMidiFile())
         {
@@ -34,11 +33,5 @@ public class ConvertMidiToStorage : MonoBehaviour
     string GetFileToParse(int index)
     {
         return midiFilesList.GetMidiFiles.ElementAt(index).ToString();
-    }
-
-    void SetMidiLocal()
-    {
-        var localMidi = new MidiLocalStorage(.2f,1.5f,2.8f,55,80,180,true);
-        localMidi.ShowInfo();
     }
 }

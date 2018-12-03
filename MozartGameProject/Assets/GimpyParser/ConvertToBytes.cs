@@ -12,8 +12,8 @@ public class ConvertToBytes
 {
     public static int CopyToByteArray(byte[] bFile, out bool copied)
     {
-        var grandformat = new GrandFileFormat();
-        grandformat.DetectFormat(bFile);
+        var grandFormat = new GrandFileFormat();
+        grandFormat.DetectFormat(bFile);
         
         copied = false;
         return bFile.Length;
