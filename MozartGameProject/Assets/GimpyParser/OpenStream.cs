@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Net;
 using UnityEngine;
 
 /// <summary>
@@ -7,7 +8,7 @@ using UnityEngine;
 /// 
 /// </summary>
 
-public class OpenStream : MonoBehaviour
+public class OpenStream
 {
     private string fPath = "";
     private int bReaded = 0;
@@ -42,13 +43,15 @@ public class OpenStream : MonoBehaviour
         
         if (fStream != null)
         {
+            byte[] tmp;
             fStream.Position = 0;
-            ConvertToBytes step = new ConvertToBytes();
-            bReaded = step.CopyToByteArray(fStream, out openAndCopied);
+            tmp = File.ReadAllBytes(fPath);
+            bReaded = ConvertToBytes.CopyToByteArray(tmp, out openAndCopied);
         }
         
         Debug.Log("Bytes readed: " + bReaded);    // Show number of bytes readed in int format
         fStream.Close();    // Always remember to close stream
+        openAndCopied = true;
         return openAndCopied;
     }
 }

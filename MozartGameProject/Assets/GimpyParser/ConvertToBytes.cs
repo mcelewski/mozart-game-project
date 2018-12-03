@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using UnityEngine;
 
 /// <summary>
@@ -7,21 +8,14 @@ using UnityEngine;
 /// 
 /// </summary>
 
-public class ConvertToBytes : MonoBehaviour 
+public class ConvertToBytes 
 {
-    private static byte[] fileInfo;
-    public int CopyToByteArray(FileStream fileStream, out bool copied)
+    public static int CopyToByteArray(byte[] bFile, out bool copied)
     {
-        fileInfo = new byte[fileStream.Length +1];
-        while (fileStream.Read(fileInfo, 0, (int) fileStream.Length) > -1)
-            ;
-
-        if (fileInfo.Length >= fileStream.Length)
-            copied = true;
-        
-        
+        var grandformat = new GrandFileFormat();
+        grandformat.DetectFormat(bFile);
         
         copied = false;
-        return fileInfo.Length;
+        return bFile.Length;
     }
 }

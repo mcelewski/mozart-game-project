@@ -24,10 +24,10 @@ public class NoteBehaviour : MonoBehaviour
     public static event OnNoteChanges ChangeNoteStatus;
 
     #region Default values
-    private int noteNumber = 0;
-    private float noteLenght = 1.0f;
-    private float startPosition = 0.0f;
-    private bool isWhite = false;
+    private int noteNumber;
+    private float noteLenght;
+    private float startPosition;
+    private bool isWhite;
 
     private Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
     private Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
@@ -89,7 +89,7 @@ public class NoteBehaviour : MonoBehaviour
 
     private void NoteBehaviour_ChangeNoteStatus()
     {
-        // send message was created
+        // send message note was created
         Debug.Log("Note Created or disabled");
     }
 

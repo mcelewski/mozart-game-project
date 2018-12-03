@@ -7,44 +7,38 @@ using MidiLoader.Parser;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Think about this way 
+/// </summary>
 public class ConvertMidiToStorage : MonoBehaviour
 {
     public ProjectMidiFilesStorage midiFilesList;
-    public Loader loader;
 
     private void Start()
     {
-        ConvertFileToObject();
+        ShowMeTheWay();
+        SetMidiLocal();
     }
 
-    void ConvertFileToObject()
+    void ShowMeTheWay()
     {
-        string[] fName;
-        int size = midiFilesList.GetMidiFiles.Capacity;
+        OpenStream oStream = new OpenStream();
+        oStream.SetMidiPath = GetFileToParse(2);
         
-        fName = new string[size];
-        size = 0;
-
-        foreach (var item in midiFilesList.GetMidiFiles)
+        if (false == oStream.OpenMidiFile())
         {
-            fName[size] = item.ToString();
-            size++;
+            Debug.Log("\nCouldn't open");
         }
-        
-        SetFile(fName[1]);
-        GetFileInfo();
     }
 
-    void SetFile(string path)
+    string GetFileToParse(int index)
     {
-        loader = new Loader(path);
+        return midiFilesList.GetMidiFiles.ElementAt(index).ToString();
     }
 
-    void GetFileInfo()
+    void SetMidiLocal()
     {
-        for(int i = 0; i < loader.trackInfos.Length; i++)
-        {
-            Debug.Log(loader.trackInfos[i].ToString());
-        }
+        var localMidi = new MidiLocalStorage(.2f,1.5f,2.8f,55,80,180,true);
+        localMidi.ShowInfo();
     }
 }
