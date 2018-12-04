@@ -23,6 +23,7 @@ public class GrandFileFormat
         string format = "";
         uint chunkSize = 0; // max val = 2 x 4 bytes = 32 bits = 8 589 934 591 max value
         uint trackAmount = 0;
+        uint timeDivision = 0;
         
         // Check if it's midi format
         if (0 != (file[0] >> 7))
@@ -34,11 +35,14 @@ public class GrandFileFormat
         GetSizeOfChunk(ref file,ref chunkSize);
         GetMidiFormatType(ref file, ref SetupMidiFormat);
         GetNumberOfTracks(ref file, ref trackAmount);
+        if (!GetTimeDivision(ref file, ref timeDivision))
+            Debug.Log("No needed format");
     //--------------------------------------------------------------------//
         
         Debug.Log("File format: " + format +
                   "\tChunk size: " + chunkSize + 
-                  "\tTrack info: " + SetupMidiFormat);
+                  "\tTrack info: " + SetupMidiFormat +
+                  "\tTime division: " + timeDivision);
     }
     
     // Chunk type in ASCII
@@ -87,35 +91,39 @@ public class GrandFileFormat
     }
     
     // Get time division
-    private static void GetTimeDivision(ref byte[] file)
+    private static bool GetTimeDivision(ref byte[] file, ref uint division)
     {
         /*
          * If the top bit of the word (bit mask 0x8000) is 0,
          * the following 15 bits describe the time division in ticks per beat.
-         * Otherwise the following 15 bits (bit mask 0x7FFF)
-         * describe the time division in frames per second.
-         */
-        
-        /*
+         *
          * Ticks per beat translate to the number of clock ticks or track delta positions
          * (described in the Track Chunk section) in every quarter note of music.
          * 
          * Common values range from 48 to 960, although newer sequencers go far beyond this range to
          * ease working with MIDI and digital audio together.
-         * 
-         * Frames per second is defined by breaking the remaining 15 bytes into two values.
-         *
-         * The top 7 bits (bit mask 0x7F00) define a value for the number of SMPTE frames and can be 24,
-         * 25, 29 (for 29.97 fps) or 30.
-         * 
-         * The remaining byte (bit mask 0x00FF) defines how many clock ticks or track
-         * delta positions there are per frame.
-         *
-         * So a time division example of 0x9978 could be broken down into
-         * it's three parts: the top bit is one, so it is in SMPTE frames per second format,
-         * the following 7 bits have a value of 25 (0x19)and the bottom byte has a value of 120 (0x78).
-         * This means the example plays at 24 frames per second SMPTE time
-         * and has 120 ticks per frame. 
          */
+        
+        const uint determineTicksMask = 0x8000;
+        const uint valueMask = 0x7FFF;
+
+        if (0 == (file[12] & determineTicksMask))
+        {
+            division = ((uint)(file[12] << 1 )& valueMask) + (file[13] & valueMask);
+            if (!(48 <= division) && !(960 >= division))
+                return false;
+
+            return true;
+        }
+        return false;
+    }
+    
+    //Get track chunk
+    private static void GetTrackChunk(ref byte[] file, ref )
+    {
+        /*
+         * Beacouse the chunk ID is always "MTrk" (0x4D54726B) skip 
+         */
+        
     }
 }

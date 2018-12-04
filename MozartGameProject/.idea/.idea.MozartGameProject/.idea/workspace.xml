@@ -34,20 +34,21 @@
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="11944" />
+          <entry key="cs" value="12683" />
           <entry key="css" value="82" />
           <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="11944" />
+          <entry key="C#" value="12683" />
           <entry key="CSS" value="82" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
@@ -115,16 +116,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ConvertMidiToStorage.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+            <state relative-caret-position="510">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
-                <marker date="1543845322734" expanded="false" signature="6:179" ph="..." />
-                <marker date="1543845322734" expanded="true" signature="181:235" ph="/// Think about this way  ... " />
-                <marker date="1543845322734" expanded="true" signature="285:771" ph="{...}" />
-                <marker date="1543845322734" expanded="true" signature="363:399" ph="{...}" />
-                <marker date="1543845322734" expanded="true" signature="424:648" ph="{...}" />
-                <marker date="1543845322734" expanded="true" signature="580:642" ph="{...}" />
-                <marker date="1543845322734" expanded="true" signature="686:769" ph="{...}" />
+                <marker date="1543864389678" expanded="false" signature="6:179" ph="..." />
+                <marker date="1543864389678" expanded="true" signature="181:235" ph="/// Think about this way  ... " />
+                <marker date="1543864389678" expanded="true" signature="285:771" ph="{...}" />
+                <marker date="1543864389678" expanded="true" signature="363:399" ph="{...}" />
+                <marker date="1543864389678" expanded="true" signature="424:648" ph="{...}" />
+                <marker date="1543864389678" expanded="true" signature="580:642" ph="{...}" />
+                <marker date="1543864389678" expanded="true" signature="686:769" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -133,17 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/MidiLocalStorage.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="493">
               <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <marker date="1543828799017" expanded="false" signature="6:78" ph="..." />
-                <marker date="1543828799017" expanded="true" signature="80:484" ph="/// Hold midi file information ... " />
-                <marker date="1543828799017" expanded="true" signature="515:2036" ph="{...}" />
-                <marker date="1543828799017" expanded="true" signature="555:765" ph="{...}" />
-                <marker date="1543828799017" expanded="true" signature="809:909" ph="{...}" />
-                <marker date="1543828799017" expanded="true" signature="1059:1453" ph="{...}" />
-                <marker date="1543828799017" expanded="true" signature="1481:2034" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -151,14 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="306">
               <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <marker date="1543830278302" expanded="false" signature="6:49" ph="..." />
-                <marker date="1543830278302" expanded="true" signature="51:166" ph="///     Converting file to byte array ... " />
-                <marker date="1543830278302" expanded="true" signature="196:433" ph="{...}" />
-                <marker date="1543830278302" expanded="true" signature="267:431" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -166,25 +152,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/GrandFileFormat.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1263">
-              <caret line="98" column="10" lean-forward="true" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+            <state relative-caret-position="445">
+              <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
               <folding>
-                <marker date="1543846016577" expanded="true" signature="6:51" ph="..." />
-                <marker date="1543846016577" expanded="true" signature="53:141" ph="///     Determine file format ... " />
-                <marker date="1543846016577" expanded="true" signature="171:4182" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="201:437" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="521:1353" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="1460:1648" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="1538:1596" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="1753:1873" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="1979:2385" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="2084:2162" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="2190:2271" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="2299:2379" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="2494:2612" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="2699:4180" ph="{...}" />
-                <marker date="1543846016577" expanded="true" signature="2714:2990" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
-                <marker date="1543846016577" expanded="true" signature="3008:4174" ph="/* Ticks per beat translate to the number of clock ticks or track delta positions ... */" />
+                <marker date="1543868639150" expanded="false" signature="6:51" ph="..." />
+                <marker date="1543868639150" expanded="true" signature="53:141" ph="///     Determine file format ... " />
+                <marker date="1543868639150" expanded="true" signature="171:3937" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="201:437" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="521:1540" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="1647:1835" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="1725:1783" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="1940:2060" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2166:2572" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2271:2349" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2377:2458" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2486:2566" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2681:2799" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2905:3826" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="2920:3433" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
+                <marker date="1543868639150" expanded="true" signature="3580:3798" ph="{...}" />
+                <marker date="1543868639150" expanded="true" signature="3914:3935" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -220,47 +207,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/OpenStream.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemRealTime/StartMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/GrandFileFormat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/TrackInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemCommon/SystemCommonMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemCommon/SongPositionPointerMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/ParseUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Scene/SetMidiToScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MIDIConventer/UnityMidiExample/ExampleBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ProjectMidiFilesStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/TrackInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ConvertMidiToStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/MidiLocalStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteActivated.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiUtils/TimeSpanLogger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Loader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectHeader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/LoaderLogger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/ChannelVoice/NoteOffMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/GrandFileFormat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/SequenceAsset.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Sequencer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/ChannelVoice/ChannelVoiceMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Player/PlayedTrack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MIDIConventer/UnityMidiExample/ExampleBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectTrack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Player/ITrackListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/UndefinedMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/ChannelVoice/NoteOnMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Player/SequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemCommon/SongPositionPointerMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/MidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemCommon/SystemCommonMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MIDIConventer/UnityMidiExample/SimpleBeatListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MIDIConventer/UnityMidiExample/Editor/MidiAssetFileCreatorEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ConvertMidiToStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/ParseUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/SystemRealTime/StartMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/LoaderLogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoteActivated.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Loader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Scene/SetMidiToScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ProjectMidiFilesStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiUtils/TimeSpanLogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/DetectTrack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/MidiLocalStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Sequencer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/SequenceAsset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/ChannelVoice/ChannelVoiceMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/ChannelVoice/NoteOffMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Player/SequencePlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Player/PlayedTrack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiFakeSequencer/Player/ITrackListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/MidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Events/UndefinedMidiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/UnityMidi/MidiLoader/Parser/HeaderInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -295,10 +282,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1088" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1096" />
-    <option name="height" value="1896" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -409,11 +396,12 @@
       <workItem from="1543775033497" duration="705000" />
       <workItem from="1543829350063" duration="3453000" />
       <workItem from="1543843402578" duration="2602000" />
+      <workItem from="1543864543913" duration="3951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80287000" />
+    <option name="totallyTimeSpent" value="84238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,10 +413,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1088" y="-8" width="1096" height="1896" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2104247" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21336761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -775,6 +763,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/MidiLocalStorage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoteIndicatorKeys.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -789,72 +791,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/ConvertToBytes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <marker date="1543830278302" expanded="false" signature="6:49" ph="..." />
-            <marker date="1543830278302" expanded="true" signature="51:166" ph="///     Converting file to byte array ... " />
-            <marker date="1543830278302" expanded="true" signature="196:433" ph="{...}" />
-            <marker date="1543830278302" expanded="true" signature="267:431" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/MidiLocalStorage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <marker date="1543828799017" expanded="false" signature="6:78" ph="..." />
-            <marker date="1543828799017" expanded="true" signature="80:484" ph="/// Hold midi file information ... " />
-            <marker date="1543828799017" expanded="true" signature="515:2036" ph="{...}" />
-            <marker date="1543828799017" expanded="true" signature="555:765" ph="{...}" />
-            <marker date="1543828799017" expanded="true" signature="809:909" ph="{...}" />
-            <marker date="1543828799017" expanded="true" signature="1059:1453" ph="{...}" />
-            <marker date="1543828799017" expanded="true" signature="1481:2034" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OwnMIDIConverter/Holder/ConvertMidiToStorage.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        <state relative-caret-position="510">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <marker date="1543845322734" expanded="false" signature="6:179" ph="..." />
-            <marker date="1543845322734" expanded="true" signature="181:235" ph="/// Think about this way  ... " />
-            <marker date="1543845322734" expanded="true" signature="285:771" ph="{...}" />
-            <marker date="1543845322734" expanded="true" signature="363:399" ph="{...}" />
-            <marker date="1543845322734" expanded="true" signature="424:648" ph="{...}" />
-            <marker date="1543845322734" expanded="true" signature="580:642" ph="{...}" />
-            <marker date="1543845322734" expanded="true" signature="686:769" ph="{...}" />
+            <marker date="1543864389678" expanded="false" signature="6:179" ph="..." />
+            <marker date="1543864389678" expanded="true" signature="181:235" ph="/// Think about this way  ... " />
+            <marker date="1543864389678" expanded="true" signature="285:771" ph="{...}" />
+            <marker date="1543864389678" expanded="true" signature="363:399" ph="{...}" />
+            <marker date="1543864389678" expanded="true" signature="424:648" ph="{...}" />
+            <marker date="1543864389678" expanded="true" signature="580:642" ph="{...}" />
+            <marker date="1543864389678" expanded="true" signature="686:769" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/GrandFileFormat.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1263">
-          <caret line="98" column="10" lean-forward="true" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+        <state relative-caret-position="445">
+          <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
           <folding>
-            <marker date="1543846016577" expanded="true" signature="6:51" ph="..." />
-            <marker date="1543846016577" expanded="true" signature="53:141" ph="///     Determine file format ... " />
-            <marker date="1543846016577" expanded="true" signature="171:4182" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="201:437" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="521:1353" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="1460:1648" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="1538:1596" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="1753:1873" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="1979:2385" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="2084:2162" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="2190:2271" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="2299:2379" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="2494:2612" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="2699:4180" ph="{...}" />
-            <marker date="1543846016577" expanded="true" signature="2714:2990" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
-            <marker date="1543846016577" expanded="true" signature="3008:4174" ph="/* Ticks per beat translate to the number of clock ticks or track delta positions ... */" />
+            <marker date="1543868639150" expanded="false" signature="6:51" ph="..." />
+            <marker date="1543868639150" expanded="true" signature="53:141" ph="///     Determine file format ... " />
+            <marker date="1543868639150" expanded="true" signature="171:3937" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="201:437" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="521:1540" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="1647:1835" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="1725:1783" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="1940:2060" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2166:2572" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2271:2349" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2377:2458" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2486:2566" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2681:2799" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2905:3826" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="2920:3433" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
+            <marker date="1543868639150" expanded="true" signature="3580:3798" ph="{...}" />
+            <marker date="1543868639150" expanded="true" signature="3914:3935" ph="{...}" />
           </folding>
         </state>
       </provider>
