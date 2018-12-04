@@ -26,7 +26,7 @@
     <session id="635492048">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="3" />
@@ -41,14 +41,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="12683" />
+          <entry key="cs" value="12703" />
           <entry key="css" value="82" />
           <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="12683" />
+          <entry key="C#" value="12703" />
           <entry key="CSS" value="82" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
@@ -152,26 +152,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/GrandFileFormat.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+            <state relative-caret-position="598">
+              <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
               <folding>
-                <marker date="1543868639150" expanded="false" signature="6:51" ph="..." />
-                <marker date="1543868639150" expanded="true" signature="53:141" ph="///     Determine file format ... " />
-                <marker date="1543868639150" expanded="true" signature="171:3937" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="201:437" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="521:1540" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="1647:1835" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="1725:1783" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="1940:2060" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2166:2572" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2271:2349" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2377:2458" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2486:2566" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2681:2799" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2905:3826" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="2920:3433" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
-                <marker date="1543868639150" expanded="true" signature="3580:3798" ph="{...}" />
-                <marker date="1543868639150" expanded="true" signature="3914:3935" ph="{...}" />
+                <marker date="1543910360397" expanded="false" signature="6:51" ph="..." />
+                <marker date="1543910360397" expanded="true" signature="53:141" ph="///     Determine file format ... " />
+                <marker date="1543910360397" expanded="true" signature="171:4029" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="201:437" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="521:1540" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="1647:1835" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="1725:1783" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="1940:2060" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2166:2572" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2271:2349" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2377:2458" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2486:2566" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2681:2799" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2905:3826" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="2920:3433" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
+                <marker date="1543910360397" expanded="true" signature="3580:3798" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="3914:4027" ph="{...}" />
+                <marker date="1543910360397" expanded="true" signature="3929:4012" ph="/* Beacouse the chunk ID is always &quot;MTrk&quot; (0x4D54726B) skip ... */" />
               </folding>
             </state>
           </provider>
@@ -396,12 +397,12 @@
       <workItem from="1543775033497" duration="705000" />
       <workItem from="1543829350063" duration="3453000" />
       <workItem from="1543843402578" duration="2602000" />
-      <workItem from="1543864543913" duration="3951000" />
+      <workItem from="1543864543913" duration="4590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84238000" />
+    <option name="totallyTimeSpent" value="84877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -809,26 +810,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/GimpyParser/GrandFileFormat.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+        <state relative-caret-position="598">
+          <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
           <folding>
-            <marker date="1543868639150" expanded="false" signature="6:51" ph="..." />
-            <marker date="1543868639150" expanded="true" signature="53:141" ph="///     Determine file format ... " />
-            <marker date="1543868639150" expanded="true" signature="171:3937" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="201:437" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="521:1540" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="1647:1835" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="1725:1783" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="1940:2060" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2166:2572" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2271:2349" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2377:2458" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2486:2566" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2681:2799" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2905:3826" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="2920:3433" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
-            <marker date="1543868639150" expanded="true" signature="3580:3798" ph="{...}" />
-            <marker date="1543868639150" expanded="true" signature="3914:3935" ph="{...}" />
+            <marker date="1543910360397" expanded="false" signature="6:51" ph="..." />
+            <marker date="1543910360397" expanded="true" signature="53:141" ph="///     Determine file format ... " />
+            <marker date="1543910360397" expanded="true" signature="171:4029" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="201:437" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="521:1540" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="1647:1835" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="1725:1783" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="1940:2060" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2166:2572" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2271:2349" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2377:2458" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2486:2566" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2681:2799" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2905:3826" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="2920:3433" ph="/* If the top bit of the word (bit mask 0x8000) is 0, ... */" />
+            <marker date="1543910360397" expanded="true" signature="3580:3798" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="3914:4027" ph="{...}" />
+            <marker date="1543910360397" expanded="true" signature="3929:4012" ph="/* Beacouse the chunk ID is always &quot;MTrk&quot; (0x4D54726B) skip ... */" />
           </folding>
         </state>
       </provider>
