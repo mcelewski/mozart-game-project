@@ -23,8 +23,6 @@
         </e>
         <e p="GimpyParser" t="Include">
           <e p="ConvertToBytes.cs" t="Include" />
-          <e p="DetectHeader.cs" t="Include" />
-          <e p="DetectTrack.cs" t="Include" />
           <e p="GrandFileFormat.cs" t="Include" />
           <e p="OpenStream.cs" t="Include" />
         </e>

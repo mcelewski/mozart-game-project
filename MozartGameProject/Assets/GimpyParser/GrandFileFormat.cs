@@ -3,8 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 /// <summary>
-///     Determine file format
-///     Determine file lenght
+///     Determine midi file basics informations
 /// </summary>
 
 public class GrandFileFormat
@@ -20,39 +19,47 @@ public class GrandFileFormat
 
     public void DetectFormat(byte[] file)
     {
-        string format = "";
+        const int headerChunk = 0;
+        const int trackChunk = 14;
+        
+        string headerFormat = "";
         uint chunkSize = 0; // max val = 2 x 4 bytes = 32 bits = 8 589 934 591 max value
         uint trackAmount = 0;
         uint timeDivision = 0;
+        string trackFormat = "";
+        uint eventDataSize = 0;
         
         // Check if it's midi format
         if (0 != (file[0] >> 7))
             Debug.Log("Non midi format."); // non midi file
         
-        
     //--------------------------------------------------------------------//
-        GetASCIICode(ref file,ref format);
+        GetASCIICode(ref file, headerChunk ,ref headerFormat);
         GetSizeOfChunk(ref file,ref chunkSize);
         GetMidiFormatType(ref file, ref SetupMidiFormat);
         GetNumberOfTracks(ref file, ref trackAmount);
         if (!GetTimeDivision(ref file, ref timeDivision))
             Debug.Log("No needed format");
+        GetASCIICode(ref file, trackChunk, ref trackFormat);
+        GetTrackChunkSize(ref file, ref eventDataSize);
     //--------------------------------------------------------------------//
         
-        Debug.Log("File format: " + format +
+        Debug.Log("File format: " + headerFormat +
                   "\tChunk size: " + chunkSize + 
                   "\tTrack info: " + SetupMidiFormat +
-                  "\tTime division: " + timeDivision);
+                  "\tTime division: " + timeDivision +
+                  "\tTrack format: " + trackFormat + 
+                  "\tChunk size: " + eventDataSize);
     }
     
     // Chunk type in ASCII
-    private static void GetASCIICode(ref byte[] file, ref string onformat)
+    private static void GetASCIICode(ref byte[] file, int pos, ref string onformat)
     {
         char[] type = new char[4];
 
-        for (int j = 0; j < 4; j++)
+        for (int j = pos, i = 0; j < pos + 4; j++, i++)
         {
-            type[j] = (char) file[j];
+            type[i] = (char) file[j];
         }
         
         onformat = new string(type);
@@ -119,11 +126,8 @@ public class GrandFileFormat
     }
     
     //Get track chunk
-    private static void GetTrackChunk(ref byte[] file, ref )
+    private static void GetTrackChunkSize(ref byte[] file, ref uint chunkSize)
     {
-        /*
-         * Beacouse the chunk ID is always "MTrk" (0x4D54726B) skip 
-         */
-        
+        chunkSize = ((uint) file[18]) + ((uint) file[19]) + ((uint) file[20]) + ((uint) file[21]);
     }
 }
