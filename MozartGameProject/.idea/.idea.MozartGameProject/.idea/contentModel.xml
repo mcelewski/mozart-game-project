@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\GitSe\.Rider2018.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\GitSe\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\GitSe\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_MozartGameProject.-1138100400.00" t="ExcludeRecursive" />
-    <e p="C:\Users\GitSe\Documents\GitHub\mozart-game-project\MozartGameProject" t="IncludeRecursive">
+    <e p="C:\Users\GitSe\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_MozartGameProject.620428189.00" t="ExcludeRecursive" />
+    <e p="F:\GitHubProjects\mozart-game-project\MozartGameProject" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -21,20 +20,6 @@
             <e p="NoteIndicatorGroup.cs" t="Include" />
           </e>
         </e>
-        <e p="GimpyParser" t="Include">
-          <e p="ConvertToBytes.cs" t="Include" />
-          <e p="GrandFileFormat.cs" t="Include" />
-          <e p="OpenStream.cs" t="Include" />
-        </e>
-        <e p="MIDIConventer" t="Include">
-          <e p="UnityMidiExample" t="Include">
-            <e p="Editor" t="Include">
-              <e p="MidiAssetFileCreatorEditorWindow.cs" t="Include" />
-            </e>
-            <e p="ExampleBehaviour.cs" t="Include" />
-            <e p="SimpleBeatListener.cs" t="Include" />
-          </e>
-        </e>
         <e p="MidiJack" t="Include">
           <e p="Editor" t="Include">
             <e p="MidiJackWindow.cs" t="Include" />
@@ -44,119 +29,28 @@
           <e p="MidiMaster.cs" t="Include" />
           <e p="MidiStateUpdater.cs" t="Include" />
         </e>
-        <e p="OwnMIDIConverter" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="GimpyParser" t="Include">
+            <e p="ConvertToBytes.cs" t="Include" />
+            <e p="GrandFileFormat.cs" t="Include" />
+            <e p="OpenStream.cs" t="Include" />
+          </e>
           <e p="Holder" t="Include">
             <e p="ConvertMidiToStorage.cs" t="Include" />
             <e p="MidiLocalStorage.cs" t="Include" />
             <e p="ProjectMidiFilesStorage.cs" t="Include" />
           </e>
-          <e p="Scene" t="Include">
+          <e p="MainMenuUI" t="Include">
+            <e p="MenuUIController.cs" t="Include" />
+          </e>
+          <e p="PianoSceneScripts" t="Include">
+            <e p="KeyboardController.cs" t="Include" />
+            <e p="NoteActivated.cs" t="Include" />
+            <e p="NoteBehaviour.cs" t="Include" />
+            <e p="NoteIndicatorKeys.cs" t="Include" />
+            <e p="NoteInfo.cs" t="Include" />
             <e p="SetMidiToScene.cs" t="Include" />
           </e>
-          <e p="UnityMidi" t="Include">
-            <e p="MidiFakeSequencer" t="Include">
-              <e p="Exceptions" t="Include">
-                <e p="FakeSequencerException.cs" t="Include" />
-              </e>
-              <e p="Player" t="Include">
-                <e p="ITrackListener.cs" t="Include" />
-                <e p="PlayedTrack.cs" t="Include" />
-                <e p="SequencePlayer.cs" t="Include" />
-              </e>
-              <e p="SequenceAsset.cs" t="Include" />
-              <e p="Sequencer.cs" t="Include" />
-              <e p="SequencerLogger.cs" t="Include" />
-              <e p="TrackSequence.cs" t="Include" />
-            </e>
-            <e p="MidiLoader" t="Include">
-              <e p="Editor" t="Include">
-                <e p="Tests" t="Include">
-                  <e p="HeaderParserTests.cs" t="Include" />
-                  <e p="VariableLengthQuantityTests.cs" t="Include" />
-                </e>
-              </e>
-              <e p="Events" t="Include">
-                <e p="ChannelVoice" t="Include">
-                  <e p="ChannelPressureMidiEvent.cs" t="Include" />
-                  <e p="ChannelVoiceMidiEvent.cs" t="Include" />
-                  <e p="ControlChangeMidiEvent.cs" t="Include" />
-                  <e p="NoteOffMidiEvent.cs" t="Include" />
-                  <e p="NoteOnMidiEvent.cs" t="Include" />
-                  <e p="PitchBendChangeMidiEvent.cs" t="Include" />
-                  <e p="PolyphonicPressureMidiEvent.cs" t="Include" />
-                  <e p="ProgramChangeMidiEvent.cs" t="Include" />
-                </e>
-                <e p="Meta" t="Include">
-                  <e p="BlankMetaEvent.cs" t="Include" />
-                  <e p="ChannelPrefixMetaEvent.cs" t="Include" />
-                  <e p="CopyrightNoticeMetaEvent.cs" t="Include" />
-                  <e p="CuePointMetaEvent.cs" t="Include" />
-                  <e p="DeviceNameMetaEvent.cs" t="Include" />
-                  <e p="EndOfTrackMetaEvent.cs" t="Include" />
-                  <e p="InstrumentNameMetaEvent.cs" t="Include" />
-                  <e p="KeySignatureMetaEvent.cs" t="Include" />
-                  <e p="LyricMetaEvent.cs" t="Include" />
-                  <e p="MarkerMetaEvent.cs" t="Include" />
-                  <e p="MetaEvent.cs" t="Include" />
-                  <e p="MidiPortMetaEvent.cs" t="Include" />
-                  <e p="ProgramNameMetaEvent.cs" t="Include" />
-                  <e p="SequenceNumberMetaEvent.cs" t="Include" />
-                  <e p="SequencerSpecificMetaEvent.cs" t="Include" />
-                  <e p="SetTempoMetaEvent.cs" t="Include" />
-                  <e p="SMPTEOffsetMetaEvent.cs" t="Include" />
-                  <e p="TextBasedMetaEvent.cs" t="Include" />
-                  <e p="TextMetaEvent.cs" t="Include" />
-                  <e p="TimeSignatureMetaEvent.cs" t="Include" />
-                  <e p="TrackOrSequenceNameMetaEvent.cs" t="Include" />
-                </e>
-                <e p="MidiEvent.cs" t="Include" />
-                <e p="SystemCommon" t="Include">
-                  <e p="SongPositionPointerMidiEvent.cs" t="Include" />
-                  <e p="SongSelectMidiEvent.cs" t="Include" />
-                  <e p="SystemCommonMidiEvent.cs" t="Include" />
-                  <e p="SystemExclusive2MidiEvent.cs" t="Include" />
-                  <e p="SystemExclusiveMidiEvent.cs" t="Include" />
-                  <e p="TuneRequestMidiEvent.cs" t="Include" />
-                </e>
-                <e p="SystemRealTime" t="Include">
-                  <e p="ActiveSensingMidiEvent.cs" t="Include" />
-                  <e p="ContinueMidiEvent.cs" t="Include" />
-                  <e p="StartMidiEvent.cs" t="Include" />
-                  <e p="StopMidiEvent.cs" t="Include" />
-                  <e p="SystemRealTimeMidiEvent.cs" t="Include" />
-                  <e p="TimingClockMidiEvent.cs" t="Include" />
-                </e>
-                <e p="UndefinedMidiEvent.cs" t="Include" />
-              </e>
-              <e p="Exceptions" t="Include">
-                <e p="MidiEndOfFileException.cs" t="Include" />
-                <e p="MidiParseException.cs" t="Include" />
-                <e p="UnrecognizedMetaEventException.cs" t="Include" />
-                <e p="UnrecognizedMidiEventException.cs" t="Include" />
-              </e>
-              <e p="Loader.cs" t="Include" />
-              <e p="LoaderLogger.cs" t="Include" />
-              <e p="Parser" t="Include">
-                <e p="HeaderInfo.cs" t="Include" />
-                <e p="HeaderParser.cs" t="Include" />
-                <e p="MidiEventParser.cs" t="Include" />
-                <e p="ParseUtils.cs" t="Include" />
-                <e p="TrackInfo.cs" t="Include" />
-                <e p="TrackParser.cs" t="Include" />
-                <e p="VariableLengthQuantity.cs" t="Include" />
-              </e>
-            </e>
-            <e p="MidiUtils" t="Include">
-              <e p="TimeSpanLogger.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Scripts" t="Include">
-          <e p="KeyboardController.cs" t="Include" />
-          <e p="NoteActivated.cs" t="Include" />
-          <e p="NoteBehaviour.cs" t="Include" />
-          <e p="NoteIndicatorKeys.cs" t="Include" />
-          <e p="NoteInfo.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
