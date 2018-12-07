@@ -31,12 +31,6 @@ public class MenuUIController : MonoBehaviour
     private void Start()
     {
         MenuDefaultSetting();
-        DontDestroy();
-    }
-
-    private void DontDestroy()
-    {
-        DontDestroyOnLoad(menuUI);
     }
     
     private void CheckUIPanelState()
@@ -101,14 +95,16 @@ public class MenuUIController : MonoBehaviour
         ChangeStateMenuButtons(true);
         Debug.Log("Leave game");
     }
-    
+    // TODO fix enable / disable object
     public void EnableMenu()
     {
         menuUI.SetActive(true);
+        Debug.Log("EnableMenu");
     }
 
     public void DisableMenu()
     {
         menuUI.SetActive(false);
+        Debug.Log("DisableMenu");
     }
 }

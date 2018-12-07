@@ -1,16 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Experimental.UIElements;
 
+///<summary>
+///My publisher
+/// </summary>
 public class PlayerMove : MonoBehaviour
 {
-    private MenuUIController menu;
+    public UserInteractListener userAction;
 
-    private void Awake()
+    private void Update()
     {
-        menu = GameObject.Find("Controllers").GetComponentInChildren<MenuUIController>();
+        userAction.TakeActionOnKeyPress();
     }
-    
-
 }
