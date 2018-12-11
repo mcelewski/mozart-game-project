@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 /// <summary>
@@ -15,6 +14,11 @@ public class UserInteractListener : MonoBehaviour
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
 
     public bool IsPaused { get; set; }
+    public bool EnternedHiddenObjectsScene { get; set; }
+    public bool EnternedAdventureScene { get; set; }
+    public bool EnternedKeyboardScene { get; set; }
+
+    public bool EnableEnterHiddenObjectsScene { get; set; }
 
     private float mainSpeed = 5f;
     
@@ -22,13 +26,17 @@ public class UserInteractListener : MonoBehaviour
     {
         SetActionsToDictionary();
         IsPaused = false;
+        EnternedKeyboardScene = false;
+        EnternedHiddenObjectsScene = false;
+        EnternedAdventureScene = true;
+        EnableEnterHiddenObjectsScene = false;
     }
 
     public void TakeActionOnKeyPress()
     {
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
-            if (Input.GetKey(key))
+            if (Input.GetKey(key) && !EnternedKeyboardScene)
             {
                 ActionsDictionary[key].Invoke();
             }
@@ -59,12 +67,16 @@ public class UserInteractListener : MonoBehaviour
         MainMenuUI.GetComponent<MenuUIController>().DisableMenu();
     }
 
-    private static void OpenEquipment()
+    private void OpenEquipment()
     {
         Debug.Log("Equipment opened");
     }
-    private static void UseItem()
+    private void UseItem()
     {
+        if (EnableEnterHiddenObjectsScene)
+        {
+            
+        }
         Debug.Log("UseItem");
     }
     private void MoveLeft()
@@ -77,19 +89,33 @@ public class UserInteractListener : MonoBehaviour
     }
     private void ClimbUp()
     {
-        player.GetComponent<Rigidbody2D>().velocity += new Vector2(0,1 * mainSpeed * Time.deltaTime);
+        if (!EnternedHiddenObjectsScene)
+        {
+            player.GetComponent<Rigidbody2D>().velocity += new Vector2(0,1 * mainSpeed * Time.deltaTime);
+        }
+        else
+        {
+            player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
+        }
         Debug.Log("ClimbUp");
     }
     private void ClimbDown()
     {
-        player.GetComponent<Rigidbody2D>().velocity += new Vector2(0,-1 * mainSpeed * Time.deltaTime);
+        if (!EnternedHiddenObjectsScene)
+        {
+            player.GetComponent<Rigidbody2D>().velocity += new Vector2(0,-1 * mainSpeed * Time.deltaTime);
+        }
+        else
+        {
+            player.GetComponent<Transform>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
+        }
         Debug.Log("ClimbDown");
     }
 
     private void Jump()
     {
         //TODO If grounded enable jump else do nothing
-        if (player.GetComponentInChildren<Collider2D>())
+        if (!EnternedKeyboardScene && !EnternedKeyboardScene)
         {
             player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }

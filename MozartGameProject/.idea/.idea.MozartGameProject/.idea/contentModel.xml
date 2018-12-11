@@ -31,10 +31,19 @@
           <e p="MidiStateUpdater.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="AdventureScene" t="Include">
+            <e p="EnterOrLeaveDungeon.cs" t="Include" />
+          </e>
           <e p="GimpyParser" t="Include">
             <e p="ConvertToBytes.cs" t="Include" />
             <e p="GrandFileFormat.cs" t="Include" />
             <e p="OpenStream.cs" t="Include" />
+          </e>
+          <e p="HeadControllers" t="Include">
+            <e p="PlayerMove.cs" t="Include" />
+            <e p="SceneMovementController.cs" t="Include" />
+            <e p="ScenesBehaviour.cs" t="Include" />
+            <e p="UserInteractListener.cs" t="Include" />
           </e>
           <e p="Holder" t="Include">
             <e p="ConvertMidiToStorage.cs" t="Include" />
@@ -44,9 +53,6 @@
           <e p="MainMenuUI" t="Include">
             <e p="MenuUIController.cs" t="Include" />
           </e>
-          <e p="MainScene" t="Include">
-            <e p="PlayerMove.cs" t="Include" />
-          </e>
           <e p="PianoSceneScripts" t="Include">
             <e p="KeyboardController.cs" t="Include" />
             <e p="NoteActivated.cs" t="Include" />
@@ -55,7 +61,6 @@
             <e p="NoteInfo.cs" t="Include" />
             <e p="SetMidiToScene.cs" t="Include" />
           </e>
-          <e p="UserInteractListener.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
