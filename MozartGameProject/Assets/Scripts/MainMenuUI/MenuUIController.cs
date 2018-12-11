@@ -69,7 +69,7 @@ public class MenuUIController : MonoBehaviour
     public void OnStart()
     {
         DisableMenu();
-        Debug.Log("Open main scene");
+        SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.Adventure);
     }
     
     public void OnStory()
@@ -77,7 +77,6 @@ public class MenuUIController : MonoBehaviour
         storyUI.SetActive(true);
         SetExitBtnText(false);
         ChangeStateMenuButtons(false);
-        Debug.Log("Open story line");
     }
     
     public void OnHowTo()
@@ -85,7 +84,6 @@ public class MenuUIController : MonoBehaviour
         howToUI.SetActive(true);
         SetExitBtnText(false);
         ChangeStateMenuButtons(false);
-        Debug.Log("Tutorial how to play");
     }
     
     public void OnLeave()
@@ -93,18 +91,15 @@ public class MenuUIController : MonoBehaviour
         CheckUIPanelState();
         SetExitBtnText(true);
         ChangeStateMenuButtons(true);
-        Debug.Log("Leave game");
     }
     // TODO fix enable / disable object
     public void EnableMenu()
     {
         menuUI.SetActive(true);
-        Debug.Log("EnableMenu");
     }
 
     public void DisableMenu()
     {
         menuUI.SetActive(false);
-        Debug.Log("DisableMenu");
     }
 }

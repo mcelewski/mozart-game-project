@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Place where are defined all user actions in game
@@ -10,13 +11,14 @@ public class UserInteractListener : MonoBehaviour
     //TODO Keyboard input for all scenes including pause menu
     public GameObject player;
     public GameObject MainMenuUI;
-    public Camera mainCamera;
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
 
     public bool IsPaused { get; set; }
     public bool EnternedHiddenObjectsScene { get; set; }
     public bool EnternedAdventureScene { get; set; }
     public bool EnternedKeyboardScene { get; set; }
+
+    public string SceneName { get; private set; }
 
     public bool EnableEnterHiddenObjectsScene { get; set; }
 
@@ -71,11 +73,15 @@ public class UserInteractListener : MonoBehaviour
     {
         Debug.Log("Equipment opened");
     }
+
     private void UseItem()
     {
-        if (EnableEnterHiddenObjectsScene)
+        if (EnableEnterHiddenObjectsScene &&
+             SceneMovementController.GetSceneLoadedStatus != SceneMovementController.SceneLoaded.HiddenObjects)
         {
-            
+            SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
+            SceneManager.LoadScene(SceneName);
+            SetMozartRigidbody(false);
         }
         Debug.Log("UseItem");
     }
@@ -115,10 +121,26 @@ public class UserInteractListener : MonoBehaviour
     private void Jump()
     {
         //TODO If grounded enable jump else do nothing
-        if (!EnternedKeyboardScene && !EnternedKeyboardScene)
+        if (!EnternedKeyboardScene && !EnternedKeyboardScene && PlayerGroudDetection.IsGroundedAlready())
         {
             player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
-        Debug.Log("Jump");
     }
+
+    private void SetMozartRigidbody(bool set)
+    {
+        var rb = player.GetComponent<Rigidbody2D>();
+
+        if (set == false)
+            rb.gravityScale = 0;
+        rb.gravityScale = 1;
+    }
+
+    public void AllowUserToChangeScene(GameObject sender, bool ready)
+    {
+        EnableEnterHiddenObjectsScene = ready;
+        SceneName = sender.name;
+    }
+
+   
 }

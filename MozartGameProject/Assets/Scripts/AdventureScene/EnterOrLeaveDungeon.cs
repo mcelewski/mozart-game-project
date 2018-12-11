@@ -8,18 +8,18 @@ public class EnterOrLeaveDungeon : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        
-        // send information about dungeon to enter
-        // object(id), scene type
-        // make autosave, player pos, player eq
-        listener.EnableEnterHiddenObjectsScene = true;
-        Debug.Log(this.gameObject.name);
+        //TODO make autosave, player pos, player eq
+        OnCanChangedScene(this.gameObject, true);
     }
-
+    
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        listener.EnableEnterHiddenObjectsScene = false;
-        Debug.Log("Leaved");
+        OnCanChangedScene(this.gameObject, false);
+    }
+
+    private void OnCanChangedScene(GameObject sender, bool ready)
+    {
+        listener.AllowUserToChangeScene(sender,ready);
     }
 }

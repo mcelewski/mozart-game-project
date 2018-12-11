@@ -13,19 +13,19 @@ public class SceneMovementController : MonoBehaviour
         MozartHero
     }
 
-    private SceneLoaded actualScene;
+    private static SceneLoaded actualScene;
 
     private void Awake()
     {
         actualScene = SceneLoaded.Adventure;
     }
 
-    public void SetActualLoadedScene(SceneLoaded sceneType)
+    public static void SetActualLoadedScene(SceneLoaded sceneType)
     {
         GetSceneLoadedStatus = sceneType;
     }
 
-    public SceneLoaded GetSceneLoadedStatus
+    public static SceneLoaded GetSceneLoadedStatus
     {
         get
         {
