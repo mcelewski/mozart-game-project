@@ -15,7 +15,7 @@ public class UserInteractListener : MonoBehaviour
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
 
     public bool IsPaused { get; set; }
-    public bool EnternedHiddenObjectsScene { get; set; }
+    public bool EnterToDungeon { get; set; }
     public bool EnternedAdventureScene { get; set; }
     public bool EnternedKeyboardScene { get; set; }
 
@@ -24,13 +24,14 @@ public class UserInteractListener : MonoBehaviour
     public bool EnableEnterHiddenObjectsScene { get; set; }
 
     private float mainSpeed = 5f;
+    private float actionSpeed = 60;
     
     private void Awake()
     {
         SetActionsToDictionary();
         IsPaused = false;
         EnternedKeyboardScene = false;
-        EnternedHiddenObjectsScene = false;
+        EnterToDungeon = false;
         EnternedAdventureScene = true;
         EnableEnterHiddenObjectsScene = false;
     }
@@ -81,14 +82,17 @@ public class UserInteractListener : MonoBehaviour
              SceneMovementController.GetSceneLoadedStatus != SceneMovementController.SceneLoaded.HiddenObjects)
         {
             SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
-            SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
             SetMozartRigidbody(false);
             SpawnMozartOnOtherPlace();
-            EnternedHiddenObjectsScene = true;
+            EnterToDungeon = true;
         }
-        else if (SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
+        else if (!EnableEnterHiddenObjectsScene &&
+            SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
-            
+            Debug.Log("You can leave");
+            SetMozartRigidbody(true);
+            SceneManager.UnloadSceneAsync(SceneName);
         }
 
         Debug.Log("UseItem");
@@ -96,42 +100,48 @@ public class UserInteractListener : MonoBehaviour
     private void MoveLeft()
     {
         player.GetComponent<Transform>().transform.position += Vector3.left * mainSpeed * Time.deltaTime;
+        player.GetComponent<SpriteRenderer>().flipX = false;
     }
     private void MoveRight()
     {
         player.GetComponent<Transform>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
+        player.GetComponent<SpriteRenderer>().flipX = true;
     }
     private void ClimbUp()
     {
-        if (!EnternedHiddenObjectsScene)
+        if (!EnterToDungeon && LadderObj.AllowUseLadder())
         {
-            player.GetComponent<Rigidbody2D>().velocity += new Vector2(0,1 * mainSpeed * Time.deltaTime);
+            SetMozartRigidbody(false);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,actionSpeed * mainSpeed * Time.deltaTime, 0);
         }
-        else
+        else if (EnterToDungeon)
         {
             player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
-        Debug.Log("ClimbUp");
+        else if (!LadderObj.AllowUseLadder())
+        SetMozartRigidbody(true);
     }
     private void ClimbDown()
     {
-        if (!EnternedHiddenObjectsScene)
+        if (!EnterToDungeon && LadderObj.AllowUseLadder())
         {
-            player.GetComponent<Rigidbody2D>().velocity += new Vector2(0,-1 * mainSpeed * Time.deltaTime);
+            SetMozartRigidbody(false);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,-actionSpeed * mainSpeed * Time.deltaTime, 0);
         }
-        else
+        else if (EnterToDungeon)
         {
             player.GetComponent<Transform>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
         }
-        Debug.Log("ClimbDown");
+        else if (!LadderObj.AllowUseLadder())
+            SetMozartRigidbody(true);
+        
     }
 
     private void Jump()
     {
-        //TODO If grounded enable jump else do nothing
-        if (!EnternedKeyboardScene && !EnternedHiddenObjectsScene && PlayerGroudDetection.IsGroundedAlready())
+        if (!EnternedKeyboardScene && !EnterToDungeon && PlayerGroudDetection.IsGrounded())
         {
-            player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
+            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,actionSpeed * mainSpeed * Time.deltaTime,0) ;
         }
     }
 
@@ -145,8 +155,6 @@ public class UserInteractListener : MonoBehaviour
     {
         GameObject[] hObjects = SceneManager.GetSceneByName(SceneName).GetRootGameObjects();
         
-        
-        Debug.Log("item at: " + hObjects[0]);
         foreach (var item in hObjects)
         {
             Debug.Log("in" + item);
