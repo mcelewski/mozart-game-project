@@ -25,6 +25,7 @@ public class UserInteractListener : MonoBehaviour
 
     private float mainSpeed = 5f;
     private float actionSpeed = 60;
+    private float jumpHeigh = 40;
     
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class UserInteractListener : MonoBehaviour
 
     public void TakeActionOnKeyPress()
     {
+        SetMozartRigidbody();
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
             if (Input.GetKey(key) && !EnternedKeyboardScene)
@@ -64,12 +66,14 @@ public class UserInteractListener : MonoBehaviour
 
     private void OpenClosePauseMenu()
     {
-        if (IsPaused)
+        if (!IsPaused)
         {
             MainMenuUI.GetComponent<MenuUIController>().EnableMenu();
+            Time.timeScale = 0;
         }
-        MainMenuUI.GetComponent<MenuUIController>().DisableMenu();
     }
+
+    #region PlayerMovement
 
     private void OpenEquipment()
     {
@@ -83,15 +87,12 @@ public class UserInteractListener : MonoBehaviour
         {
             SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
             SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
-            SetMozartRigidbody(false);
-            SpawnMozartOnOtherPlace();
             EnterToDungeon = true;
         }
         else if (!EnableEnterHiddenObjectsScene &&
             SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
             Debug.Log("You can leave");
-            SetMozartRigidbody(true);
             SceneManager.UnloadSceneAsync(SceneName);
         }
 
@@ -99,41 +100,36 @@ public class UserInteractListener : MonoBehaviour
     }
     private void MoveLeft()
     {
-        player.GetComponent<Transform>().transform.position += Vector3.left * mainSpeed * Time.deltaTime;
+        player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime; 
         player.GetComponent<SpriteRenderer>().flipX = false;
     }
     private void MoveRight()
     {
-        player.GetComponent<Transform>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
+        player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
         player.GetComponent<SpriteRenderer>().flipX = true;
     }
     private void ClimbUp()
     {
         if (!EnterToDungeon && LadderObj.AllowUseLadder())
         {
-            SetMozartRigidbody(false);
-            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,actionSpeed * mainSpeed * Time.deltaTime, 0);
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
         else if (EnterToDungeon)
         {
-            player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
-        else if (!LadderObj.AllowUseLadder())
-        SetMozartRigidbody(true);
+        
     }
     private void ClimbDown()
     {
         if (!EnterToDungeon && LadderObj.AllowUseLadder())
         {
-            SetMozartRigidbody(false);
-            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,-actionSpeed * mainSpeed * Time.deltaTime, 0);
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
         }
         else if (EnterToDungeon)
         {
-            player.GetComponent<Transform>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
         }
-        else if (!LadderObj.AllowUseLadder())
-            SetMozartRigidbody(true);
         
     }
 
@@ -141,14 +137,23 @@ public class UserInteractListener : MonoBehaviour
     {
         if (!EnternedKeyboardScene && !EnterToDungeon && PlayerGroudDetection.IsGrounded())
         {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,actionSpeed * mainSpeed * Time.deltaTime,0) ;
+            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,jumpHeigh * mainSpeed * Time.deltaTime,0) ;
         }
     }
 
-    private void SetMozartRigidbody(bool set)
+    #endregion
+
+    private void SetMozartRigidbody()
     {
         var rb = player.GetComponent<Rigidbody2D>();
-        rb.simulated = set;
+        if (LadderObj.AllowUseLadder() || EnterToDungeon)
+        {
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = 1;
+        }
     }
 
     private void SpawnMozartOnOtherPlace()

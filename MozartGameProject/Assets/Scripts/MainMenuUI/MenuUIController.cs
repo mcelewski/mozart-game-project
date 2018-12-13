@@ -26,6 +26,7 @@ public class MenuUIController : MonoBehaviour
 
     private string leave = "Leave";
     private string back = "Back";
+    private string resume = "Resume";
 
     #region Private Methods
     private void Start()
@@ -95,11 +96,14 @@ public class MenuUIController : MonoBehaviour
     // TODO fix enable / disable object
     public void EnableMenu()
     {
+        var resumeText = startBtn.GetComponentInChildren<Text>();
+        resumeText.text = resume;
         menuUI.SetActive(true);
     }
 
     public void DisableMenu()
     {
         menuUI.SetActive(false);
+        Time.timeScale = 1;
     }
 }
