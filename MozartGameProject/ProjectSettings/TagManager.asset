@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PianoKey
   - Ground
+  - Spawn
   layers:
   - Default
   - TransparentFX

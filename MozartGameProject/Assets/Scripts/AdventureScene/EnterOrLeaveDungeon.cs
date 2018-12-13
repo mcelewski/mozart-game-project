@@ -1,10 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class EnterOrLeaveDungeon : MonoBehaviour
 {
     public UserInteractListener listener;
+
+    private void Start()
+    {
+        if (!listener)
+        {
+            listener = GameObject.Find("PlayerBehaviour").GetComponent<UserInteractListener>();
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;

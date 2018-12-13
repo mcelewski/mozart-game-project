@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -80,9 +81,16 @@ public class UserInteractListener : MonoBehaviour
              SceneMovementController.GetSceneLoadedStatus != SceneMovementController.SceneLoaded.HiddenObjects)
         {
             SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
-            SceneManager.LoadScene(SceneName);
+            SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
             SetMozartRigidbody(false);
+            SpawnMozartOnOtherPlace();
+            EnternedHiddenObjectsScene = true;
         }
+        else if (SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
+        {
+            
+        }
+
         Debug.Log("UseItem");
     }
     private void MoveLeft()
@@ -121,7 +129,7 @@ public class UserInteractListener : MonoBehaviour
     private void Jump()
     {
         //TODO If grounded enable jump else do nothing
-        if (!EnternedKeyboardScene && !EnternedKeyboardScene && PlayerGroudDetection.IsGroundedAlready())
+        if (!EnternedKeyboardScene && !EnternedHiddenObjectsScene && PlayerGroudDetection.IsGroundedAlready())
         {
             player.GetComponent<Transform>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
@@ -130,10 +138,24 @@ public class UserInteractListener : MonoBehaviour
     private void SetMozartRigidbody(bool set)
     {
         var rb = player.GetComponent<Rigidbody2D>();
+        rb.simulated = set;
+    }
 
-        if (set == false)
-            rb.gravityScale = 0;
-        rb.gravityScale = 1;
+    private void SpawnMozartOnOtherPlace()
+    {
+        GameObject[] hObjects = SceneManager.GetSceneByName(SceneName).GetRootGameObjects();
+        
+        
+        Debug.Log("item at: " + hObjects[0]);
+        foreach (var item in hObjects)
+        {
+            Debug.Log("in" + item);
+            if (item.CompareTag("Spawn"))
+            {
+                player.transform.position += item.GetComponent<Transform>().transform.position;
+                Debug.Log("Found");
+            }
+        }
     }
 
     public void AllowUserToChangeScene(GameObject sender, bool ready)
@@ -142,5 +164,5 @@ public class UserInteractListener : MonoBehaviour
         SceneName = sender.name;
     }
 
-   
+    
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,31 +124,31 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1095905628}
+    m_TransformParent: {fileID: 1924643149}
     m_Modifications:
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -718.85
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -893.56
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.46679688
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalRotation.w
@@ -156,7 +156,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 50238902179761940, guid: 55681429a3639c74580172b6049dcec4,
         type: 2}
@@ -198,7 +198,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1095905628}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &288238644
 SpriteRenderer:
@@ -363,7 +363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1095905628}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &692704606
 BoxCollider2D:
@@ -482,10 +482,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1095905627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 711.92126, y: 890.37463, z: -38.5}
+  m_LocalPosition: {x: 0, y: 0, z: -38.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1357015156}
   - {fileID: 1941741165}
   - {fileID: 692704605}
   - {fileID: 288238643}
@@ -619,7 +618,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1924643149}
-  - component: {fileID: 1924643150}
   m_Layer: 0
   m_Name: ForAllScenes
   m_TagString: Untagged
@@ -639,20 +637,10 @@ Transform:
   m_Children:
   - {fileID: 1670136474}
   - {fileID: 1982439488}
+  - {fileID: 1357015156}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1924643150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1924643148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8f49eb0df0e3942a518d86bb02bd6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1941741164
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +669,7 @@ Transform:
   m_LocalScale: {x: 500, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1095905628}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1941741166
 BoxCollider2D:
