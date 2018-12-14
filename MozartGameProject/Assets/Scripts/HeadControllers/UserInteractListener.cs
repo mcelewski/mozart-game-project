@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -85,15 +86,16 @@ public class UserInteractListener : MonoBehaviour
         if (EnableEnterHiddenObjectsScene &&
              SceneMovementController.GetSceneLoadedStatus != SceneMovementController.SceneLoaded.HiddenObjects)
         {
-            SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
-            SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
+            SetNewMozartRespawn();
+            SetNewScene();
+            DetectNewSpawnLocation();
             EnterToDungeon = true;
         }
         else if (!EnableEnterHiddenObjectsScene &&
             SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
-            Debug.Log("You can leave");
-            SceneManager.UnloadSceneAsync(SceneName);
+            UnloadScene();
+            EnterToDungeon = false;
         }
 
         Debug.Log("UseItem");
@@ -155,20 +157,35 @@ public class UserInteractListener : MonoBehaviour
             rb.gravityScale = 1;
         }
     }
-
-    private void SpawnMozartOnOtherPlace()
+    
+    private void DetectNewSpawnLocation()
     {
-        GameObject[] hObjects = SceneManager.GetSceneByName(SceneName).GetRootGameObjects();
-        
-        foreach (var item in hObjects)
+        Debug.Log("sc" + SceneName);
+    }
+
+    private void SetNewMozartRespawn()
+    {
+        var respawnObj = new GameObject("RespawnAfterDungeon");
+        respawnObj.transform.position = player.transform.position;
+        respawnObj.tag = "Respawn";
+        if (SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
-            Debug.Log("in" + item);
-            if (item.CompareTag("Spawn"))
-            {
-                player.transform.position += item.GetComponent<Transform>().transform.position;
-                Debug.Log("Found");
-            }
+            Instantiate(respawnObj);
         }
+    }
+
+    private void SetNewScene()
+    {
+        Scene scene = SceneManager.GetSceneByName(SceneName);
+        Debug.Log("name: " + scene.name + " ,namepath: " + SceneName );
+        SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
+        SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
+        SceneManager.SetActiveScene(scene);
+    }
+
+    private void UnloadScene()
+    {
+        SceneManager.UnloadSceneAsync(SceneName);
     }
 
     public void AllowUserToChangeScene(GameObject sender, bool ready)
@@ -176,6 +193,4 @@ public class UserInteractListener : MonoBehaviour
         EnableEnterHiddenObjectsScene = ready;
         SceneName = sender.name;
     }
-
-    
 }

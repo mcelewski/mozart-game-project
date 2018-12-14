@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,7 +136,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.46679688
+      value: 21.1
       objectReference: {fileID: 0}
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_LocalRotation.x
@@ -211,8 +211,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 288238642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.67, y: 1.82, z: 1}
-  m_LocalScale: {x: 0.5, y: 1, z: 1}
+  m_LocalPosition: {x: 1.67, y: 2.182, z: 1}
+  m_LocalScale: {x: 0.5, y: 1.212, z: 1}
   m_Children: []
   m_Father: {fileID: 1095905628}
   m_RootOrder: 2
@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 681362792}
   - component: {fileID: 681362791}
   - component: {fileID: 681362790}
+  - component: {fileID: 681362793}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -355,10 +356,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 200
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 80
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -381,12 +382,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681362789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -65.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &681362793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 681362789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442a843fdbd1cf4489b2fa67131e3a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRef: {fileID: 1357015155}
 --- !u!1 &692704604
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +548,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1095905627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -38.5}
+  m_LocalPosition: {x: 0, y: 0, z: -16.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1941741165}
@@ -555,8 +568,9 @@ GameObject:
   - component: {fileID: 1286636775}
   - component: {fileID: 1286636777}
   - component: {fileID: 1286636776}
+  - component: {fileID: 1286636778}
   m_Layer: 0
-  m_Name: Ground (1)
+  m_Name: Platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -584,7 +598,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -646,6 +660,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1286636778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1286636774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1150b1c3f0b4993428960a8e1eade856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1357015155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1941976725149842, guid: 55681429a3639c74580172b6049dcec4,

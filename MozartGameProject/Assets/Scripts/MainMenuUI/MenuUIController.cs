@@ -70,6 +70,7 @@ public class MenuUIController : MonoBehaviour
     public void OnStart()
     {
         DisableMenu();
+        CameraBehaviour.SetGameCamera = true;
         SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.Adventure);
     }
     
@@ -93,17 +94,19 @@ public class MenuUIController : MonoBehaviour
         SetExitBtnText(true);
         ChangeStateMenuButtons(true);
     }
-    // TODO fix enable / disable object
+    
     public void EnableMenu()
     {
         var resumeText = startBtn.GetComponentInChildren<Text>();
         resumeText.text = resume;
+        CameraBehaviour.SetGameCamera = false;
         menuUI.SetActive(true);
     }
 
     public void DisableMenu()
     {
         menuUI.SetActive(false);
+        CameraBehaviour.SetGameCamera = true;
         Time.timeScale = 1;
     }
 }

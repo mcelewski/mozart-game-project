@@ -14,14 +14,14 @@ public class LadderObj : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        
+        PlatformBehaviour.SetPlatformTrigger(true);
         allowClimb = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-      
+        PlatformBehaviour.SetPlatformTrigger(false);
         allowClimb = false;
     }
 }
