@@ -166,7 +166,7 @@ public class UserInteractListener : MonoBehaviour
     private void SetNewMozartRespawn()
     {
         var respawnObj = new GameObject("RespawnAfterDungeon");
-        respawnObj.transform.position = player.transform.position;
+        respawnObj.transform.position = new Vector3(player.transform.position.x + 2, player.transform.position.y, player.transform.position.z);
         respawnObj.tag = "Respawn";
         if (SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
@@ -176,11 +176,10 @@ public class UserInteractListener : MonoBehaviour
 
     private void SetNewScene()
     {
-        Scene scene = SceneManager.GetSceneByName(SceneName);
-        Debug.Log("name: " + scene.name + " ,namepath: " + SceneName );
+        Debug.Log("namepath: " + SceneName );
         SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
         SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
-        SceneManager.SetActiveScene(scene);
+       // SceneManager.SetActiveScene(scene);
     }
 
     private void UnloadScene()

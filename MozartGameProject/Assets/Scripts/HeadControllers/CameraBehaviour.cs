@@ -18,9 +18,8 @@ public class CameraBehaviour : MonoBehaviour
 		SetCameraOrtoSize();
 		gameObject.transform.LookAt(playerRef.transform.position);
 
-		if (SetGameCamera && gameObject.transform.position.x >= playerRef.transform.position.x -2)
+		if (SetGameCamera && gameObject.transform.position.x >= playerRef.transform.position.x -5)
 		{
-			Debug.Log("out of range");
 			gameObject.transform.position = new Vector3(playerRef.transform.position.x * Time.deltaTime, 0,-150f);
 		}
 	}
