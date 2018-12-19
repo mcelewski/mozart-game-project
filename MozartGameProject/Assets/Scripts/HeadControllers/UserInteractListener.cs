@@ -19,11 +19,13 @@ public class UserInteractListener : MonoBehaviour
     public bool EnterToDungeon { get; set; }
     public bool EnternedAdventureScene { get; set; }
     public bool EnternedKeyboardScene { get; set; }
+    public bool AllowToTurn { get; private set; }
 
     public string SceneName { get; private set; }
 
     public bool EnableEnterHiddenObjectsScene { get; set; }
 
+    private GameObject respawn;
     private float mainSpeed = 5f;
     private float actionSpeed = 60;
     private float jumpHeigh = 40;
@@ -36,11 +38,13 @@ public class UserInteractListener : MonoBehaviour
         EnterToDungeon = false;
         EnternedAdventureScene = true;
         EnableEnterHiddenObjectsScene = false;
+        AllowToTurn = true;
     }
 
     public void TakeActionOnKeyPress()
     {
         SetMozartRigidbody();
+        AllowPlayerToTurn();
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
             if (Input.GetKey(key) && !EnternedKeyboardScene)
@@ -89,11 +93,13 @@ public class UserInteractListener : MonoBehaviour
             SetNewMozartRespawn();
             SetNewScene();
             DetectNewSpawnLocation();
+            SetMozartRigidbody();
             EnterToDungeon = true;
         }
         else if (!EnableEnterHiddenObjectsScene &&
             SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
+            RespawnMozartToAdventure();
             UnloadScene();
             EnterToDungeon = false;
         }
@@ -102,13 +108,19 @@ public class UserInteractListener : MonoBehaviour
     }
     private void MoveLeft()
     {
-        player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime; 
-        player.GetComponent<SpriteRenderer>().flipX = false;
+        if (AllowToTurn)
+        {
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime; 
+            player.GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
     private void MoveRight()
     {
-        player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
-        player.GetComponent<SpriteRenderer>().flipX = true;
+        if (AllowToTurn)
+        {
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
+            player.GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
     private void ClimbUp()
     {
@@ -160,7 +172,7 @@ public class UserInteractListener : MonoBehaviour
     
     private void DetectNewSpawnLocation()
     {
-        Debug.Log("sc" + SceneName);
+        player.transform.position = GameObject.Find("NewSceneSpawn").GetComponent<Transform>().transform.position;
     }
 
     private void SetNewMozartRespawn()
@@ -171,7 +183,13 @@ public class UserInteractListener : MonoBehaviour
         if (SceneMovementController.GetSceneLoadedStatus == SceneMovementController.SceneLoaded.HiddenObjects)
         {
             Instantiate(respawnObj);
+            respawn = respawnObj.GetComponent<GameObject>();
         }
+    }
+
+    private void RespawnMozartToAdventure()
+    {
+        player.transform.position = respawn.transform.position;
     }
 
     private void SetNewScene()
@@ -179,7 +197,6 @@ public class UserInteractListener : MonoBehaviour
         Debug.Log("namepath: " + SceneName );
         SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.HiddenObjects);
         SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
-       // SceneManager.SetActiveScene(scene);
     }
 
     private void UnloadScene()
@@ -187,9 +204,26 @@ public class UserInteractListener : MonoBehaviour
         SceneManager.UnloadSceneAsync(SceneName);
     }
 
+    private void AllowPlayerToTurn()
+    {
+        float PlayerYpos = player.transform.position.y;
+        float playerLocalSize = player.transform.localScale.y / 2;
+        
+        Debug.Log("lA: " + ((LadderObj.LadderLocalPosition - LadderObj.LadderLocalSize) - playerLocalSize) +
+                  " pl: " + PlayerYpos);
+        
+        if (PlayerYpos <= (LadderObj.LadderLocalPosition - LadderObj.LadderLocalSize) - playerLocalSize ||
+            PlayerYpos >= (LadderObj.LadderLocalPosition + LadderObj.LadderLocalSize) - playerLocalSize)
+            AllowToTurn = false;
+        else
+            AllowToTurn = true;
+    }
+
     public void AllowUserToChangeScene(GameObject sender, bool ready)
     {
         EnableEnterHiddenObjectsScene = ready;
         SceneName = sender.name;
     }
+    
+    
 }
