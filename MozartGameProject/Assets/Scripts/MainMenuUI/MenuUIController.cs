@@ -71,7 +71,6 @@ public class MenuUIController : MonoBehaviour
     {
         DisableMenu();
         CameraBehaviour.SetGameCamera = true;
-        SceneMovementController.SetActualLoadedScene(SceneMovementController.SceneLoaded.Adventure);
     }
     
     public void OnStory()

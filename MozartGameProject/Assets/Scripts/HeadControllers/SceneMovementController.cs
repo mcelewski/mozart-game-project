@@ -1,39 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 /// <summary>
 /// knowledge about actual played scene
 /// </summary>
 public class SceneMovementController : MonoBehaviour 
 {
-    public enum SceneLoaded
+    public enum Scene
     {
         Adventure,
         HiddenObjects,
         MozartHero
     }
+    
+    public static string sceneToGoAfterEPress;
+    
+    public static Scene currentScene;
 
-    private static SceneLoaded actualScene;
 
-    private void Awake()
+    public static void SetActualLoadedScene(Scene sceneType)
     {
-        actualScene = SceneLoaded.Adventure;
+        SceneManager.LoadSceneAsync(sceneToGoAfterEPress, LoadSceneMode.Additive);
+        currentScene = sceneType;
+    }
+  
+    public void SetNewScene()
+    {
+        SceneMovementController.SetActualLoadedScene(SceneMovementController.Scene.HiddenObjects);
+        SceneManager.LoadSceneAsync(sceneToGoAfterEPress, LoadSceneMode.Additive);
+        Debug.Log("e");
+        StartCoroutine(CheckLoadedScene());
     }
 
-    public static void SetActualLoadedScene(SceneLoaded sceneType)
+    public static IEnumerator UnloadScene()
     {
-        GetSceneLoadedStatus = sceneType;
+        yield return new WaitForSeconds(5f);
+        SceneManager.UnloadSceneAsync(sceneToGoAfterEPress);
     }
 
-    public static SceneLoaded GetSceneLoadedStatus
+    static IEnumerator CheckLoadedScene()
     {
-        get
+        Debug.Log("in");
+        yield return new WaitForSeconds(4f);
+        GameObject[] gameObjects = SceneManager.GetSceneByName(sceneToGoAfterEPress).GetRootGameObjects();
+        Debug.Log("leng: " + gameObjects.Length);
+        foreach (var item in gameObjects)
         {
-            return actualScene;
+            Debug.Log("item: + " + item.name);
         }
-        private set
-        {
-            actualScene = value;
-        }
+        
+    }
+
+    public static void AllowUserToChangeScene(GameObject sender, bool ready)
+    {
+        /*AllowToLeaveDungeon = ready;
+        EnableEnterDungeon = ready;
+        SceneName = sender.name;*/
+        sceneToGoAfterEPress = sender.name;
     }
 }

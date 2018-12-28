@@ -136,8 +136,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1476906043696660}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 717.1913, y: 885.61, z: -38.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7441406, y: -8.293762, z: 0.46679688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4552966088330792}
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   MainMenuUI: {fileID: 1967757319178446}
-  mainCamera: {fileID: 0}
+  hiddenSceneSpawnPref: {fileID: 0}
 --- !u!114 &114317854584550762
 MonoBehaviour:
   m_ObjectHideFlags: 1

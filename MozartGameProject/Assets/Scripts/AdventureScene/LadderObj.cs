@@ -6,14 +6,7 @@ public class LadderObj : MonoBehaviour
 {
     private static bool allowClimb;
 
-    private void Start()
-    {
-        // Ladder heigh multiply by 2 beacouse it's calculated from center of an object
-        LadderLocalSize = gameObject.transform.localScale.y * 2;
-        LadderLocalPosition = gameObject.transform.localPosition.y;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         PlatformBehaviour.SetPlatformTrigger(true);
@@ -31,7 +24,4 @@ public class LadderObj : MonoBehaviour
     {
         return allowClimb;
     }
-
-    public static float LadderLocalSize{ get; private set; }
-    public static float LadderLocalPosition{ get; private set; }
 }

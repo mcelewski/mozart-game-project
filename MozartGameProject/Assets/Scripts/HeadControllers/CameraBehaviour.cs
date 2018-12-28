@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Experimental.UIElements;
+using UnityEngine;
 
 public class CameraBehaviour : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class CameraBehaviour : MonoBehaviour
 		if (SetGameCamera && gameObject.transform.position.x >= playerRef.transform.position.x -5)
 		{
 			gameObject.transform.position = new Vector3(playerRef.transform.position.x * Time.deltaTime, 0,-150f);
+		}
+
+		if (SetGameCamera && gameObject.transform.position.y > playerRef.transform.position.y -2)
+		{
+			gameObject.transform.position = new Vector3(gameObject.transform.position.x,playerRef.transform.position.y, gameObject.transform.position.z);
 		}
 	}
 
