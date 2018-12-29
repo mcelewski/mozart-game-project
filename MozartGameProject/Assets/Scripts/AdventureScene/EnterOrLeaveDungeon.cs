@@ -4,13 +4,14 @@ using UnityEngine;
 public class EnterOrLeaveDungeon : MonoBehaviour
 {
     public UserInteractListener listener;
+    private static bool canChangeScene;
 
     void Start(){
         if (!listener)
             listener = GameObject.Find("PlayerBehaviour").GetComponent<UserInteractListener>();
     }
 
-    void OnTriggerEnter2D(Collider2D other){
+    void OnTriggerStay2D(Collider2D other){
         if (!IsPlayer(other)) return;
         //TODO make autosave, player pos, player eq, spawn 
         AllowToChangeScene(gameObject);
@@ -20,48 +21,25 @@ public class EnterOrLeaveDungeon : MonoBehaviour
         if (!IsPlayer(other)) return;
         DenyToChangeScene(gameObject);
     }
-    
-    void AllowToChangeScene(GameObject sceneName) {
-        Debug.Log("Player can change scene to "+ sceneName);
-        SceneMovementController.AllowUserToChangeScene(sceneName,true);
+      
+    void AllowToChangeScene(GameObject sceneToLoad) {
+        Debug.Log("Player can change scene to "+ sceneToLoad);
+        SceneMovementController.SetSceneToLoad(sceneToLoad, false);
+        canChangeScene = true;
     }
     
-    void DenyToChangeScene(GameObject sceneName) {
-        Debug.Log("Player **cannot** change scene to "+ sceneName);
-        SceneMovementController.AllowUserToChangeScene(sceneName,false);
+    void DenyToChangeScene(GameObject sceneToLoad) {
+        Debug.Log("Player **cannot** change scene to "+ sceneToLoad);
+        SceneMovementController.SetSceneToLoad(sceneToLoad, true);
+        canChangeScene = false;
     }
     
+    public static bool CanPlayerChangeScene()
+    {
+        return canChangeScene;
+    }
+
     bool IsPlayer(Collider2D col) {
         return col.CompareTag("Player");
     }
-    
-    /*
-     * public UserInteractListener listener;
-
-    private void Start()
-    {
-        if (!listener)
-        {
-            listener = GameObject.Find("PlayerBehaviour").GetComponent<UserInteractListener>();
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player")) return;
-        //TODO make autosave, player pos, player eq, spawn 
-        OnCanChangedScene(gameObject, true);
-    }
-    
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player")) return;
-        OnCanChangedScene(gameObject, false);
-    }
-    
-    private void OnCanChangedScene(GameObject sender, bool ready)
-    {
-        listener.AllowUserToChangeScene(sender,ready);
-    }
-     */
 }

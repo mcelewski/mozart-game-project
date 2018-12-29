@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -157,6 +157,10 @@ Prefab:
     - target: {fileID: 4766428462438626, guid: 65bfca69e93f9c8439190e95153cc383, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658755350976632, guid: 65bfca69e93f9c8439190e95153cc383, type: 2}
+      propertyPath: m_Name
+      value: HiddenSceneSpawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65bfca69e93f9c8439190e95153cc383, type: 2}
@@ -467,10 +471,8 @@ GameObject:
   m_Component:
   - component: {fileID: 692704605}
   - component: {fileID: 692704607}
-  - component: {fileID: 692704606}
-  - component: {fileID: 692704608}
   m_Layer: 0
-  m_Name: HouseTestDungeon
+  m_Name: HouseDungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,35 +487,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.85, y: 2.4, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1051088738}
   m_Father: {fileID: 1095905628}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &692704606
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 692704604}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.57, y: -1.76}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.9, y: 5.72}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!212 &692704607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -560,18 +538,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &692704608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 692704604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e1c1a4e97e52684eaf5a83943c6e8e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listener: {fileID: 920030348}
 --- !u!1 &790958507
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +578,106 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1670136473}
   m_Script: {fileID: 11500000, guid: c810aecf3ca984446ba01efaa99e1129, type: 3}
+--- !u!1 &1051088737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051088738}
+  - component: {fileID: 1051088740}
+  - component: {fileID: 1051088739}
+  m_Layer: 0
+  m_Name: HouseTestDungeon
+  m_TagString: HiddenObjects
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051088738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051088737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.59, y: -1.77, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692704605}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051088739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051088737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1c1a4e97e52684eaf5a83943c6e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listener: {fileID: 920030348}
+--- !u!58 &1051088740
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051088737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!1 &1074431170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074431171}
+  - component: {fileID: 1074431172}
+  m_Layer: 0
+  m_Name: SpawnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1074431171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074431170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1670136474}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1074431172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074431170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a463a81e5a093240a50ae5ad905300f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1357015155}
+  _respawn: {fileID: 0}
+  hiddenSceneSpawnPref: {fileID: 70558606}
 --- !u!1 &1095905627
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +962,19 @@ Prefab:
       propertyPath: hiddenSceneSpawnPref
       value: 
       objectReference: {fileID: 70558606}
-    m_RemovedComponents: []
+    - target: {fileID: 114107235287919224, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 2}
+      propertyPath: _sceneController
+      value: 
+      objectReference: {fileID: 1670136476}
+    - target: {fileID: 114107235287919224, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 2}
+      propertyPath: _spawnController
+      value: 
+      objectReference: {fileID: 1074431172}
+    m_RemovedComponents:
+    - {fileID: 114317854584550762, guid: 995c7afe758adf144b27261fb77b8e55, type: 2}
+    - {fileID: 114990230490912844, guid: 995c7afe758adf144b27261fb77b8e55, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 995c7afe758adf144b27261fb77b8e55, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1670136474 stripped
@@ -904,6 +982,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4906725820751726, guid: 995c7afe758adf144b27261fb77b8e55,
     type: 2}
   m_PrefabInternal: {fileID: 1670136473}
+--- !u!1 &1670136475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1777907320795974, guid: 995c7afe758adf144b27261fb77b8e55,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670136473}
+--- !u!114 &1670136476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670136475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377082d19b561b1479590c5b8e7f5846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1744796295 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114310351798950772, guid: ca085bd9d15912842a73b281576e550d,

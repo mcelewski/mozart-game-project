@@ -8,6 +8,9 @@ TagManager:
   - Ground
   - Spawn
   - Ladder
+  - HiddenObjects
+  - Adventure
+  - MozartHero
   layers:
   - Default
   - TransparentFX

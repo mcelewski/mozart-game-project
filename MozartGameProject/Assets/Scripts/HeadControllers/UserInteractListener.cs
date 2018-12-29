@@ -14,37 +14,27 @@ public class UserInteractListener : MonoBehaviour
     //TODO Keyboard input for all scenes including pause menu
     public GameObject player;
     public GameObject MainMenuUI;
-    public GameObject hiddenSceneSpawnPref;
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
-
-    public bool IsPaused { get; set; }
-    public bool EnterToDungeon { get; set; }
-    public bool EnternedKeyboardScene { get; set; }
-    public bool AllowToTurn { get; private set; }
-    public bool AllowToLeaveDungeon { get; set; }
-
-    public bool EnableEnterDungeon { get; set; }
-
-    private Transform respawn;
+    public SceneMovementController _sceneController;
+    public RespawnBehaviour _spawnController;
+    
     private float mainSpeed = 5f;
     private float jumpHeigh = 40;
     
     private void Awake()
     {
         SetActionsToDictionary();
-        IsPaused = false;
-        EnternedKeyboardScene = false;
-        EnterToDungeon = false;
-        AllowToLeaveDungeon = false;
-        AllowToTurn = true;
     }
 
     public void TakeActionOnKeyPress()
     {
         SetMozartRigidbody();
+        Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
+        Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
+        Debug.Log("Current scene: " + SceneMovementController.currentScene);
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
-            if (Input.GetKey(key) && !EnternedKeyboardScene)
+            if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene())
             {
                 ActionsDictionary[key].Invoke();
             }
@@ -68,10 +58,11 @@ public class UserInteractListener : MonoBehaviour
 
     private void OpenClosePauseMenu()
     {
-        if (!IsPaused)
+        if (!_sceneController.IsPaused())
         {
             MainMenuUI.GetComponent<MenuUIController>().EnableMenu();
             Time.timeScale = 0;
+            SceneMovementController.currentScene = SceneMovementController.ScenesInGame.Paused;
         }
     }
 
@@ -79,39 +70,40 @@ public class UserInteractListener : MonoBehaviour
 
     private void OpenEquipment()
     {
-        Debug.Log("Equipment opened");
+        if (!_sceneController.IsOnMozartHeroScene())
+        {
+            Debug.Log("Equipment opened");
+        }
     }
 
     private void UseItem()
     {
-        if (EnableEnterDungeon &&
-             IsOnHiddenObjectsScene())
+        if (_sceneController.IsOnAdventureScene() && EnterOrLeaveDungeon.CanPlayerChangeScene())
         {
-            SetNewMozartRespawn();
-            SpawnToHiddenScene();
-            SetMozartRigidbody();
-            EnterToDungeon = true;
-            EnableEnterDungeon = false;
+            _sceneController.SetNewScene();
+            _spawnController.SetUpNewRespawn();
+            _spawnController.SpawnToHiddenScene();
+            Debug.Log("Enter dungeon");
         }
-        if (AllowToLeaveDungeon && IsOnHiddenObjectsScene())
+        else if (_sceneController.IsOnHiddenObjectsScene() && EnterOrLeaveDungeon.CanPlayerChangeScene())
         {
-            RespawnMozartToAdventure();
-            StartCoroutine(SceneMovementController.UnloadScene());
-            EnterToDungeon = false;
-            EnableEnterDungeon = true;
+            _spawnController.SpawnToAdventure();
+            StartCoroutine(_sceneController.UnloadScene());
+            Debug.Log("Leave Dungeon");
+        }
+        else if (_sceneController.IsOnAdventureScene())
+        {
+            Debug.Log("Use item");
         }
 
-        Debug.Log("UseItem");
     }
 
-    private static bool IsOnHiddenObjectsScene()
-    {
-        return SceneMovementController.currentScene != SceneMovementController.Scene.HiddenObjects;
-    }
+    
 
     private void MoveLeft()
     {
-        if (AllowToTurn)
+        
+        if (!LadderObj.AllowUseLadder())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime; 
             player.GetComponent<SpriteRenderer>().flipX = false;
@@ -119,19 +111,20 @@ public class UserInteractListener : MonoBehaviour
     }
     private void MoveRight()
     {
-        if (AllowToTurn)
+        player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
+        player.GetComponent<SpriteRenderer>().flipX = true;
+        if (!LadderObj.AllowUseLadder())
         {
-            player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
-            player.GetComponent<SpriteRenderer>().flipX = true;
+            
         }
     }
     private void ClimbUp()
     {
-        if (!EnterToDungeon && LadderObj.AllowUseLadder())
+        if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
-        else if (EnterToDungeon)
+        else if (_sceneController.IsOnHiddenObjectsScene())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
@@ -139,11 +132,11 @@ public class UserInteractListener : MonoBehaviour
     }
     private void ClimbDown()
     {
-        if (!EnterToDungeon && LadderObj.AllowUseLadder())
+        if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
         }
-        else if (EnterToDungeon)
+        else if (_sceneController.IsOnHiddenObjectsScene())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
         }
@@ -152,7 +145,7 @@ public class UserInteractListener : MonoBehaviour
 
     private void Jump()
     {
-        if (!EnternedKeyboardScene && !EnterToDungeon && PlayerGroudDetection.IsGrounded())
+        if (!_sceneController.IsOnMozartHeroScene() && !_sceneController.IsOnHiddenObjectsScene() && PlayerGroudDetection.IsGrounded())
         {
             player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,jumpHeigh * mainSpeed * Time.deltaTime,0) ;
         }
@@ -163,7 +156,7 @@ public class UserInteractListener : MonoBehaviour
     private void SetMozartRigidbody()
     {
         var rb = player.GetComponent<Rigidbody2D>();
-        if (LadderObj.AllowUseLadder() || EnterToDungeon)
+        if (LadderObj.AllowUseLadder() || _sceneController.IsOnHiddenObjectsScene())
         {
             rb.gravityScale = 0;
         }
@@ -172,34 +165,4 @@ public class UserInteractListener : MonoBehaviour
             rb.gravityScale = 1;
         }
     }
-
-    #region Spawn
-
-    private void SpawnToHiddenScene()
-    {
-        player.transform.position = hiddenSceneSpawnPref.transform.position;
-    }
-
-    private void SetNewMozartRespawn()
-    {
-        var respawnObj = new GameObject("RespawnAfterDungeon");
-        respawnObj.transform.position = new Vector3(player.transform.position.x + 2, player.transform.position.y, player.transform.position.z);
-        respawnObj.tag = "Respawn";
-        if (IsOnHiddenObjectsScene())
-        {
-            Instantiate(respawnObj);
-        }
-        respawn = GameObject.Find(respawnObj.name).GetComponent<Transform>();
-    }
-
-    private void RespawnMozartToAdventure()
-    {
-        player.transform.position = respawn.transform.position;
-    }
-
-    #endregion
-
-    
-    
-    
 }
