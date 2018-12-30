@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -43,7 +44,7 @@ public class SceneMovementController : MonoBehaviour
     
     public IEnumerator UnloadScene()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         SceneManager.UnloadSceneAsync(lastLoadedScene);
     }
 
@@ -59,12 +60,20 @@ public class SceneMovementController : MonoBehaviour
         StartCoroutine(UnloadScene());
     }
 
+    /// <summary>
+    /// On Load scene run function to change scene place
+    /// </summary>
+    /// <param name="sceneInfo"></param>
+    public static void SetCurrentlyActiveScene(ScenesInGame sceneInfo)
+    {
+        currentScene = sceneInfo;
+        Debug.Log("set curent");
+    }
+
     private IEnumerator CheckLoadedScene()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(3f);
         GameObject[] gameObjects = SceneManager.GetSceneByName(lastLoadedScene).GetRootGameObjects();
-        //TODO problem with changing current scene
-        currentScene = sceneToGo;
         if (gameObjects != null) Debug.Log("Scene not loaded");
     }
 
@@ -95,7 +104,6 @@ public class SceneMovementController : MonoBehaviour
     /// </summary>
     private static void DefaultSceneInfo()
     {
-        currentScene = ScenesInGame.Adventure;
         sceneToGoAfterEPress = "Adventure";
     }
 
@@ -140,5 +148,6 @@ public class SceneMovementController : MonoBehaviour
             return false;
     }
 
+    //TODO puzzle
     #endregion
 }
