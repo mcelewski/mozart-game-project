@@ -31,12 +31,18 @@
           <e p="MidiStateUpdater.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="ActualSceneBehaviour.cs" t="Include" />
           <e p="AdventureScene" t="Include">
+            <e p="EndCurrentLevelBehaviour.cs" t="Include" />
             <e p="EnterOrLeaveDungeon.cs" t="Include" />
             <e p="LadderObj.cs" t="Include" />
+            <e p="PlatformBehaviour.cs" t="Include" />
           </e>
-          <e p="GenerateOnAllScenes.cs" t="Include" />
+          <e p="General" t="Include">
+            <e p="ActualSceneBehaviour.cs" t="Include" />
+            <e p="GenerateOnAllScenes.cs" t="Include" />
+            <e p="HoldSceneLocation.cs" t="Include" />
+            <e p="NesSceneSpawnBehaviour.cs" t="Include" />
+          </e>
           <e p="GimpyParser" t="Include">
             <e p="ConvertToBytes.cs" t="Include" />
             <e p="GrandFileFormat.cs" t="Include" />
@@ -56,11 +62,9 @@
             <e p="MidiLocalStorage.cs" t="Include" />
             <e p="ProjectMidiFilesStorage.cs" t="Include" />
           </e>
-          <e p="HoldSceneLocation.cs" t="Include" />
           <e p="MainMenuUI" t="Include">
             <e p="MenuUIController.cs" t="Include" />
           </e>
-          <e p="NesSceneSpawnBehaviour.cs" t="Include" />
           <e p="PianoSceneScripts" t="Include">
             <e p="KeyboardController.cs" t="Include" />
             <e p="NoteActivated.cs" t="Include" />
@@ -69,7 +73,6 @@
             <e p="NoteInfo.cs" t="Include" />
             <e p="SetMidiToScene.cs" t="Include" />
           </e>
-          <e p="PlatformBehaviour.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
