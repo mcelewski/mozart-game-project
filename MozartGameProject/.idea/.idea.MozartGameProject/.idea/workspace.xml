@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2889a3aa-c017-4c07-868e-68c4520ee2f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CurrentActiveSceneInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CurrentActiveSceneInfo.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AdventureScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AdventureScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/HiddenObjects/HouseTestDungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HiddenObjects/HouseTestDungeon.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/SceneMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/SceneMovementController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/UserInteractListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/UserInteractListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI/MenuUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI/MenuUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CurrentActiveSceneInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CurrentActiveSceneInfo.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +33,7 @@
     <session id="635492048">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="6" />
@@ -43,11 +41,12 @@
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -123,10 +122,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/SceneMovementController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <marker date="1546523464480" expanded="true" signature="6:115" ph="..." />
+                <marker date="1546523464480" expanded="false" signature="6:115" ph="..." />
                 <marker date="1546523464480" expanded="true" signature="117:185" ph="/// knowledge about actual played scene ... " />
                 <marker date="1546523464480" expanded="true" signature="239:4692" ph="{...}" />
                 <marker date="1546523464480" expanded="true" signature="270:359" ph="{...}" />
@@ -152,7 +151,7 @@
                 <marker date="1546523464480" expanded="true" signature="3243:3312" ph="{...}" />
                 <marker date="1546523464480" expanded="true" signature="3323:3440" ph="/// Default setting: SceneInGame = Adventure, sceneToGoAfterEPress = &quot;Adventure&quot; ... " />
                 <marker date="1546523464480" expanded="true" signature="3483:3539" ph="{...}" />
-                <marker date="1546523464480" expanded="true" signature="3544:4690" ph="Check currnetly loaded scene type" />
+                <marker date="1546523464480" expanded="false" signature="3544:4690" ph="Check currnetly loaded scene type" />
                 <marker date="1546523464480" expanded="true" signature="3591:3722" ph="/// Check current playing scene ... " />
                 <marker date="1546523464480" expanded="true" signature="3749:3828" ph="{...}" />
                 <marker date="1546523464480" expanded="true" signature="3834:3965" ph="/// Check current playing scene ... " />
@@ -184,7 +183,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/UserInteractListener.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding>
                 <marker date="1546523395365" expanded="false" signature="6:175" ph="..." />
                 <marker date="1546523395365" expanded="true" signature="177:258" ph="/// Place where are defined all user actions in game ... " />
@@ -197,7 +196,7 @@
                 <marker date="1546523395365" expanded="true" signature="1446:1988" ph="{...}" />
                 <marker date="1546523395365" expanded="true" signature="2027:2299" ph="{...}" />
                 <marker date="1546523395365" expanded="true" signature="2075:2293" ph="{...}" />
-                <marker date="1546523395365" expanded="true" signature="2305:5105" ph="PlayerMovement" />
+                <marker date="1546523395365" expanded="false" signature="2305:5105" ph="PlayerMovement" />
                 <marker date="1546523395365" expanded="true" signature="2361:2489" ph="{...}" />
                 <marker date="1546523395365" expanded="true" signature="2420:2483" ph="{...}" />
                 <marker date="1546523395365" expanded="true" signature="2517:3293" ph="{...}" />
@@ -265,8 +264,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/EnterOrLeaveDungeon.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="411">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
                 <marker date="1546122601165" expanded="false" signature="6:52" ph="..." />
                 <marker date="1546122601165" expanded="true" signature="102:1293" ph="{...}" />
@@ -381,6 +380,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -423,7 +423,6 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -520,12 +519,13 @@
       <workItem from="1545988622986" duration="10122000" />
       <workItem from="1546097253252" duration="11216000" />
       <workItem from="1546162917620" duration="65000" />
-      <workItem from="1546520559989" duration="2925000" />
+      <workItem from="1546520559989" duration="3061000" />
+      <workItem from="1546524800529" duration="549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175728000" />
+    <option name="totallyTimeSpent" value="176413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,7 +540,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49598393" visible="true" weight="0.1895887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49598393" visible="true" weight="0.19215938" />
       <window_info id="Structure" order="1" sideWeight="0.50401604" side_tool="true" weight="0.16323908" />
       <window_info id="Favorites" order="2" sideWeight="0.50401604" side_tool="true" weight="0.16323908" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -725,13 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <marker date="1546096922728" expanded="false" signature="6:78" ph="..." />
-            <marker date="1546096922728" expanded="true" signature="118:628" ph="{...}" />
-            <marker date="1546096922728" expanded="true" signature="208:348" ph="{...}" />
-            <marker date="1546096922728" expanded="true" signature="400:542" ph="{...}" />
-            <marker date="1546096922728" expanded="true" signature="587:626" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,45 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <marker date="1546096922791" expanded="false" signature="6:78" ph="..." />
-            <marker date="1546096922791" expanded="true" signature="132:324" ph="{...}" />
-            <marker date="1546096922791" expanded="true" signature="222:322" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/CameraBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <marker date="1546522106922" expanded="false" signature="6:61" ph="..." />
-            <marker date="1546522106922" expanded="true" signature="107:1083" ph="{...}" />
-            <marker date="1546522106922" expanded="true" signature="211:330" ph="{...}" />
-            <marker date="1546522106922" expanded="true" signature="359:903" ph="{...}" />
-            <marker date="1546522106922" expanded="true" signature="540:654" ph="{...}" />
-            <marker date="1546522106922" expanded="true" signature="747:900" ph="{...}" />
-            <marker date="1546522106922" expanded="true" signature="938:1081" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/EnterOrLeaveDungeon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <marker date="1546122601165" expanded="false" signature="6:52" ph="..." />
-            <marker date="1546122601165" expanded="true" signature="102:1293" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="204:330" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="374:519" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="567:651" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="711:880" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="937:1113" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="1164:1207" ph="{...}" />
-            <marker date="1546122601165" expanded="true" signature="1243:1291" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,6 +753,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/CameraBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <marker date="1546522106922" expanded="false" signature="6:61" ph="..." />
+            <marker date="1546522106922" expanded="true" signature="107:1083" ph="{...}" />
+            <marker date="1546522106922" expanded="true" signature="211:330" ph="{...}" />
+            <marker date="1546522106922" expanded="true" signature="359:903" ph="{...}" />
+            <marker date="1546522106922" expanded="true" signature="540:654" ph="{...}" />
+            <marker date="1546522106922" expanded="true" signature="747:900" ph="{...}" />
+            <marker date="1546522106922" expanded="true" signature="938:1081" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActualSceneBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -811,10 +781,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/EnterOrLeaveDungeon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <marker date="1546122601165" expanded="false" signature="6:52" ph="..." />
+            <marker date="1546122601165" expanded="true" signature="102:1293" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="204:330" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="374:519" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="567:651" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="711:880" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="937:1113" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="1164:1207" ph="{...}" />
+            <marker date="1546122601165" expanded="true" signature="1243:1291" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/UserInteractListener.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
             <marker date="1546523395365" expanded="false" signature="6:175" ph="..." />
             <marker date="1546523395365" expanded="true" signature="177:258" ph="/// Place where are defined all user actions in game ... " />
@@ -827,7 +815,7 @@
             <marker date="1546523395365" expanded="true" signature="1446:1988" ph="{...}" />
             <marker date="1546523395365" expanded="true" signature="2027:2299" ph="{...}" />
             <marker date="1546523395365" expanded="true" signature="2075:2293" ph="{...}" />
-            <marker date="1546523395365" expanded="true" signature="2305:5105" ph="PlayerMovement" />
+            <marker date="1546523395365" expanded="false" signature="2305:5105" ph="PlayerMovement" />
             <marker date="1546523395365" expanded="true" signature="2361:2489" ph="{...}" />
             <marker date="1546523395365" expanded="true" signature="2420:2483" ph="{...}" />
             <marker date="1546523395365" expanded="true" signature="2517:3293" ph="{...}" />
@@ -855,10 +843,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/SceneMovementController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <marker date="1546523464480" expanded="true" signature="6:115" ph="..." />
+            <marker date="1546523464480" expanded="false" signature="6:115" ph="..." />
             <marker date="1546523464480" expanded="true" signature="117:185" ph="/// knowledge about actual played scene ... " />
             <marker date="1546523464480" expanded="true" signature="239:4692" ph="{...}" />
             <marker date="1546523464480" expanded="true" signature="270:359" ph="{...}" />
@@ -884,7 +872,7 @@
             <marker date="1546523464480" expanded="true" signature="3243:3312" ph="{...}" />
             <marker date="1546523464480" expanded="true" signature="3323:3440" ph="/// Default setting: SceneInGame = Adventure, sceneToGoAfterEPress = &quot;Adventure&quot; ... " />
             <marker date="1546523464480" expanded="true" signature="3483:3539" ph="{...}" />
-            <marker date="1546523464480" expanded="true" signature="3544:4690" ph="Check currnetly loaded scene type" />
+            <marker date="1546523464480" expanded="false" signature="3544:4690" ph="Check currnetly loaded scene type" />
             <marker date="1546523464480" expanded="true" signature="3591:3722" ph="/// Check current playing scene ... " />
             <marker date="1546523464480" expanded="true" signature="3749:3828" ph="{...}" />
             <marker date="1546523464480" expanded="true" signature="3834:3965" ph="/// Check current playing scene ... " />
