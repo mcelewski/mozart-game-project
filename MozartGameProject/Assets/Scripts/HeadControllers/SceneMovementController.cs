@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Security.Cryptography;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,7 +19,7 @@ public class SceneMovementController : MonoBehaviour
     private static string sceneToGoAfterEPress;
     private static string lastLoadedScene;
     public static ScenesInGame currentScene, sceneToGo;
-
+    
     /// <summary>
     /// Set up scene info to load
     /// </summary>
