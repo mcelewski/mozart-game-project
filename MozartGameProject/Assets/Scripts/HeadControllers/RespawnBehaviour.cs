@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class RespawnBehaviour : MonoBehaviour
 {
@@ -37,10 +38,11 @@ public class RespawnBehaviour : MonoBehaviour
 		_respawn = GameObject.Find(respawnObj.name).GetComponent<Transform>();
 	}
 
-	public void DeactivateSpawn()
+	public IEnumerator DeactivateSpawn()
 	{
+		yield return new WaitForSeconds(2f);
 		_respawn.gameObject.SetActive(false);
-		Destroy(_respawn);
+		Destroy(_respawn.gameObject);
 	}
 
 	public void SetRespawnTransform(Transform resp)

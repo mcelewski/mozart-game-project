@@ -29,7 +29,6 @@ public class UserInteractListener : MonoBehaviour
     public void TakeActionOnKeyPress()
     {
         SetMozartRigidbody();
-        Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
         Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
         Debug.Log("Current scene: " + SceneMovementController.currentScene);
         foreach (KeyCode key in ActionsDictionary.Keys)
@@ -88,7 +87,9 @@ public class UserInteractListener : MonoBehaviour
         else if (_sceneController.IsOnHiddenObjectsScene() && EnterOrLeaveDungeon.CanPlayerChangeScene())
         {
             _spawnController.SpawnToAdventure();
+            StartCoroutine(_spawnController.DeactivateSpawn());
             StartCoroutine(_sceneController.UnloadScene());
+            
             Debug.Log("Leave Dungeon");
         }
         else if (_sceneController.IsOnAdventureScene())
@@ -97,8 +98,6 @@ public class UserInteractListener : MonoBehaviour
         }
 
     }
-
-    
 
     private void MoveLeft()
     {

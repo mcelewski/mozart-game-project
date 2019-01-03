@@ -27,9 +27,7 @@ public class SceneMovementController : MonoBehaviour
     public static void SetSceneToLoad(GameObject sceneToLoad, bool clearData)
     {
         if (!clearData)
-            SetSceneInfo(sceneToLoad);
-        else
-            DefaultSceneInfo();
+            SetSceneToGoInfo(sceneToLoad);
     }
   
     /// <summary>
@@ -38,25 +36,44 @@ public class SceneMovementController : MonoBehaviour
     public void SetNewScene()
     {
         LoadScene();
-        StartCoroutine(CheckLoadedScene());
     }
     
     public IEnumerator UnloadScene()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         SceneManager.UnloadSceneAsync(lastLoadedScene);
+    }
+    
+    public void BackToDefaultScene()
+    {
+        Debug.Log("DefaultScene");
+        StartCoroutine(UnloadScene());
+    }
+    
+    /// <summary>
+    /// Set up basic current scene info
+    /// </summary>
+    /// <param name="sceneInfo">Game object holding scene information</param>
+    public static void SetCurrentSceneInfo(GameObject sceneInfo)
+    {
+        if (sceneInfo.CompareTag("Adventure"))
+        {
+            currentScene = ScenesInGame.Adventure;
+        }
+        else if (sceneInfo.CompareTag("HiddenObjects"))
+        {
+            currentScene = ScenesInGame.HiddenObjects;
+        }
+        else if (sceneInfo.CompareTag("MozartHero"))
+        {
+            currentScene = ScenesInGame.MozartHero;
+        }
     }
 
     private void LoadScene()
     {
         SceneManager.LoadSceneAsync(sceneToGoAfterEPress, LoadSceneMode.Additive);
         lastLoadedScene = sceneToGoAfterEPress;
-    }
-
-    public void BackToDefaultScene()
-    {
-        Debug.Log("DefaultScene");
-        StartCoroutine(UnloadScene());
     }
 
     private IEnumerator CheckLoadedScene()
@@ -72,7 +89,7 @@ public class SceneMovementController : MonoBehaviour
     /// Set up basic new scene info
     /// </summary>
     /// <param name="sceneInfo">Game object holding scene information</param>
-    private static void SetSceneInfo(GameObject sceneInfo)
+    private static void SetSceneToGoInfo(GameObject sceneInfo)
     {
         sceneToGoAfterEPress = sceneInfo.name;
         
@@ -88,15 +105,6 @@ public class SceneMovementController : MonoBehaviour
         {
             sceneToGo = ScenesInGame.MozartHero;
         }
-    }
-
-    /// <summary>
-    /// Default setting: SceneInGame = Adventure, sceneToGoAfterEPress = "Adventure"
-    /// </summary>
-    private static void DefaultSceneInfo()
-    {
-        currentScene = ScenesInGame.Adventure;
-        sceneToGoAfterEPress = "Adventure";
     }
 
     #region Check currnetly loaded scene type
