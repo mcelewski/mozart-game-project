@@ -36,6 +36,7 @@
             <e p="EnterOrLeaveDungeon.cs" t="Include" />
             <e p="LadderObj.cs" t="Include" />
           </e>
+          <e p="CurrentActiveSceneInfo.cs" t="Include" />
           <e p="GenerateOnAllScenes.cs" t="Include" />
           <e p="GimpyParser" t="Include">
             <e p="ConvertToBytes.cs" t="Include" />

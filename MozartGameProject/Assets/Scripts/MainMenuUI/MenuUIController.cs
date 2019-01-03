@@ -97,6 +97,7 @@ public class MenuUIController : MonoBehaviour
     public void EnableMenu()
     {
         var resumeText = startBtn.GetComponentInChildren<Text>();
+        
         resumeText.text = resume;
         CameraBehaviour.SetGameCamera = false;
         menuUI.SetActive(true);

@@ -30,6 +30,8 @@ public class UserInteractListener : MonoBehaviour
     {
         SetMozartRigidbody();
         Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
+       // Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
+       // Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
         Debug.Log("Current scene: " + SceneMovementController.currentScene);
         foreach (KeyCode key in ActionsDictionary.Keys)
         {

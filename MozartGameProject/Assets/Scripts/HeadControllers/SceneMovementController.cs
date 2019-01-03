@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,12 +45,6 @@ public class SceneMovementController : MonoBehaviour
         SceneManager.UnloadSceneAsync(lastLoadedScene);
     }
     
-    public void BackToDefaultScene()
-    {
-        Debug.Log("DefaultScene");
-        StartCoroutine(UnloadScene());
-    }
-    
     /// <summary>
     /// Set up basic current scene info
     /// </summary>
@@ -75,13 +70,26 @@ public class SceneMovementController : MonoBehaviour
         SceneManager.LoadSceneAsync(sceneToGoAfterEPress, LoadSceneMode.Additive);
         lastLoadedScene = sceneToGoAfterEPress;
     }
+    
+    public void BackToDefaultScene()
+    {
+        Debug.Log("DefaultScene");
+        StartCoroutine(UnloadScene());
+    }
 
+    /// <summary>
+    /// On Load scene run function to change scene place
+    /// </summary>
+    /// <param name="sceneInfo"></param>
+    public static void SetCurrentlyActiveScene(ScenesInGame sceneInfo)
+    {
+        currentScene = sceneInfo;
+        Debug.Log("set curent");
+    }
     private IEnumerator CheckLoadedScene()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(3f);
         GameObject[] gameObjects = SceneManager.GetSceneByName(lastLoadedScene).GetRootGameObjects();
-        //TODO problem with changing current scene
-        currentScene = sceneToGo;
         if (gameObjects != null) Debug.Log("Scene not loaded");
     }
 
@@ -106,7 +114,13 @@ public class SceneMovementController : MonoBehaviour
             sceneToGo = ScenesInGame.MozartHero;
         }
     }
-
+    /// <summary>
+    /// Default setting: SceneInGame = Adventure, sceneToGoAfterEPress = "Adventure"
+    /// </summary>
+    private static void DefaultSceneInfo()
+    {
+        sceneToGoAfterEPress = "Adventure";
+    }
     #region Check currnetly loaded scene type
 
     /// <summary>
@@ -148,5 +162,6 @@ public class SceneMovementController : MonoBehaviour
             return false;
     }
 
+    //TODO puzzle
     #endregion
 }
