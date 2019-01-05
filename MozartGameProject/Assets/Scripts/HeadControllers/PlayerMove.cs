@@ -11,9 +11,20 @@ using UnityEngine.Experimental.UIElements;
 public class PlayerMove : MonoBehaviour
 {
     public UserInteractListener userAction;
+    public SceneMovementController _sceneController;
 
     private void Update()
     {
-        userAction.TakeActionOnKeyPress();
+        if(!_sceneController.IsOnMozartHeroScene())
+            userAction.TakeActionOnKeyPress();
+        else if (_sceneController.IsOnMozartHeroScene())
+        {
+            // mozart hero
+        }
+    }
+
+    private void UpdateIfNeed()
+    {
+        // change settings for mozart hero scene
     }
 }

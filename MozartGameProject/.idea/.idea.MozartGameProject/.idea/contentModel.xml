@@ -65,6 +65,9 @@
           <e p="MainMenuUI" t="Include">
             <e p="MenuUIController.cs" t="Include" />
           </e>
+          <e p="MozartHero" t="Include">
+            <e p="OnSceneLoad.cs" t="Include" />
+          </e>
           <e p="PianoSceneScripts" t="Include">
             <e p="KeyboardController.cs" t="Include" />
             <e p="NoteActivated.cs" t="Include" />

@@ -94,6 +94,12 @@ public class UserInteractListener : MonoBehaviour
             
             Debug.Log("Leave Dungeon");
         }
+        else if (_sceneController.IsOnAdventureScene() && EndCurrentLevelBehaviour.CanPlayerChangeScene())
+        {
+            //TODO check wtf with load scene it fails
+            _sceneController.SetNewScene();
+            Debug.Log("Mozart hero");
+        }
         else if (_sceneController.IsOnAdventureScene())
         {
             Debug.Log("Use item");

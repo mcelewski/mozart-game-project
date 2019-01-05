@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 296043024}
   - component: {fileID: 296043026}
   m_Layer: 0
-  m_Name: PianoKeyboard
+  m_Name: MozartHero
   m_TagString: MozartHero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1095,6 +1095,11 @@ Prefab:
       propertyPath: _spawnController
       value: 
       objectReference: {fileID: 1074431172}
+    - target: {fileID: 114732739109499752, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 2}
+      propertyPath: _sceneController
+      value: 
+      objectReference: {fileID: 1670136476}
     m_RemovedComponents:
     - {fileID: 114317854584550762, guid: 995c7afe758adf144b27261fb77b8e55, type: 2}
     - {fileID: 114990230490912844, guid: 995c7afe758adf144b27261fb77b8e55, type: 2}
@@ -1353,6 +1358,10 @@ Prefab:
     - target: {fileID: 1534069345651942, guid: ca085bd9d15912842a73b281576e550d, type: 2}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418969354895952, guid: ca085bd9d15912842a73b281576e550d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca085bd9d15912842a73b281576e550d, type: 2}
