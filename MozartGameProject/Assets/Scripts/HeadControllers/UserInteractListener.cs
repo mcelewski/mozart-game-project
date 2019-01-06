@@ -104,13 +104,11 @@ public class UserInteractListener : MonoBehaviour
         {
             Debug.Log("Use item");
         }
-
     }
 
     private void MoveLeft()
     {
-        
-        if (!LadderObj.AllowUseLadder())
+        if (!LowerLadder.DenyTurn())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime; 
             player.GetComponent<SpriteRenderer>().flipX = false;
@@ -118,11 +116,10 @@ public class UserInteractListener : MonoBehaviour
     }
     private void MoveRight()
     {
-        player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
-        player.GetComponent<SpriteRenderer>().flipX = true;
-        if (!LadderObj.AllowUseLadder())
+        if (!LowerLadder.DenyTurn())
         {
-            
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
+            player.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
     private void ClimbUp()
@@ -135,8 +132,8 @@ public class UserInteractListener : MonoBehaviour
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
         }
-        
     }
+    
     private void ClimbDown()
     {
         if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
@@ -147,7 +144,6 @@ public class UserInteractListener : MonoBehaviour
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
         }
-        
     }
 
     private void Jump()
