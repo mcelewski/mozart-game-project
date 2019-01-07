@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndCurrentLevelBehaviour : MonoBehaviour 
 {
-    //TODO autosave, show summary level, open keyboard scene
+    //TODO autosave, show summary level
     private static bool endScene;
     
     private void OnTriggerEnter2D(Collider2D other)

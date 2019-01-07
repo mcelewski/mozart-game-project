@@ -13,7 +13,8 @@ public class SceneMovementController : MonoBehaviour
         Adventure,
         HiddenObjects,
         MozartHero,
-        Paused
+        Paused,
+        Puzzle
     }
     
     private static string sceneToGoAfterEPress;
@@ -62,6 +63,10 @@ public class SceneMovementController : MonoBehaviour
         else if (sceneInfo.CompareTag("MozartHero"))
         {
             currentScene = ScenesInGame.MozartHero;
+        }
+        else if (sceneInfo.CompareTag("Puzzle"))
+        {
+            currentScene = ScenesInGame.Puzzle;
         }
     }
 
@@ -113,13 +118,10 @@ public class SceneMovementController : MonoBehaviour
         {
             sceneToGo = ScenesInGame.MozartHero;
         }
-    }
-    /// <summary>
-    /// Default setting: SceneInGame = Adventure, sceneToGoAfterEPress = "Adventure"
-    /// </summary>
-    private static void DefaultSceneInfo()
-    {
-        sceneToGoAfterEPress = "Adventure";
+        else if (sceneInfo.CompareTag("Puzzle"))
+        {
+            currentScene = ScenesInGame.Puzzle;
+        }
     }
     #region Check currnetly loaded scene type
 
@@ -156,12 +158,17 @@ public class SceneMovementController : MonoBehaviour
     /// <returns>True if is playing, otherwise false</returns>
     public bool IsOnAdventureScene()
     {
-        if (currentScene == ScenesInGame.Adventure)
-            return true;
-        else
-            return false;
+        return currentScene == ScenesInGame.Adventure ? true : false;
     }
 
-    //TODO puzzle
+    /// <summary>
+    /// Check current playing scene
+    /// </summary>
+    /// <returns>True if is playing, otherwise false</returns>
+    public bool IsOnPuzzleScene()
+    {
+        return currentScene == ScenesInGame.Puzzle ? true : false;
+    }
+
     #endregion
 }

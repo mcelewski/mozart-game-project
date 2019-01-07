@@ -70,7 +70,6 @@ public class MenuUIController : MonoBehaviour
     public void OnStart()
     {
         DisableMenu();
-        CameraBehaviour.SetGameCamera = true;
     }
     
     public void OnStory()
@@ -98,15 +97,15 @@ public class MenuUIController : MonoBehaviour
     {
         var resumeText = startBtn.GetComponentInChildren<Text>();
         
+        SceneMovementController.currentScene = SceneMovementController.ScenesInGame.Paused;
         resumeText.text = resume;
-        CameraBehaviour.SetGameCamera = false;
         menuUI.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void DisableMenu()
     {
         menuUI.SetActive(false);
-        CameraBehaviour.SetGameCamera = true;
         Time.timeScale = 1;
     }
 }

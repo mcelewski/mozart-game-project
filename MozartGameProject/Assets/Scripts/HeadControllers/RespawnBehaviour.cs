@@ -30,6 +30,9 @@ public class RespawnBehaviour : MonoBehaviour
 		var respawnObj = new GameObject("RespawnAfterDungeon");
 		respawnObj.transform.position = new Vector3(player.transform.position.x + 2, player.transform.position.y, player.transform.position.z);
 		respawnObj.tag = "Adventure";
+		respawnObj.AddComponent<CircleCollider2D>().isTrigger = true;
+		respawnObj.AddComponent<ActualSceneBehaviour>();
+		
 		
 		if (SceneMovementController.currentScene != SceneMovementController.ScenesInGame.Adventure)
 		{
@@ -40,9 +43,12 @@ public class RespawnBehaviour : MonoBehaviour
 
 	public IEnumerator DeactivateSpawn()
 	{
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(3f);
 		_respawn.gameObject.SetActive(false);
-		Destroy(_respawn.gameObject);
+		if (_respawn != null) 
+		{
+			Destroy(_respawn.gameObject);
+		}
 	}
 
 	public void SetRespawnTransform(Transform resp)

@@ -11,7 +11,6 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class UserInteractListener : MonoBehaviour
 {
-    //TODO Keyboard input for all scenes including pause menu
     public GameObject player;
     public GameObject MainMenuUI;
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
@@ -29,10 +28,10 @@ public class UserInteractListener : MonoBehaviour
     public void TakeActionOnKeyPress()
     {
         SetMozartRigidbody();
-        Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
-       // Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
-       // Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
-        Debug.Log("Current scene: " + SceneMovementController.currentScene);
+        //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
+        //Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
+        //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
+        //Debug.Log("Current scene: " + SceneMovementController.currentScene);
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
             if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene())
@@ -62,8 +61,6 @@ public class UserInteractListener : MonoBehaviour
         if (!_sceneController.IsPaused())
         {
             MainMenuUI.GetComponent<MenuUIController>().EnableMenu();
-            Time.timeScale = 0;
-            SceneMovementController.currentScene = SceneMovementController.ScenesInGame.Paused;
         }
     }
 
