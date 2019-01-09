@@ -17,6 +17,7 @@ public class MenuUIController : MonoBehaviour
      * Get all UI objects
      */
     public GameObject menuUI;
+    public GameObject gameplayUI;
     public Button startBtn;
     public Button storyBtn;
     public Button howtoBtn;
@@ -34,6 +35,7 @@ public class MenuUIController : MonoBehaviour
     private void Start()
     {
         MenuDefaultSetting();
+        //TODO fix start game
     }
     
     private void CheckUIPanelState()
@@ -44,6 +46,17 @@ public class MenuUIController : MonoBehaviour
             howToUI.SetActive(false);
         }
     }
+
+    private void DeactivePlayerUI()
+    {
+        gameplayUI.SetActive(false);
+    }
+
+    private void ActivatePlayerUI()
+    {
+        gameplayUI.SetActive(true);
+    }
+
     private void SetExitBtnText(bool leaveGame)
     {
         var btnText = leaveBtn.GetComponentInChildren<Text>();
@@ -57,6 +70,7 @@ public class MenuUIController : MonoBehaviour
     private void MenuDefaultSetting()
     {
         CheckUIPanelState();
+        DeactivePlayerUI();
         SetExitBtnText(true);
     }
 
@@ -98,17 +112,19 @@ public class MenuUIController : MonoBehaviour
     public void EnableMenu()
     {
         var resumeText = startBtn.GetComponentInChildren<Text>();
-        
-        SceneMovementController.currentScene = SceneMovementController.ScenesInGame.Paused;
+
         resumeText.text = resume;
         menuUI.SetActive(true);
+        DeactivePlayerUI();
         Time.timeScale = 0;
     }
 
     public void DisableMenu()
     {
         menuUI.SetActive(false);
+        ActivatePlayerUI();
         Time.timeScale = 1;
         healthBar.SetBar();
     }
+    
 }

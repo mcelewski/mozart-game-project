@@ -7,6 +7,7 @@ public class HealthBarBehaviour : MonoBehaviour
     public float hpTimer;
     public float maxTime;
     public bool beginPoison = false;
+    public HealthInfoChange infoChange;
 
     public void SetBar()
     {
@@ -35,6 +36,7 @@ public class HealthBarBehaviour : MonoBehaviour
         if (beginPoison && hpTimer > 0)
         {
             hpTimer -= Time.deltaTime;
+            infoChange.SetHeart(hpTimer);
         }
     }
 

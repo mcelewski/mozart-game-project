@@ -34,9 +34,24 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4999993251471092}
-  - component: {fileID: 114990230490912844}
   m_Layer: 0
   m_Name: ControllerSetUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1628804728031408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4505986924874464}
+  - component: {fileID: 114567938948568586}
+  m_Layer: 0
+  m_Name: HealthController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,9 +65,25 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4461421392056944}
-  - component: {fileID: 114317854584550762}
+  - component: {fileID: 114743814592088018}
   m_Layer: 0
   m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1917114764956560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4718291710123458}
+  - component: {fileID: 114951119738537814}
+  m_Layer: 0
+  m_Name: SpawnController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,6 +148,19 @@ Transform:
   m_Father: {fileID: 4906725820751726}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4505986924874464
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1628804728031408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4906725820751726}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4552966088330792
 Transform:
   m_ObjectHideFlags: 1
@@ -129,6 +173,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4906725820751726}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4718291710123458
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917114764956560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4906725820751726}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4906725820751726
 Transform:
@@ -144,6 +201,8 @@ Transform:
   - {fileID: 4084332523334186}
   - {fileID: 4999993251471092}
   - {fileID: 4461421392056944}
+  - {fileID: 4718291710123458}
+  - {fileID: 4505986924874464}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -173,18 +232,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   MainMenuUI: {fileID: 1967757319178446}
-  hiddenSceneSpawnPref: {fileID: 0}
---- !u!114 &114317854584550762
+  _sceneController: {fileID: 114743814592088018}
+  _spawnController: {fileID: 114951119738537814}
+--- !u!114 &114567938948568586
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1777907320795974}
+  m_GameObject: {fileID: 1628804728031408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82c8e8624c2e26a478a8ad83be3aa189, type: 3}
+  m_Script: {fileID: 11500000, guid: c9ca09d59db8ccd41b2ae57a3538ef39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthStatus:
+  - {fileID: 21300000, guid: 33d95eb1e26030043ac3dd64a6a7ceb8, type: 3}
+  - {fileID: 21300000, guid: f6647105ca728764da514374e6cd63b7, type: 3}
+  - {fileID: 21300000, guid: 22e616c5d7eec414493f76165283163f, type: 3}
+  - {fileID: 21300000, guid: 2e1b492507bd95449994bd771e29c1ef, type: 3}
+  - {fileID: 21300000, guid: 69f0a204020da4c4f840d66e8d533502, type: 3}
+  - {fileID: 21300000, guid: 0b639319e3595f44eb552e6d40cda15a, type: 3}
 --- !u!114 &114727915742015070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,12 +264,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuUI: {fileID: 0}
+  gameplayUI: {fileID: 0}
+  player: {fileID: 0}
   startBtn: {fileID: 0}
   storyBtn: {fileID: 0}
   howtoBtn: {fileID: 0}
   leaveBtn: {fileID: 0}
   storyUI: {fileID: 0}
   howToUI: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!114 &114732739109499752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,14 +285,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userAction: {fileID: 114107235287919224}
---- !u!114 &114990230490912844
+  sceneController: {fileID: 114743814592088018}
+  healthBar: {fileID: 0}
+--- !u!114 &114743814592088018
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544253242666926}
+  m_GameObject: {fileID: 1777907320795974}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 377082d19b561b1479590c5b8e7f5846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114951119738537814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917114764956560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a463a81e5a093240a50ae5ad905300f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  _respawn: {fileID: 0}
+  hiddenSceneSpawnPref: {fileID: 0}

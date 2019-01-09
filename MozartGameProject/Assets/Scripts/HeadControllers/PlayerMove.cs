@@ -16,12 +16,12 @@ public class PlayerMove : MonoBehaviour
     //TODO Keyboard input for all scenes including pause menu
     private void Update()
     {
-        if (!sceneController.IsOnMozartHeroScene())
+        if (!sceneController.IsOnMozartHeroScene() && !sceneController.IsPaused())
         {
             userAction.TakeActionOnKeyPress();
             healthBar.CheckPoison();
         }
-        else if (sceneController.IsOnMozartHeroScene())
+        else if (sceneController.IsOnMozartHeroScene() && !sceneController.IsPaused())
         {
             // mozart hero
         }

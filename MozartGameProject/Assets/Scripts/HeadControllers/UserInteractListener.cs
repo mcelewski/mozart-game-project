@@ -18,7 +18,7 @@ public class UserInteractListener : MonoBehaviour
     public RespawnBehaviour _spawnController;
     
     private float mainSpeed = 5f;
-    private float jumpHeigh = 40;
+    private float jumpHeigh = 20f;
     
     private void Awake()
     {
@@ -31,7 +31,7 @@ public class UserInteractListener : MonoBehaviour
         //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
         //Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
         //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
-        //Debug.Log("Current scene: " + SceneMovementController.currentScene);
+        Debug.Log("Current scene: " + SceneMovementController.currentScene);
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
             if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene())
