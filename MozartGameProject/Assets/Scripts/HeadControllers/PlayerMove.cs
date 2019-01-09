@@ -11,13 +11,17 @@ using UnityEngine.Experimental.UIElements;
 public class PlayerMove : MonoBehaviour
 {
     public UserInteractListener userAction;
-    public SceneMovementController _sceneController;
+    public SceneMovementController sceneController;
+    public HealthBarBehaviour healthBar;
     //TODO Keyboard input for all scenes including pause menu
     private void Update()
     {
-        if(!_sceneController.IsOnMozartHeroScene())
+        if (!sceneController.IsOnMozartHeroScene())
+        {
             userAction.TakeActionOnKeyPress();
-        else if (_sceneController.IsOnMozartHeroScene())
+            healthBar.CheckPoison();
+        }
+        else if (sceneController.IsOnMozartHeroScene())
         {
             // mozart hero
         }
