@@ -19,6 +19,8 @@ public class UserInteractListener : MonoBehaviour
     
     private float mainSpeed = 5f;
     private float jumpHeigh = 20f;
+
+    private static bool pickUp;
     
     private void Awake()
     {
@@ -31,7 +33,7 @@ public class UserInteractListener : MonoBehaviour
         //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
         //Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
         //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
-        Debug.Log("Current scene: " + SceneMovementController.currentScene);
+        //Debug.Log("Current scene: " + SceneMovementController.currentScene);
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
             if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene())
@@ -101,6 +103,10 @@ public class UserInteractListener : MonoBehaviour
         {
             Debug.Log("Use item");
         }
+        else if(pickUp && _sceneController.IsOnAdventureScene())
+        {
+            Debug.Log("Pick up to inventory");
+        }
     }
 
     private void MoveLeft()
@@ -164,5 +170,10 @@ public class UserInteractListener : MonoBehaviour
         {
             rb.gravityScale = 1;
         }
+    }
+
+    public static void AllowToPickUp(bool allow)
+    {
+        pickUp = allow;
     }
 }

@@ -43,12 +43,15 @@
             <e p="PlatformBehaviour.cs" t="Include" />
           </e>
           <e p="GameplayUI" t="Include">
+            <e p="AllowToAddInInventory.cs" t="Include" />
             <e p="HealthBarBehaviour.cs" t="Include" />
             <e p="HealthInfoChange.cs" t="Include" />
+            <e p="InventorySpace.cs" t="Include" />
             <e p="ScoreBehaviour.cs" t="Include" />
           </e>
           <e p="General" t="Include">
             <e p="ActualSceneBehaviour.cs" t="Include" />
+            <e p="AllowToPickUpItem.cs" t="Include" />
             <e p="GenerateOnAllScenes.cs" t="Include" />
             <e p="HoldSceneLocation.cs" t="Include" />
             <e p="NesSceneSpawnBehaviour.cs" t="Include" />

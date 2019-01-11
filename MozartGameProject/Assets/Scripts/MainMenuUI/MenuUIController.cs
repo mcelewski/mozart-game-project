@@ -25,8 +25,6 @@ public class MenuUIController : MonoBehaviour
     public GameObject storyUI;
     public GameObject howToUI;
 
-    public HealthBarBehaviour healthBar;
-
     private string leave = "Leave";
     private string back = "Back";
     private string resume = "Resume";
@@ -86,7 +84,6 @@ public class MenuUIController : MonoBehaviour
     public void OnStart()
     {
         DisableMenu();
-        healthBar.SetBar();
     }
     
     public void OnStory()

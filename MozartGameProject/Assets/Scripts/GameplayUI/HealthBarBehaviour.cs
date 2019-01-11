@@ -10,11 +10,9 @@ public class HealthBarBehaviour : MonoBehaviour
     public bool beginPoison = false;
     public HealthInfoChange infoChange;
 
-    public void SetBar()
+    private void Start()
     {
-        SetMaxTime();
-        ReSetTimer();
-        StartCoroutine(ReadyToPoison());
+        SetBar();
     }
     
     public void PausePoison()
@@ -60,6 +58,13 @@ public class HealthBarBehaviour : MonoBehaviour
         timeCalc = calc;
     }
 
+    void SetBar()
+    {
+        SetMaxTime();
+        ReSetTimer();
+        ReadyToPoison();
+    }
+    
     void SetMaxTime()
     {
         maxTime = PlayerHP.GetMaxHp();
@@ -70,10 +75,8 @@ public class HealthBarBehaviour : MonoBehaviour
         hpTimer = maxTime;
     }
 
-    IEnumerator ReadyToPoison()
+    void ReadyToPoison()
     {
-        yield return new WaitForSeconds(3f);
-
         beginPoison = true;
     }
 }
