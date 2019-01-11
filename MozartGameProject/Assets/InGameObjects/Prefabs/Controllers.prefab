@@ -252,6 +252,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2e1b492507bd95449994bd771e29c1ef, type: 3}
   - {fileID: 21300000, guid: 69f0a204020da4c4f840d66e8d533502, type: 3}
   - {fileID: 21300000, guid: 0b639319e3595f44eb552e6d40cda15a, type: 3}
+  healthHearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114727915742015070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,7 +271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuUI: {fileID: 0}
   gameplayUI: {fileID: 0}
-  player: {fileID: 0}
   startBtn: {fileID: 0}
   storyBtn: {fileID: 0}
   howtoBtn: {fileID: 0}
