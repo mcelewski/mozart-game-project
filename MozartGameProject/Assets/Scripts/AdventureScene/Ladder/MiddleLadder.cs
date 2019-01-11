@@ -10,7 +10,7 @@ public class MiddleLadder : MonoBehaviour
 		if (other.CompareTag("Player"))
 			activateMiddle = true;
 		LowerLadder.UpdateIfNeed();
-		Debug.Log("Middle active");
+		//Debug.Log("Middle active");
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
@@ -18,7 +18,7 @@ public class MiddleLadder : MonoBehaviour
 		if (other.CompareTag("Player"))
 			activateMiddle = false;
 		LowerLadder.UpdateIfNeed();
-		Debug.Log("Middle unactive");
+		//Debug.Log("Middle unactive");
 	}
 
 	public static bool GetActivateStatus()

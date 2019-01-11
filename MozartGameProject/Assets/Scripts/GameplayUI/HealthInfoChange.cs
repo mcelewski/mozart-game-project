@@ -10,8 +10,6 @@ public class HealthInfoChange : MonoBehaviour
     /// </summary>
     public Sprite[] healthStatus = new Sprite[6];
     public List<GameObject> healthHearts = new List<GameObject>();
-    private int statIndex = 0;
-    private float newTime = 100f;
 
     private static int index;
     

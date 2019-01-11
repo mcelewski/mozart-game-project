@@ -12,7 +12,7 @@ public class LowerLadder : MonoBehaviour
         if (other.CompareTag("Player"))
             activateLower = true;
         UpdateIfNeed();
-        Debug.Log("Lower active");
+        //Debug.Log("Lower active");
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -20,7 +20,7 @@ public class LowerLadder : MonoBehaviour
         if (other.CompareTag("Player"))
             activateLower = false;
         UpdateIfNeed();
-        Debug.Log("Lower unactive");
+        //Debug.Log("Lower unactive");
     }
 
     public static void UpdateIfNeed()

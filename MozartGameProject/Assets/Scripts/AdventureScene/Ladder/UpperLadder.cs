@@ -10,7 +10,7 @@ public class UpperLadder : MonoBehaviour
         if (other.CompareTag("Player"))
             activateUpper = true;
         LowerLadder.UpdateIfNeed();
-        Debug.Log("Upper active");
+        //Debug.Log("Upper active");
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -18,7 +18,7 @@ public class UpperLadder : MonoBehaviour
         if (other.CompareTag("Player"))
             activateUpper = false;
         LowerLadder.UpdateIfNeed();
-        Debug.Log("Upper unactive");
+        //Debug.Log("Upper unactive");
     }
 
     public static bool GetActivateStatus()

@@ -86,6 +86,7 @@ public class MenuUIController : MonoBehaviour
     public void OnStart()
     {
         DisableMenu();
+        healthBar.SetBar();
     }
     
     public void OnStory()
@@ -124,7 +125,6 @@ public class MenuUIController : MonoBehaviour
         menuUI.SetActive(false);
         ActivatePlayerUI();
         Time.timeScale = 1;
-        healthBar.SetBar();
     }
     
 }

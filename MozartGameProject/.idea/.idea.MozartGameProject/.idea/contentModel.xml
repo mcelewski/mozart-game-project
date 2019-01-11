@@ -39,11 +39,13 @@
               <e p="MiddleLadder.cs" t="Include" />
               <e p="UpperLadder.cs" t="Include" />
             </e>
+            <e p="NoteToCollectBehaviour.cs" t="Include" />
             <e p="PlatformBehaviour.cs" t="Include" />
           </e>
           <e p="GameplayUI" t="Include">
             <e p="HealthBarBehaviour.cs" t="Include" />
             <e p="HealthInfoChange.cs" t="Include" />
+            <e p="ScoreBehaviour.cs" t="Include" />
           </e>
           <e p="General" t="Include">
             <e p="ActualSceneBehaviour.cs" t="Include" />
@@ -58,7 +60,6 @@
           </e>
           <e p="HeadControllers" t="Include">
             <e p="CameraBehaviour.cs" t="Include" />
-            <e p="GameScenesEventsArgs.cs" t="Include" />
             <e p="PlayerGroudDetection.cs" t="Include" />
             <e p="PlayerHP.cs" t="Include" />
             <e p="PlayerMove.cs" t="Include" />
