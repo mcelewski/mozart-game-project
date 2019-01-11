@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HealthBarBehaviour : MonoBehaviour
 {
-    public float hpTimer;
+    public float hpTimer = .1f;
     public float maxTime;
+    public float timeCalc = 1f;
     public bool beginPoison = false;
     public HealthInfoChange infoChange;
 
@@ -35,9 +36,28 @@ public class HealthBarBehaviour : MonoBehaviour
     {
         if (beginPoison && hpTimer > 0)
         {
-            hpTimer -= Time.deltaTime;
+            hpTimer -= Time.deltaTime / timeCalc;
             infoChange.SetHeart(hpTimer);
         }
+    }
+    
+    public void BonusTime(float xTime)
+    {
+        hpTimer += xTime;
+    }
+    
+    public void DecrementTime(float xTime)
+    {
+        hpTimer -= xTime;
+    }
+
+    /// <summary>
+    /// Decrease speed of timeleft
+    /// </summary>
+    /// <param name="calc"></param>
+    public void SetCalcTime(float calc)
+    {
+        timeCalc = calc;
     }
 
     void SetMaxTime()
@@ -49,7 +69,7 @@ public class HealthBarBehaviour : MonoBehaviour
     {
         hpTimer = maxTime;
     }
-    
+
     IEnumerator ReadyToPoison()
     {
         yield return new WaitForSeconds(3f);
