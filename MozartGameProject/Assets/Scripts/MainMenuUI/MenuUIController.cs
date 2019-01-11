@@ -33,7 +33,6 @@ public class MenuUIController : MonoBehaviour
     private void Start()
     {
         MenuDefaultSetting();
-        //TODO fix start game
     }
     
     private void CheckUIPanelState()

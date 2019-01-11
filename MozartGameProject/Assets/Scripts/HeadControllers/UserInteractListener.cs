@@ -14,13 +14,13 @@ public class UserInteractListener : MonoBehaviour
     public GameObject player;
     public GameObject MainMenuUI;
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
+    
     public SceneMovementController _sceneController;
     public RespawnBehaviour _spawnController;
+    public InventorySpace _inventory;
     
     private float mainSpeed = 5f;
     private float jumpHeigh = 20f;
-
-    private static bool pickUp;
     
     private void Awake()
     {
@@ -95,17 +95,17 @@ public class UserInteractListener : MonoBehaviour
         }
         else if (_sceneController.IsOnAdventureScene() && EndCurrentLevelBehaviour.CanPlayerChangeScene())
         {
-            //TODO check wtf with load scene it fails
             _sceneController.SetNewScene();
             Debug.Log("Mozart hero");
+        }
+        else if(AllowToPickUpItem.AllowToPickUp() && _sceneController.IsOnAdventureScene())
+        {
+            _inventory.AddToInventory();
+            Debug.Log("Pick up to inventory");
         }
         else if (_sceneController.IsOnAdventureScene())
         {
             Debug.Log("Use item");
-        }
-        else if(pickUp && _sceneController.IsOnAdventureScene())
-        {
-            Debug.Log("Pick up to inventory");
         }
     }
 
@@ -170,10 +170,5 @@ public class UserInteractListener : MonoBehaviour
         {
             rb.gravityScale = 1;
         }
-    }
-
-    public static void AllowToPickUp(bool allow)
-    {
-        pickUp = allow;
     }
 }

@@ -20,6 +20,7 @@ public class SceneMovementController : MonoBehaviour
     private static string sceneToGoAfterEPress;
     private static string lastLoadedScene;
     public static ScenesInGame currentScene, sceneToGo;
+    private Scene sceneLoaded;
     
     /// <summary>
     /// Set up scene info to load
@@ -43,7 +44,10 @@ public class SceneMovementController : MonoBehaviour
     public IEnumerator UnloadScene()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.UnloadSceneAsync(lastLoadedScene);
+        if (sceneLoaded.isLoaded)
+        {
+            SceneManager.UnloadSceneAsync(lastLoadedScene);
+        }
     }
     
     /// <summary>
@@ -72,8 +76,12 @@ public class SceneMovementController : MonoBehaviour
 
     private void LoadScene()
     {
-        SceneManager.LoadSceneAsync(sceneToGoAfterEPress, LoadSceneMode.Additive);
+        if (sceneToGoAfterEPress.Length > 6)
+        {
+            SceneManager.LoadSceneAsync(sceneToGoAfterEPress, LoadSceneMode.Additive);
+        }
         lastLoadedScene = sceneToGoAfterEPress;
+        sceneLoaded = SceneManager.GetSceneByName(lastLoadedScene);
     }
     
     public void BackToDefaultScene()
