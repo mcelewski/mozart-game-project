@@ -1673,6 +1673,11 @@ Prefab:
       propertyPath: healthHearts.Array.data[4]
       value: 
       objectReference: {fileID: 1729706981}
+    - target: {fileID: 114107235287919224, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1357015160}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 995c7afe758adf144b27261fb77b8e55, type: 2}
   m_IsPrefabAsset: 0

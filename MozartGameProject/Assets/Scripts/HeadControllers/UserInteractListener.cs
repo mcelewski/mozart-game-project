@@ -14,17 +14,24 @@ public class UserInteractListener : MonoBehaviour
     public GameObject player;
     public GameObject MainMenuUI;
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
-    
+    public Animator animator;
+
     public SceneMovementController _sceneController;
     public RespawnBehaviour _spawnController;
     public InventorySpace _inventory;
-    
-    private float mainSpeed = 5f;
-    private float jumpHeigh = 20f;
+
+    private float idleSpeed = 0.0f;
+    private float mainSpeed = 5.0f;
+    private float jumpHeigh = 20.0f;
     
     private void Awake()
     {
         SetActionsToDictionary();
+    }
+
+    private void Update()
+    {
+        animator.SetFloat("Speed", Mathf.Abs(idleSpeed));
     }
 
     public void TakeActionOnKeyPress()
