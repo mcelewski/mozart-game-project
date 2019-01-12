@@ -13,6 +13,16 @@ public class PlayerMove : MonoBehaviour
     public UserInteractListener userAction;
     public SceneMovementController sceneController;
     public HealthBarBehaviour healthBar;
+    
+    public static PlayerStates currentPlayerAction = PlayerStates.Idle;
+    
+    public enum PlayerStates
+    {
+        Idle,
+        Walking,
+        Jumping,
+        Climbing
+    }
     //TODO Keyboard input for all scenes including pause menu
     private void Update()
     {

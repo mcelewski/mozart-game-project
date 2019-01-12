@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.SceneManagement;
 
 /// <summary>
@@ -20,18 +21,12 @@ public class UserInteractListener : MonoBehaviour
     public RespawnBehaviour _spawnController;
     public InventorySpace _inventory;
 
-    private float idleSpeed = 0.0f;
     private float mainSpeed = 5.0f;
     private float jumpHeigh = 20.0f;
     
     private void Awake()
     {
         SetActionsToDictionary();
-    }
-
-    private void Update()
-    {
-        animator.SetFloat("Speed", Mathf.Abs(idleSpeed));
     }
 
     public void TakeActionOnKeyPress()
@@ -47,6 +42,23 @@ public class UserInteractListener : MonoBehaviour
             {
                 ActionsDictionary[key].Invoke();
             }
+            else if (Input.GetKeyUp(key) && PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Walking)
+            {
+                EndMovingAnimation();
+                PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Idle;
+            }
+            else if (Input.GetKeyUp(key) && PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Jumping)
+            {
+                EndJumpingAnimation();
+                PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Idle;
+            }
+            else if (Input.GetKeyUp(key) && PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Climbing)
+            {
+                EndClimbingAnimation();
+                PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Idle;
+            }
+            
+            PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Idle;
         }
     }
     
@@ -120,8 +132,10 @@ public class UserInteractListener : MonoBehaviour
     {
         if (!LowerLadder.DenyTurn())
         {
-            player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime; 
+            player.GetComponent<Rigidbody2D>().transform.position += Vector3.left * mainSpeed * Time.deltaTime;
             player.GetComponent<SpriteRenderer>().flipX = false;
+            PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Walking;
+            StartMovingAnimation();
         }
     }
     private void MoveRight()
@@ -130,13 +144,18 @@ public class UserInteractListener : MonoBehaviour
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.right * mainSpeed * Time.deltaTime;
             player.GetComponent<SpriteRenderer>().flipX = true;
+            PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Walking;
+            StartMovingAnimation();
         }
+        
     }
     private void ClimbUp()
     {
         if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.up * mainSpeed * Time.deltaTime;
+            PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Climbing;
+            StartClimbingAnimation();
         }
         else if (_sceneController.IsOnHiddenObjectsScene())
         {
@@ -149,6 +168,8 @@ public class UserInteractListener : MonoBehaviour
         if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
         {
             player.GetComponent<Rigidbody2D>().transform.position += Vector3.down * mainSpeed * Time.deltaTime;
+            PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Climbing;
+            StartClimbingAnimation();
         }
         else if (_sceneController.IsOnHiddenObjectsScene())
         {
@@ -161,6 +182,8 @@ public class UserInteractListener : MonoBehaviour
         if (!_sceneController.IsOnMozartHeroScene() && !_sceneController.IsOnHiddenObjectsScene() && PlayerGroudDetection.IsGrounded())
         {
             player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,jumpHeigh * mainSpeed * Time.deltaTime,0) ;
+            PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Jumping;
+            StartJumpingAnimation();
         }
     }
 
@@ -178,4 +201,63 @@ public class UserInteractListener : MonoBehaviour
             rb.gravityScale = 1;
         }
     }
+
+    #region Moving animations
+    
+    private void EndMovingAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Mozart_walk"))
+        {
+            animator.ResetTrigger("Mozart_Move");
+        }
+    }
+
+    private void StartMovingAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Mozart_idle"))
+        {
+            animator.SetTrigger("Mozart_Move");
+        }
+    }
+    #endregion
+
+    #region Jumping animations
+
+    private void EndJumpingAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Mozart_jump"))
+        {
+            animator.ResetTrigger("Mozart_Jump");
+        }
+    }
+
+    private void StartJumpingAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Mozart_idle"))
+        {
+            animator.SetTrigger("Mozart_Jump");
+        }
+    }
+
+    #endregion
+    
+    #region Climbing animations
+
+    private void EndClimbingAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Mozart_climbing"))
+        {
+            animator.ResetTrigger("Mozart_Climb");
+        }
+    }
+
+    private void StartClimbingAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Mozart_idle"))
+        {
+            animator.SetTrigger("Mozart_Climb");
+        }
+    }
+
+    #endregion
 }

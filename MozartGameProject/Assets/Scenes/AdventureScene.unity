@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -213,79 +213,6 @@ Prefab:
     - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 50238902179761940, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 50238902179761940, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 61411839070530884, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 61411839070530884, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 70830515999841652, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 70830515999841652, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 70830515999841652, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1941976725149842, guid: 55681429a3639c74580172b6049dcec4, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212620828635692446, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2b26e9f659e4e34458772bf5396396bb,
-        type: 3}
-    - target: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 70830515999841652, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 70830515999841652, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 61411839070530884, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 61411839070530884, guid: 55681429a3639c74580172b6049dcec4,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55681429a3639c74580172b6049dcec4, type: 2}
@@ -1348,52 +1275,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4833893606013136, guid: 55681429a3639c74580172b6049dcec4,
     type: 2}
   m_PrefabInternal: {fileID: 106299618}
---- !u!114 &1357015157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357015155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76e6458c7572c81418d7281bc87b8636, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundCollider: {fileID: 1357015158}
---- !u!61 &1357015158 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 61411839070530884, guid: 55681429a3639c74580172b6049dcec4,
+--- !u!95 &1357015160 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95213837100533890, guid: 55681429a3639c74580172b6049dcec4,
     type: 2}
   m_PrefabInternal: {fileID: 106299618}
---- !u!114 &1357015159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357015155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4ec107ae30796c4690937f3ccd01614, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &1357015160
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357015155}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 92de2dfc99c6eb349afdf8070b66b0f5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1417152432 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114638521271705860, guid: dbb1d38e0f6db064b9f81510de751155,
