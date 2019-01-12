@@ -11,24 +11,30 @@ public class InventorySpace : MonoBehaviour
 
     public void AddToInventory(int itemId)
     {
-        Debug.Log("slot to add in : " + SearchFreeSlot());
-        PushToInventory(SearchFreeSlot(),itemId);
+        StartCoroutine(PushToInventory(SearchFreeSlot(), itemId));
     }
 
     int SearchFreeSlot()
     {
         int slotnum = 0;
-        
-        var freeslot = slots.First(x => !x.activeSelf);
-        slotnum = freeslot.GetComponent<SlotBehaviour>().GetSlotNumber();
 
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (!slots[i].activeSelf)
+            {
+                slotnum = i;
+                break;
+            }
+        }
         return slotnum;
     }
 
-    void PushToInventory(int index, int itemId)
+    IEnumerator PushToInventory(int index, int itemId)
     {
-        Debug.Log("index, " + index + " item ID: " + itemId);
-        slots[index-1].SetActive(true);
+        yield return new WaitForSeconds(.5f);
+        
+        Debug.Log("inventory slot, " + index + " item ID: " + itemId);
+        slots[index].SetActive(true);
         // change image to image id
     }
 }
