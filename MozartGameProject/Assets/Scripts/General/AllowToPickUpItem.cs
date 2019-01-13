@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AllowToPickUpItem : MonoBehaviour
 {
-    public ItemsID idItem;
+    [SerializeField] ItemsID idItem;
     private static int itselfID;
     private static bool pickUp;
 
@@ -21,6 +21,7 @@ public class AllowToPickUpItem : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         //Debug.Log("Allow to pickup");
+        Debug.Log("item: " + itselfID);
         pickUp = true;
     }
 

@@ -11,7 +11,26 @@ public class PlayerAnimations : MonoBehaviour
 	private string _walkAnimation = "Mozart_walk";
 	private string _jumpAnimation = "Mozart_jump";
 	private string _inventoryAnimation = "Mozart_inventory";
+
+
+	#region Idle animations
+	public void EndIdleAnimation()
+	{
+		//animator.Play("Mozart_Idle");
+    }
+
+	public void StartIdleAnimation()
+	{
+		if (animator.GetCurrentAnimatorStateInfo(0).IsName(_jumpAnimation) ||
+		    animator.GetCurrentAnimatorStateInfo(0).IsName(_climbAnimation) ||
+		    animator.GetCurrentAnimatorStateInfo(0).IsName(_walkAnimation))
+		{
+			animator.Play("Mozart_idle");
+		}
+	}
 	
+
+	#endregion
 	#region Moving animations
     
 	public void EndMoveAnimation()

@@ -49,26 +49,31 @@ public class PlayerMove : MonoBehaviour
     {
         if (currentPlayerAction == PlayerStates.Idle)
         {
+            userAnimation.StartIdleAnimation();
             userAnimation.EndClimbAnimation();
             userAnimation.EndJumpAnimation();
             userAnimation.EndMoveAnimation();
-            userAnimation.EndTorchAnimation();
-            Debug.Log("endanim");
         }
         else if (currentPlayerAction == PlayerStates.Walking)
         {
             userAnimation.StartMoveAnimation();
-            Debug.Log("move");
+            userAnimation.EndJumpAnimation();
+            userAnimation.EndClimbAnimation();
+            userAnimation.EndIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Jumping)
         {
             userAnimation.StartJumpAnimation();
-            Debug.Log("jump");
+            userAnimation.EndMoveAnimation();
+            userAnimation.EndClimbAnimation();
+            userAnimation.EndIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Climbing)
         {
             userAnimation.StartClimbAnimation();
-            Debug.Log("climb");
+            userAnimation.EndIdleAnimation();
+            userAnimation.EndMoveAnimation();
+            userAnimation.EndTorchAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Torch)
         {

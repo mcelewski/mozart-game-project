@@ -18,7 +18,7 @@ public class InventorySpace : MonoBehaviour
     {
         int i = 0;
 
-        for (; i < slots.Count; i++)
+        for (; i < slots.Count-1; i++)
         {
             if (!slots[i].activeSelf)
             {
