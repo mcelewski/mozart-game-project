@@ -9,6 +9,7 @@ public class HealthInfoChange : MonoBehaviour
     /// Sprite (health status) holded in max -> min
     /// </summary>
     public Sprite[] healthStatus = new Sprite[6];
+    public Sprite[] poisonStatus = new Sprite[6];
     public List<GameObject> healthHearts = new List<GameObject>();
 
     private static int index;
@@ -75,6 +76,42 @@ public class HealthInfoChange : MonoBehaviour
         {
             //Debug.Log("empty");
             healt.sprite = healthStatus[5];
+        }
+    }
+    
+    void StatPoison(int index, float amount)
+    {
+        var healt = healthHearts.ElementAt(index).GetComponent<SpriteRenderer>();
+
+        if (IsHpFull(amount))
+        {
+            // Debug.Log("full");
+            healt.sprite = poisonStatus[0];
+        }
+        else if (IsHpAlmostFull(amount))
+        {
+            //Debug.Log("almost full");
+            healt.sprite = poisonStatus[1];
+        }
+        else if (IsHpCloseToHalf(amount))
+        {
+            //Debug.Log("close to half");
+            healt.sprite = poisonStatus[2];
+        }
+        else if (IsHpCloseToEmpty(amount))
+        {
+            //Debug.Log("close to empty");
+            healt.sprite = poisonStatus[3];
+        }
+        else if (IsHpAlmostEmpty(amount))
+        {
+            //Debug.Log("almost empty");
+            healt.sprite = poisonStatus[4];
+        }
+        else if (IsHpEmpty(amount))
+        {
+            //Debug.Log("empty");
+            healt.sprite = poisonStatus[5];
         }
     }
 

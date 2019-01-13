@@ -67,13 +67,22 @@
             <e p="OpenStream.cs" t="Include" />
           </e>
           <e p="HeadControllers" t="Include">
-            <e p="CameraBehaviour.cs" t="Include" />
-            <e p="PlayerGroudDetection.cs" t="Include" />
-            <e p="PlayerHP.cs" t="Include" />
-            <e p="PlayerMove.cs" t="Include" />
-            <e p="RespawnBehaviour.cs" t="Include" />
-            <e p="SceneMovementController.cs" t="Include" />
-            <e p="UserInteractListener.cs" t="Include" />
+            <e p="General" t="Include">
+              <e p="CameraBehaviour.cs" t="Include" />
+              <e p="PlayerHP.cs" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="PlayerAnimations.cs" t="Include" />
+              <e p="PlayerGroudDetection.cs" t="Include" />
+              <e p="PlayerMove.cs" t="Include" />
+              <e p="UserInteractListener.cs" t="Include" />
+            </e>
+            <e p="Scenes" t="Include">
+              <e p="SceneMovementController.cs" t="Include" />
+            </e>
+            <e p="Spawn" t="Include">
+              <e p="RespawnBehaviour.cs" t="Include" />
+            </e>
           </e>
           <e p="Holder" t="Include">
             <e p="ConvertMidiToStorage.cs" t="Include" />

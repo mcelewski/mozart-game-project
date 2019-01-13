@@ -16,17 +16,16 @@ public class InventorySpace : MonoBehaviour
 
     int SearchFreeSlot()
     {
-        int slotnum = 0;
+        int i = 0;
 
-        for (int i = 0; i < slots.Count; i++)
+        for (; i < slots.Count; i++)
         {
             if (!slots[i].activeSelf)
             {
-                slotnum = i;
                 break;
             }
         }
-        return slotnum;
+        return i;
     }
 
     IEnumerator PushToInventory(int index, int itemId)
