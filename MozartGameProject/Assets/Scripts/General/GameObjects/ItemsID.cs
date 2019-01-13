@@ -2,7 +2,6 @@
 
 public class ItemsID : MonoBehaviour 
 {
-	[SerializeField]
 	public int itemID;
 
 	public int GetItemID()

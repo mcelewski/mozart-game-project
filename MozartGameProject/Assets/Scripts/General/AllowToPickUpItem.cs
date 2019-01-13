@@ -5,7 +5,7 @@ using UnityEngine;
 public class AllowToPickUpItem : MonoBehaviour
 {
     [SerializeField] ItemsID idItem;
-    private static int itselfID;
+    [SerializeField] static int itselfID;
     private static bool pickUp;
 
     private void Start()
@@ -15,13 +15,16 @@ public class AllowToPickUpItem : MonoBehaviour
             idItem = gameObject.GetComponent<ItemsID>();
             itselfID = idItem.GetItemID();
         }
+
+        itselfID = 0;
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         //Debug.Log("Allow to pickup");
-        Debug.Log("item: " + itselfID);
+        Debug.Log("ids " + idItem.GetItemID());
+        Debug.Log("itsef\t" + itselfID);
         pickUp = true;
     }
 
