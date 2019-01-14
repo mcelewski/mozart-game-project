@@ -21,14 +21,12 @@ public class EndCurrentLevelBehaviour : MonoBehaviour
     
     void AllowToChangeScene(GameObject sceneToLoad) {
         Debug.Log("Player can leave current level");
-        SceneMovementController.SetSceneToLoad(sceneToLoad, false);
         // endcene if all on adventure is done
         endScene = true;
     }
     
     void DenyToChangeScene(GameObject sceneToLoad) {
         Debug.Log("Player **cannot** leave current level");
-        SceneMovementController.SetSceneToLoad(sceneToLoad, true);
         endScene = false;
     }
     

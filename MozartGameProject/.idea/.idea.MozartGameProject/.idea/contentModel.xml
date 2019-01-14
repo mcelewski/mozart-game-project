@@ -33,8 +33,9 @@
         <e p="Scripts" t="Include">
           <e p="AdventureScene" t="Include">
             <e p="ActiveObjects" t="Include">
+              <e p="ActiveObjects.cs" t="Include" />
+              <e p="ActiveObjectsBehaviour.cs" t="Include" />
               <e p="MatchBoxBehaviour.cs" t="Include" />
-              <e p="TorchBehaviour.cs" t="Include" />
             </e>
             <e p="EndCurrentLevelBehaviour.cs" t="Include" />
             <e p="EnterOrLeaveDungeon.cs" t="Include" />
@@ -46,14 +47,6 @@
             </e>
             <e p="NoteToCollectBehaviour.cs" t="Include" />
             <e p="PlatformBehaviour.cs" t="Include" />
-          </e>
-          <e p="GameplayUI" t="Include">
-            <e p="AllowToAddInInventory.cs" t="Include" />
-            <e p="HealthBarBehaviour.cs" t="Include" />
-            <e p="HealthInfoChange.cs" t="Include" />
-            <e p="InventorySpace.cs" t="Include" />
-            <e p="ScoreBehaviour.cs" t="Include" />
-            <e p="SlotBehaviour.cs" t="Include" />
           </e>
           <e p="General" t="Include">
             <e p="ActualSceneBehaviour.cs" t="Include" />
@@ -93,9 +86,6 @@
             <e p="MidiLocalStorage.cs" t="Include" />
             <e p="ProjectMidiFilesStorage.cs" t="Include" />
           </e>
-          <e p="MainMenuUI" t="Include">
-            <e p="MenuUIController.cs" t="Include" />
-          </e>
           <e p="MozartHero" t="Include">
             <e p="OnSceneLoad.cs" t="Include" />
           </e>
@@ -106,6 +96,19 @@
             <e p="NoteIndicatorKeys.cs" t="Include" />
             <e p="NoteInfo.cs" t="Include" />
             <e p="SetMidiToScene.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="GameplayUI" t="Include">
+              <e p="AllowToAddInInventory.cs" t="Include" />
+              <e p="HealthBarBehaviour.cs" t="Include" />
+              <e p="HealthInfoChange.cs" t="Include" />
+              <e p="InventorySpace.cs" t="Include" />
+              <e p="ScoreBehaviour.cs" t="Include" />
+              <e p="SlotBehaviour.cs" t="Include" />
+            </e>
+            <e p="MainMenuUI" t="Include">
+              <e p="MenuUIController.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
