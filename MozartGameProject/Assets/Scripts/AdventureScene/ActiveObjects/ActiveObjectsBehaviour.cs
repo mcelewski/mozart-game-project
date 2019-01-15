@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+[RequireComponent(typeof(ActiveObjects))]
 public class ActiveObjectsBehaviour : MonoBehaviour
 {
     public ActiveObjects item;

@@ -11,6 +11,7 @@ TagManager:
   - HiddenObjects
   - Adventure
   - MozartHero
+  - Puzzle
   layers:
   - Default
   - TransparentFX

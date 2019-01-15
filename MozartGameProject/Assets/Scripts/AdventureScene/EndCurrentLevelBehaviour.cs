@@ -10,22 +10,21 @@ public class EndCurrentLevelBehaviour : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(!IsPlayer(other)) return;
-        AllowToChangeScene(this.gameObject);
+        AllowToEndScene();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if(!IsPlayer(other)) return;
-        DenyToChangeScene(this.gameObject);
+        DenyToEndScene();
     }
     
-    void AllowToChangeScene(GameObject sceneToLoad) {
+    void AllowToEndScene() {
         Debug.Log("Player can leave current level");
-        // endcene if all on adventure is done
         endScene = true;
     }
     
-    void DenyToChangeScene(GameObject sceneToLoad) {
+    void DenyToEndScene() {
         Debug.Log("Player **cannot** leave current level");
         endScene = false;
     }

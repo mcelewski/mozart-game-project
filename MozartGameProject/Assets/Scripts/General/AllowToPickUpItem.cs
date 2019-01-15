@@ -23,8 +23,8 @@ public class AllowToPickUpItem : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         //Debug.Log("Allow to pickup");
-        Debug.Log("ids " + idItem.GetItemID());
-        Debug.Log("itsef\t" + itselfID);
+        //Debug.Log("ids " + idItem.GetItemID());
+        //Debug.Log("itsef\t" + itselfID);
         pickUp = true;
     }
 

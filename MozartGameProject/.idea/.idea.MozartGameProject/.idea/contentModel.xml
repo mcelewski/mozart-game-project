@@ -37,8 +37,12 @@
               <e p="ActiveObjectsBehaviour.cs" t="Include" />
               <e p="MatchBoxBehaviour.cs" t="Include" />
             </e>
+            <e p="Dungeons" t="Include">
+              <e p="ActiveDungeon.cs" t="Include" />
+              <e p="ActiveDungeonBehaviour.cs" t="Include" />
+              <e p="EnterOrLeaveDungeon.cs" t="Include" />
+            </e>
             <e p="EndCurrentLevelBehaviour.cs" t="Include" />
-            <e p="EnterOrLeaveDungeon.cs" t="Include" />
             <e p="Ladder" t="Include">
               <e p="LadderObj.cs" t="Include" />
               <e p="LowerLadder.cs" t="Include" />

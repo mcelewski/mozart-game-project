@@ -1,29 +1,34 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnterOrLeaveDungeon : MonoBehaviour
 {
     public UserInteractListener listener;
     private static bool canChangeScene;
+    public GameObject sceneToGo;
 
     void Start(){
-        if (!listener)
+        if (!listener || !sceneToGo)
+        {
             listener = GameObject.Find("PlayerBehaviour").GetComponent<UserInteractListener>();
+            sceneToGo = gameObject.transform.parent.gameObject;
+        }
     }
 
     void OnTriggerStay2D(Collider2D other){
         if (!IsPlayer(other)) return;
         //TODO make autosave, player pos, player eq, spawn 
-        AllowToChangeScene(gameObject);
+        AllowToChangeScene(sceneToGo);
     }
     
     void OnTriggerExit2D(Collider2D other){
         if (!IsPlayer(other)) return;
-        DenyToChangeScene(gameObject);
+        DenyToChangeScene(sceneToGo);
     }
       
     void AllowToChangeScene(GameObject sceneToLoad) {
-        //Debug.Log("Player can change scene to "+ sceneToLoad);
+        Debug.Log("Player can change scene to "+ sceneToLoad);
         SceneMovementController.SetSceneToLoad(sceneToLoad, false);
         canChangeScene = true;
     }
