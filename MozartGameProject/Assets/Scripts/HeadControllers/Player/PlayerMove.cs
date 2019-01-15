@@ -29,21 +29,12 @@ public class PlayerMove : MonoBehaviour
     //TODO Keyboard input for all scenes including pause menu
     private void Update()
     {
-        if (!sceneController.IsOnMozartHeroScene() && !sceneController.IsPaused())
+        if (!sceneController.IsPaused())
         {
             userAction.TakeActionOnKeyPress();
             healthBar.CheckPoison();
             DetectAnimationToPlay();
         }
-        else if (sceneController.IsOnMozartHeroScene() && !sceneController.IsPaused())
-        {
-            // mozart hero
-        }
-    }
-
-    private void UpdateIfMozartHero()
-    {
-        // change settings for mozart hero scene
     }
 
     void DetectAnimationToPlay()
@@ -54,6 +45,7 @@ public class PlayerMove : MonoBehaviour
             userAnimation.EndClimbAnimation();
             userAnimation.EndJumpAnimation();
             userAnimation.EndMoveAnimation();
+            userAnimation.EndLadderIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Walking)
         {
@@ -61,6 +53,7 @@ public class PlayerMove : MonoBehaviour
             userAnimation.EndJumpAnimation();
             userAnimation.EndClimbAnimation();
             userAnimation.EndIdleAnimation();
+            userAnimation.EndLadderIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Jumping)
         {
@@ -68,6 +61,7 @@ public class PlayerMove : MonoBehaviour
             userAnimation.EndMoveAnimation();
             userAnimation.EndClimbAnimation();
             userAnimation.EndIdleAnimation();
+            userAnimation.EndLadderIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Climbing)
         {
@@ -75,6 +69,7 @@ public class PlayerMove : MonoBehaviour
             userAnimation.EndIdleAnimation();
             userAnimation.EndMoveAnimation();
             userAnimation.EndTorchAnimation();
+            userAnimation.EndLadderIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.ClimbingIdle)
         {
@@ -84,7 +79,10 @@ public class PlayerMove : MonoBehaviour
         else if (currentPlayerAction == PlayerStates.Torch)
         {
             userAnimation.StartTorchAnimation();
-            Debug.Log("torch");
+            userAnimation.EndLadderIdleAnimation();
+            userAnimation.EndIdleAnimation();
+            userAnimation.EndMoveAnimation();
+            userAnimation.EndTorchAnimation();
         }
     }
 }

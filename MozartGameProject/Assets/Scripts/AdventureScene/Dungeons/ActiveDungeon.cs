@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu (fileName = "New Dungeon", menuName = "Dungeon to enter")]
+[CreateAssetMenu (fileName = "New Dungeon", menuName = "Active Objects/Dungeon to enter")]
 public class ActiveDungeon : ScriptableObject
 {
     public string name;

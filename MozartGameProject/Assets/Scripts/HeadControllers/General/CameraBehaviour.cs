@@ -25,14 +25,14 @@ public class CameraBehaviour : MonoBehaviour
 		if (CheckIfCanBeOrto() && !CheckIfCanBeTracked())
 		{
 			CameraOnMOzartHero();
-			Debug.Log("Mozart hero camera");
+			//Debug.Log("Mozart hero camera");
 			cam.orthographicSize = 80f;
 			cam.orthographic = false;
 		}
 		else if (!CheckIfCanBeOrto() && CheckIfCanBeTracked())
 		{
 			CameraOnHiddenObjects();
-			Debug.Log("Hidden obj camera");
+			//Debug.Log("Hidden obj camera");
 		}
 		else if (!CheckIfCanBeOrto() && !CheckIfCanBeTracked())
 		{
@@ -40,7 +40,7 @@ public class CameraBehaviour : MonoBehaviour
 			TrackPlayer();
 			cam.orthographicSize = 5f;
 			cam.orthographic = true;
-			Debug.Log("Adventure camera");
+			//Debug.Log("Adventure camera");
 		}
 	}
 
