@@ -110,7 +110,7 @@ public class UserInteractListener : MonoBehaviour
         }
         else if(_sceneController.IsOnAdventureScene() && AllowToPickUpItem.AllowToPickUp())
         {
-            _inventory.AddToInventory(AllowToPickUpItem.ItemID());
+            //_inventory.AddToInventory());
             Debug.Log("Pick up to inventory");
         }
         else if (_sceneController.IsOnAdventureScene())

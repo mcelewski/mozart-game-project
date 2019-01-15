@@ -17,6 +17,7 @@ public class MainController : MonoBehaviour
             Debug.Log("Missing reference");
         }
         SetStartUIs();
+        Print();
     }
 
     void SetStartUIs()
@@ -36,7 +37,7 @@ public class MainController : MonoBehaviour
     {
         foreach (var item in InGameItemsDB.ItemsDatabase)
         {
-            Debug.Log("ItemId: " + item.id);
+            Debug.Log("ItemId: " + item.id + " Item name: " + item.name);
         }
     }
 }
