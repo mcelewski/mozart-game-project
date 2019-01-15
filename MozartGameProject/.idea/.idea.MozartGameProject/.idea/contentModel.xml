@@ -102,6 +102,9 @@
             <e p="SetMidiToScene.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="EndLevelUI" t="Include">
+              <e p="EndLevelUIController.cs" t="Include" />
+            </e>
             <e p="GameplayUI" t="Include">
               <e p="AllowToAddInInventory.cs" t="Include" />
               <e p="HealthBarBehaviour.cs" t="Include" />

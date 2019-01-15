@@ -20,16 +20,16 @@ public class EndCurrentLevelBehaviour : MonoBehaviour
     }
     
     void AllowToEndScene() {
-        Debug.Log("Player can leave current level");
+        //Debug.Log("Player can leave current level");
         endScene = true;
     }
     
     void DenyToEndScene() {
-        Debug.Log("Player **cannot** leave current level");
+        //Debug.Log("Player **cannot** leave current level");
         endScene = false;
     }
-    
-    public static bool CanPlayerChangeScene()
+
+    public static bool CanPlayerEndScene()
     {
         return endScene;
     }

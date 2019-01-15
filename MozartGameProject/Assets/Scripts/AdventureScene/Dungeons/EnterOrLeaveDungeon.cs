@@ -28,7 +28,7 @@ public class EnterOrLeaveDungeon : MonoBehaviour
     }
       
     void AllowToChangeScene(GameObject sceneToLoad) {
-        Debug.Log("Player can change scene to "+ sceneToLoad);
+        //Debug.Log("Player can change scene to "+ sceneToLoad);
         SceneMovementController.SetSceneToLoad(sceneToLoad, false);
         canChangeScene = true;
     }

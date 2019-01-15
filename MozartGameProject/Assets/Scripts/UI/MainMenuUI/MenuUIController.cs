@@ -44,16 +44,6 @@ public class MenuUIController : MonoBehaviour
         }
     }
 
-    private void DeactivePlayerUI()
-    {
-        gameplayUI.SetActive(false);
-    }
-
-    private void ActivatePlayerUI()
-    {
-        gameplayUI.SetActive(true);
-    }
-
     private void SetExitBtnText(bool leaveGame)
     {
         var btnText = leaveBtn.GetComponentInChildren<Text>();
@@ -79,6 +69,16 @@ public class MenuUIController : MonoBehaviour
     }
 
     #endregion
+    
+    public void DeactivePlayerUI()
+    {
+        gameplayUI.SetActive(false);
+    }
+
+    public void ActivatePlayerUI()
+    {
+        gameplayUI.SetActive(true);
+    }
     
     public void OnStart()
     {
