@@ -169,7 +169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndLevelUI: {fileID: 1378318345}
   MainMenuUI: {fileID: 848104746}
-  SceneMovementController: {fileID: 1670136476}
   notesScoreTxt: {fileID: 1325354944}
   totalScoreTxt: {fileID: 2110161515}
   decripctionTxt: {fileID: 1716926030}
@@ -3083,7 +3082,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1418969354895952, guid: ca085bd9d15912842a73b281576e550d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114788876126020414, guid: ca085bd9d15912842a73b281576e550d,
         type: 3}

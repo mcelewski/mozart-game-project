@@ -49,7 +49,8 @@ public class CameraBehaviour : MonoBehaviour
 		//TODO fix camera after scene change
 		if (gameObject.transform.position.x >= playerRef.transform.position.x -5)
 		{
-			gameObject.transform.position = new Vector3(playerRef.transform.position.x,
+			gameObject.transform.position = new Vector3(
+				playerRef.transform.position.x,
 				0,
 				-50f);
 		}
