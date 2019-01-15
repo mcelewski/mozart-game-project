@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour
         Walking,
         Jumping,
         Climbing,
+        ClimbingIdle,
         Torch
     }
     //TODO Keyboard input for all scenes including pause menu
@@ -74,6 +75,11 @@ public class PlayerMove : MonoBehaviour
             userAnimation.EndIdleAnimation();
             userAnimation.EndMoveAnimation();
             userAnimation.EndTorchAnimation();
+        }
+        else if (currentPlayerAction == PlayerStates.ClimbingIdle)
+        {
+            userAnimation.EndClimbAnimation();
+            userAnimation.StartLadderIdleAnimation();
         }
         else if (currentPlayerAction == PlayerStates.Torch)
         {

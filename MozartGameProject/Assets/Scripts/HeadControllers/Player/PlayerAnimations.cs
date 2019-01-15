@@ -11,6 +11,7 @@ public class PlayerAnimations : MonoBehaviour
 	private string _walkAnimation = "Mozart_walk";
 	private string _jumpAnimation = "Mozart_jump";
 	private string _inventoryAnimation = "Mozart_inventory";
+    private string _onLadder = "Mozart_onladder";
 
 
 	#region Idle animations
@@ -31,6 +32,7 @@ public class PlayerAnimations : MonoBehaviour
 	
 
 	#endregion
+
 	#region Moving animations
     
 	public void EndMoveAnimation()
@@ -113,5 +115,25 @@ public class PlayerAnimations : MonoBehaviour
 		}
 	}
 
-	#endregion
+    #endregion
+
+    #region Idle animations
+    public void EndLadderIdleAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(_onLadder))
+        {
+            animator.ResetTrigger("Mozart_OnLadder");
+        }
+    }
+
+    public void StartLadderIdleAnimation()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(_climbAnimation))
+        {
+            animator.SetTrigger("Mozart_OnLadder");
+        }
+    }
+
+
+    #endregion
 }

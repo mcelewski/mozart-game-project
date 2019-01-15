@@ -22,7 +22,7 @@ public class UserInteractListener : MonoBehaviour
     public EndLevelUIController EndLevelUI;
 
     private float mainSpeed = 5.0f;
-    private float jumpHeigh = 20.0f;
+    private float jumpHeigh = 50.0f;
     
     private void Awake()
     {
@@ -41,6 +41,10 @@ public class UserInteractListener : MonoBehaviour
             if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene())
             {
                 ActionsDictionary[key].Invoke();
+            }
+            else if (Input.GetKeyUp(key) && PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Climbing)
+            {
+                PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.ClimbingIdle;
             }
             else if (Input.GetKeyUp(key))
             {

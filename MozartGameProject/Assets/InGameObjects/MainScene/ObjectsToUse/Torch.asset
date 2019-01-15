@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Use to set light
   ID: 11
-  Icon: {fileID: 21300000, guid: 2b3e617c1f60862428cf53e36ddaa3f4, type: 3}
+  Icon: {fileID: 21300000, guid: 7f546bfde54e82f458b0c77375194273, type: 3}
