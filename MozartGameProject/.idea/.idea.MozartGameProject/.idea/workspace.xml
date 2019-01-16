@@ -4,225 +4,11 @@
     <list default="true" id="2889a3aa-c017-4c07-868e-68c4520ee2f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Ladder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Ladder.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_12.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_8.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_1/Note1_9.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_12.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_8.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_2/Note2_9.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_12.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_8.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/NoteType_3/Note3_9.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Torch.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Torch/torch_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Torch/torch_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Torch/torch_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Torch/torch_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/matches.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/matches.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/EndLevel.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/EndLevel/EndLevelExample.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/EndLevel/EndLevelExample.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/HP_Bar/HP_Bar_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayUIImages/Poison_Bar/HP_Bar_Poison_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MenuUIImages.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MenuUIImages/MozartMenu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MenuUIImages/MozartMenu.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MenuUIImages/Mozart_Hero_piano_gameplay_design_for_qwerty_keyboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MenuUIImages/Mozart_Hero_piano_gameplay_design_for_qwerty_keyboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_climbing.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_climbing.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_inventory.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_inventory.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_jump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_jump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_onladder.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_onladder.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Mozart_walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Player_animation_controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Player_animation_controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Player_mask.mask" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Animations/Player_mask.mask.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump/Mozart_2D_model_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump/Mozart_2D_model_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump/Mozart_2D_model_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump/Mozart_2D_model_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump/Mozart_2D_model_jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Jump/Mozart_2D_model_jump.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/LadderWalk.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/LadderWalk/Mozart_2D_model_back_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/LadderWalk/Mozart_2D_model_back_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/LadderWalk/Mozart_2D_model_back_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/LadderWalk/Mozart_2D_model_back_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/UseItems.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/UseItems/Mozart_2D_model_use_item_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/UseItems/Mozart_2D_model_use_item_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/UseItems/Mozart_2D_model_use_item_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/UseItems/Mozart_2D_model_use_item_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Walk.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Walk/Mozart_2D_model_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Walk/Mozart_2D_model_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Walk/Mozart_2D_model_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/MozartCharacterImages/Walk/Mozart_2D_model_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Database.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Database/ItemsDatabase.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Database/ItemsDatabase.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/HiddenScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/HiddenScene/HiddenTestLevel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/HiddenScene/HiddenTestLevel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/DungeonsToEnter.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/DungeonsToEnter/Default.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/DungeonsToEnter/Default.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/DungeonsToEnter/HouseTest.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/DungeonsToEnter/HouseTest.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/Ladder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/Ladder.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/ObjectsToUse.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/ObjectsToUse/Matches.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/ObjectsToUse/Matches.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/ObjectsToUse/Torch.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/ObjectsToUse/Torch.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/Player/Mozart_2D_gif_test.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/Player/Mozart_2D_gif_test.gif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/house.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/MainScene/house.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/PianoScenePrefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/PianoScenePrefabs/GameNotePref.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/PianoScenePrefabs/GameNotePref.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/ActiveObjectSprite.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/ActiveObjectSprite.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Controllers.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Controllers.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/DungeonsPrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/DungeonsPrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/GameplayUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/GameplayUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Keyboard.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Keyboard.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/KeyboardMozartHero.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/KeyboardMozartHero.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/MenuUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/MenuUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/NewSceneSpawn.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/NewSceneSpawn.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Note.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Note.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/dtexst.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InGameObjects/Prefabs/dtexst.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/InGameImages.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/InGameImages.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/InGameImages/GameplayObjectImages.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/InGameImages/GameplayObjectImages.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AdventureScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AdventureScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/AllowToPickUpItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/AllowToPickUpItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,42 +30,37 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-193933193">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cs" value="204" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="C#" value="204" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cs" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C#" value="4" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="MozartGameProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <folding>
+                <marker date="1547641734087" expanded="false" signature="6:61" ph="..." />
+                <marker date="1547641734087" expanded="true" signature="107:1825" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="280:374" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="398:421" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="451:831" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="553:626" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="684:828" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="866:1216" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="967:1213" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="1255:1447" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="1483:1545" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="1574:1641" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="1676:1729" ph="{...}" />
+                <marker date="1547641734087" expanded="true" signature="1766:1822" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -297,26 +78,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/MiddleLadder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsID.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/NoteToCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/LowerLadder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/ActualSceneBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/UpperLadder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/GrandFileFormat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/MiddleLadder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/LowerLadder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/GrandFileFormat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/NoteToCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/FuelTorch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/AllowToPickUpItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/EndCurrentLevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MidiJack/MidiStateUpdater.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/UpperLadder.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -366,12 +148,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdventureScene/Dungeons/ActiveDungeon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/ActiveObjects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/FuelTorch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/AllowToPickUpItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -380,17 +162,11 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1088" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1096" />
-    <option name="height" value="1896" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -450,10 +226,10 @@
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,11 +253,13 @@
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="10068">
+      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" value="10068" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <method v="2" />
@@ -591,11 +369,13 @@
       <workItem from="1547556086835" duration="2068000" />
       <workItem from="1547571340536" duration="3825000" />
       <workItem from="1547581729630" duration="1552000" />
+      <workItem from="1547639559799" duration="511000" />
+      <workItem from="1547640167326" duration="1920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270021000" />
+    <option name="totallyTimeSpent" value="272452000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -607,9 +387,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1088" y="-8" width="1096" height="1896" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48205128" visible="true" weight="0.20945945" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48205128" visible="true" weight="0.20886889" />
       <window_info id="Structure" order="1" sideWeight="0.50490195" side_tool="true" weight="0.18766066" />
       <window_info id="Favorites" order="2" sideWeight="0.51794875" side_tool="true" weight="0.20565553" />
       <window_info id="Image Layers" order="3" />
@@ -628,7 +409,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" sideWeight="0.4974293" weight="0.19002695" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49614397" weight="0.13746631" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50064266" side_tool="true" visible="true" weight="0.2122588" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50064266" side_tool="true" visible="true" weight="0.21130551" />
       <window_info anchor="bottom" id="Unity" order="14" sideWeight="0.4974293" weight="0.17520216" />
       <window_info anchor="bottom" id="Inspection Results" order="15" sideWeight="0.4993573" weight="0.24123989" />
       <window_info anchor="bottom" id="Android Profiler" order="16" show_stripe_button="false" />
@@ -675,9 +456,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -798,7 +576,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Dungeons/ActiveDungeon.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/PlayerMove.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenuUI/MenuUIController.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsInGameDatabase.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs">
@@ -879,28 +656,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/FuelTorch.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/FuelTorch.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="272">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
-            <marker date="1547582082630" expanded="false" signature="6:78" ph="..." />
-            <marker date="1547582082630" expanded="true" signature="118:145" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <marker date="1547581919392" expanded="false" signature="6:78" ph="..." />
-            <marker date="1547581919392" expanded="true" signature="114:479" ph="{...}" />
-            <marker date="1547581919392" expanded="true" signature="143:292" ph="{...}" />
-            <marker date="1547581919392" expanded="true" signature="232:286" ph="{...}" />
-            <marker date="1547581919392" expanded="true" signature="328:477" ph="{...}" />
-            <marker date="1547581919392" expanded="true" signature="416:471" ph="{...}" />
+            <marker date="1547641734087" expanded="false" signature="6:61" ph="..." />
+            <marker date="1547641734087" expanded="true" signature="107:1825" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="280:374" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="398:421" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="451:831" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="553:626" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="684:828" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="866:1216" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="967:1213" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="1255:1447" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="1483:1545" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="1574:1641" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="1676:1729" ph="{...}" />
+            <marker date="1547641734087" expanded="true" signature="1766:1822" ph="{...}" />
           </folding>
         </state>
       </provider>

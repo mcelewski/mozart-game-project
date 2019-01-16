@@ -7,6 +7,8 @@ public class CameraBehaviour : MonoBehaviour
 	public Transform hiddenObjectTarget;
 	public SceneMovementController _SceneMovement;
 
+    public float cameraSmotch;
+
 	private void Start()
 	{
 		if (!gameObject.CompareTag("MainCamera"))
@@ -21,15 +23,7 @@ public class CameraBehaviour : MonoBehaviour
 	private void CameraSetup()
 	{
 		var cam = gameObject.GetComponent<Camera>();
-		
-		if (CheckIfCanBeOrto() && !CheckIfCanBeTracked())
-		{
-			CameraOnMOzartHero();
-			//Debug.Log("Mozart hero camera");
-			cam.orthographicSize = 80f;
-			cam.orthographic = false;
-		}
-		else if (!CheckIfCanBeOrto() && CheckIfCanBeTracked())
+		if (!CheckIfCanBeOrto() && CheckIfCanBeTracked())
 		{
 			CameraOnHiddenObjects();
 			//Debug.Log("Hidden obj camera");
@@ -47,19 +41,12 @@ public class CameraBehaviour : MonoBehaviour
 	private void CameraOnAdventure()
 	{
 		//TODO fix camera after scene change
-		if (gameObject.transform.position.x >= playerRef.transform.position.x -5)
+		sbyte offset = 50;
+		if (playerRef.transform.hasChanged)
 		{
-			gameObject.transform.position = new Vector3(
-				playerRef.transform.position.x,
-				0,
-				-50f);
-		}
-
-		if (gameObject.transform.position.y > playerRef.transform.position.y -2)
-		{
-			gameObject.transform.position = new Vector3(gameObject.transform.position.x,
-				playerRef.transform.position.y,
-				gameObject.transform.position.z);
+			gameObject.transform.position = Vector3.Lerp(gameObject.transform.position,
+				new Vector3(playerRef.transform.position.x, playerRef.transform.position.y, playerRef.transform.position.z - offset),
+				Time.deltaTime * cameraSmotch );
 		}
 	}
 
