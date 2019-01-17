@@ -14,7 +14,6 @@ public class InventorySpace : MonoBehaviour
     
     public void AddToInventory()
     {
-        //TODO after add disable object in scene
         StartCoroutine(PushToInventory(SearchFreeSlot(), GetCurrentItemId()));
     }
 
@@ -90,7 +89,7 @@ public class InventorySpace : MonoBehaviour
 
     IEnumerator DeactivateItemOnScene(int itemID)
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.05f);
         GameObject obj = null;
         if (itemID != 0)
         {
