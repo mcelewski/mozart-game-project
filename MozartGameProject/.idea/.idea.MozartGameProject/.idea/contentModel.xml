@@ -48,6 +48,8 @@
               <e p="ItemInfo.cs" t="Include" />
               <e p="ItemsID.cs" t="Include" />
               <e p="ItemsInGameDatabase.cs" t="Include" />
+              <e p="NotesDatabase.cs" t="Include" />
+              <e p="NotesInfo.cs" t="Include" />
             </e>
             <e p="GenerateOnAllScenes.cs" t="Include" />
             <e p="HoldSceneLocation.cs" t="Include" />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemsDatabase", menuName = "Database/InScene")]
+[CreateAssetMenu(fileName = "ItemsDatabase", menuName = "Database/Objects in Scene")]
 public class ItemsInGameDatabase : ScriptableObject
 {
     public List<ItemInfo> ItemsDatabase = new List<ItemInfo>();

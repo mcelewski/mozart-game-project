@@ -26,11 +26,6 @@ public class ProjectMidiFilesStorage : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        //CheckFiles();
-    }
-
     #endregion
 
     #region Private Methods
