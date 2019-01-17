@@ -26,12 +26,13 @@ public class CameraBehaviour : MonoBehaviour
 		if (!CheckIfCanBeOrto() && CheckIfCanBeTracked())
 		{
 			CameraOnHiddenObjects();
+			TrackPlayer(hiddenObjectTarget);
 			//Debug.Log("Hidden obj camera");
 		}
 		else if (!CheckIfCanBeOrto() && !CheckIfCanBeTracked())
 		{
 			CameraOnAdventure();
-			TrackPlayer();
+			TrackPlayer(playerRef.transform);
 			cam.orthographicSize = 5f;
 			cam.orthographic = true;
 			//Debug.Log("Adventure camera");
@@ -40,7 +41,6 @@ public class CameraBehaviour : MonoBehaviour
 
 	private void CameraOnAdventure()
 	{
-		//TODO fix camera after scene change
 		sbyte offset = 50;
 		if (playerRef.transform.hasChanged)
 		{
@@ -53,7 +53,7 @@ public class CameraBehaviour : MonoBehaviour
 	private void CameraOnHiddenObjects()
 	{
 		sbyte offset = 2;
-		gameObject.transform.position = new Vector3(hiddenObjectTarget.position.x +offset,
+		gameObject.transform.localPosition = new Vector3(hiddenObjectTarget.position.x +offset,
 													hiddenObjectTarget.transform.position.y +offset,
 													-50);
 	}
@@ -63,9 +63,9 @@ public class CameraBehaviour : MonoBehaviour
 		gameObject.transform.position = new Vector3(0,3,-10);
 	}
 
-	private void TrackPlayer()
+	private void TrackPlayer(Transform transform)
 	{
-		gameObject.transform.LookAt(playerRef.transform.position);
+		gameObject.transform.LookAt(transform);
 	}
 	
 	private bool CheckIfCanBeOrto()

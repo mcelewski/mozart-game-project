@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Torch
   id: 10
+  amount: 1
   item: {fileID: 5692848232110565685}
 --- !u!114 &2483085921174805211
 MonoBehaviour:
@@ -185,6 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35bacf0d7b0fde8439d0d8fd04c58d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  info: {fileID: 5692848232110565685}
 --- !u!114 &3561993674693713440
 MonoBehaviour:
   m_ObjectHideFlags: 0

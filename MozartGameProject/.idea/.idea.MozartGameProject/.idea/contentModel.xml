@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\GitSe\.Rider2018.3\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\GitSe\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\GitSe\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_MozartGameProject.-1138100400.00" t="ExcludeRecursive" />
-    <e p="C:\Users\GitSe\Documents\GitHub\mozart-game-project\MozartGameProject" t="IncludeRecursive">
+    <e p="C:\Users\GitSe\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\GitSe\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_MozartGameProject.620428189.00" t="ExcludeRecursive" />
+    <e p="F:\GitHubProjects\mozart-game-project\MozartGameProject" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -22,9 +21,9 @@
             <e p="ActiveObjects" t="Include">
               <e p="ActiveObjects.cs" t="Include" />
               <e p="ActiveObjectsBehaviour.cs" t="Include" />
-              <e p="FuelTorch.cs" t="Include" />
-              <e p="MatchBoxBehaviour.cs" t="Include" />
+              <e p="Matches.cs" t="Include" />
               <e p="Torch.cs" t="Include" />
+              <e p="TorchFuel.cs" t="Include" />
             </e>
             <e p="Dungeons" t="Include">
               <e p="ActiveDungeon.cs" t="Include" />
@@ -101,6 +100,7 @@
               <e p="AllowToAddInInventory.cs" t="Include" />
               <e p="HealthBarBehaviour.cs" t="Include" />
               <e p="HealthInfoChange.cs" t="Include" />
+              <e p="InventoryDesign.cs" t="Include" />
               <e p="InventorySpace.cs" t="Include" />
               <e p="ScoreBehaviour.cs" t="Include" />
               <e p="SlotBehaviour.cs" t="Include" />

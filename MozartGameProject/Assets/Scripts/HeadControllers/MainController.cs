@@ -5,19 +5,16 @@ using UnityEngine;
 
 public class MainController : MonoBehaviour
 {
-    public ItemsInGameDatabase InGameItemsDB;
-
     public GameObject MenuUI;
   
     // Start is called before the first frame update
     void Awake()
     {
-        if (!MenuUI || !InGameItemsDB) 
+        if (!MenuUI) 
         {
             Debug.Log("Missing reference");
         }
         SetStartUIs();
-        Print();
     }
 
     void SetStartUIs()
@@ -31,13 +28,5 @@ public class MainController : MonoBehaviour
     bool IsMenuUIActive()
     {
         return MenuUI.activeSelf;
-    }
-
-    void Print()
-    {
-        foreach (var item in InGameItemsDB.ItemsDatabase)
-        {
-            Debug.Log("ItemId: " + item.id + " Item name: " + item.name);
-        }
     }
 }

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 509327043133064264}
   - component: {fileID: 509327043133064271}
   - component: {fileID: 509327043133064267}
-  - component: {fileID: 509327043133064270}
   - component: {fileID: 3393108962264766469}
+  - component: {fileID: 6405761486692171119}
   m_Layer: 0
   m_Name: TorchFuel
   m_TagString: Untagged
@@ -111,22 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4b8dbf5bc77eb4498453e4bfb084c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Torch Fuel
+  name: TorchFuel
   id: 11
+  amount: 10
   item: {fileID: 509327043133064267}
---- !u!114 &509327043133064270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509327043133064266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00361d57eef744f46b3447aaa612ed61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amount: 20
 --- !u!114 &3393108962264766469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,4 +127,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9aa39b706342a469ff87a3df10cecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idItem: {fileID: 0}
+--- !u!114 &6405761486692171119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509327043133064266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88da79a5fd4515b4d850b6375b56d0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  info: {fileID: 509327043133064267}

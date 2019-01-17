@@ -8,10 +8,19 @@ using UnityEngine.UI;
 public class InventorySpace : MonoBehaviour 
 {
     public List<GameObject> slots = new List<GameObject>();
+    public ItemsInGameDatabase InGameItemsDB;
 
-    public void AddToInventory(int itemId)
+    private int itemIdToAdd;
+    
+    public void AddToInventory()
     {
-        StartCoroutine(PushToInventory(SearchFreeSlot(), itemId));
+        //TODO after add disable object in scene
+        StartCoroutine(PushToInventory(SearchFreeSlot(), GetCurrentItemId()));
+    }
+
+    public void SetIntemToAdd(int itemID)
+    {
+        itemIdToAdd = itemID;
     }
 
     int SearchFreeSlot()
@@ -32,9 +41,72 @@ public class InventorySpace : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         
-        Debug.Log("inventory slot, " + index + " item ID: " + itemId);
+        //Debug.Log("inventory slot, " + index + " item ID: " + itemId);
         slots[index].SetActive(true);
-        // change image to image id
+        slots[index].GetComponent<Image>().sprite = SearchForItemSprite(itemId);
+        slots[index].GetComponentInChildren<Text>().text = SearchForItemAmount(itemId).ToString();
+        StartCoroutine(DeactivateItemOnScene(itemId));
+    }
+
+    int GetCurrentItemId()
+    {
+        return itemIdToAdd;
+    }
+
+    Sprite SearchForItemSprite(int itemID)
+    {
+        Sprite temp = null;
+
+        if (itemID != 0)
+        {
+            foreach (var item in InGameItemsDB.ItemsDatabase)
+            {
+                if (item.id == itemID)
+                {
+                    temp = item.GetComponent<SpriteRenderer>().sprite;
+                }
+            }
+        }
+        if (temp == null) Debug.Log("Couldn't find item sprite");
+
+        return temp;
+    }
+
+    int SearchForItemAmount(int itemID)
+    {
+        if (itemID != 0)
+        {
+            foreach (var item in InGameItemsDB.ItemsDatabase)
+            {
+                if (item.id == itemID)
+                {
+                    itemID = item.amount;
+                }
+            }
+
+        }
+        return itemID;
+    }
+
+    IEnumerator DeactivateItemOnScene(int itemID)
+    {
+        yield return new WaitForSeconds(.5f);
+        GameObject obj = null;
+        if (itemID != 0)
+        {
+            foreach (var item in InGameItemsDB.ItemsDatabase)
+            {
+                if (item.id == itemID)
+                {
+                    obj = GameObject.Find(item.name);
+                }
+            }
+        }
+
+        if (obj != null) 
+        {
+            obj.SetActive(false);
+        }
     }
 }
 

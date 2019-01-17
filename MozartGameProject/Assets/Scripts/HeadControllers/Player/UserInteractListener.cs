@@ -19,6 +19,7 @@ public class UserInteractListener : MonoBehaviour
     public SceneMovementController _sceneController;
     public RespawnBehaviour _spawnController;
     public InventorySpace _inventory;
+    public InventoryDesign _inventoryDesign;
     public EndLevelUIController EndLevelUI;
 
     private float mainSpeed = 5.0f;
@@ -82,7 +83,7 @@ public class UserInteractListener : MonoBehaviour
     {
         if (!_sceneController.IsOnMozartHeroScene())
         {
-            Debug.Log("Equipment opened");
+            _inventoryDesign.OpenCloseInventory();
         }
     }
 
@@ -93,25 +94,20 @@ public class UserInteractListener : MonoBehaviour
             _sceneController.SetNewScene();
             _spawnController.SetUpNewRespawn();
             _spawnController.SpawnToHiddenScene();
-            //Debug.Log("Enter dungeon");
         }
         else if (_sceneController.IsOnHiddenObjectsScene() && EnterOrLeaveDungeon.CanPlayerChangeScene())
         {
             _spawnController.SpawnToAdventure();
             StartCoroutine(_spawnController.DeactivateSpawn());
             StartCoroutine(_sceneController.UnloadScene());
-            
-           // Debug.Log("Leave Dungeon");
         }
         else if (_sceneController.IsOnAdventureScene() && EndCurrentLevelBehaviour.CanPlayerEndScene())
         {
             EndLevelUI.EnableEndMenu();
-           // Debug.Log("Mozart hero");
         }
         else if(_sceneController.IsOnAdventureScene() && AllowToPickUpItem.AllowToPickUp())
         {
-            //_inventory.AddToInventory());
-            Debug.Log("Pick up to inventory");
+            _inventory.AddToInventory();
         }
         else if (_sceneController.IsOnAdventureScene())
         {

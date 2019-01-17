@@ -29,6 +29,7 @@ public class EndLevelUIController : MonoBehaviour
     {
         EndLevelUI.SetActive(true);
         MainMenuUI.DeactivePlayerUI();
+        endLevelButton.enabled = false;
         Time.timeScale = 0;
     }
 
@@ -43,7 +44,6 @@ public class EndLevelUIController : MonoBehaviour
         {
             SceneManager.LoadSceneAsync(mozartHeroName, LoadSceneMode.Single);
         }
-        Debug.Log("Open mozart hero scene");
     }
 
     public void OnEndLevelBtnClick()

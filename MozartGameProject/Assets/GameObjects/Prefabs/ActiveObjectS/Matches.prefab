@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4685434449036584528}
   - component: {fileID: 4685434449036584535}
   - component: {fileID: 4678757606075820372}
+  - component: {fileID: 2156043677318258261}
   m_Layer: 0
   m_Name: Matches
   m_TagString: Untagged
@@ -112,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Matches
   id: 12
+  amount: 20
   item: {fileID: 4685434449036584535}
 --- !u!114 &4678757606075820372
 MonoBehaviour:
@@ -125,3 +127,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9aa39b706342a469ff87a3df10cecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2156043677318258261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685434449036584534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188766150dc9a0948a342ff5abad687a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  info: {fileID: 4685434449036584535}

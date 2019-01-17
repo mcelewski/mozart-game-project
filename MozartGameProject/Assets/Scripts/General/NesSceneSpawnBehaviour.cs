@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NesSceneSpawnBehaviour : MonoBehaviour 
 {
-	private readonly Vector3 spawnPos = new Vector3(1f,-15f,-15f);
+	private readonly Vector3 spawnPos = new Vector3(3f,-12f,-15f);
 
 	private void Start ()
 	{
