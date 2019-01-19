@@ -1,12 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class NotesInfo : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class NotesInfo : ItemInfo
 {
-    public string name;
     public int noteNumber;
-    public int id;
     public bool isWhite;
-    public NotesInfo note;
+    public KeyCode keyCode;
+
+    public void StartPlaying(ulong delay)
+    {
+        var noteAudio = item.GetComponent<AudioSource>();
+
+        if (!IsPlaying())
+        {
+            noteAudio.Play(delay);
+        }
+    }
+
+    public void StopPlaying()
+    {
+        var noteAudio = item.GetComponent<AudioSource>();
+
+        if (IsPlaying())
+        {
+            noteAudio.Stop();
+        }
+    }
+
+    bool IsPlaying()
+    {
+        var noteAudio = item.GetComponent<AudioSource>();
+        return noteAudio.isPlaying;
+    }
 }

@@ -163,6 +163,8 @@ namespace MidiJack
             #if UNITY_EDITOR
             _messageHistory = new Queue<MidiMessage>();
             #endif
+            
+            Debug.Log("Midi connected on: " + this);
         }
 
         #endregion

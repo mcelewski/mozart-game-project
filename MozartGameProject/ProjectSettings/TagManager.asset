@@ -12,6 +12,7 @@ TagManager:
   - Adventure
   - MozartHero
   - Puzzle
+  - Note
   layers:
   - Default
   - TransparentFX
