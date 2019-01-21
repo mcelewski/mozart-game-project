@@ -8,6 +8,6 @@ public class DesktopKeyboardController : MonoBehaviour
 
     public void DetectKey()
     {
-        Debug.Log("dsadsa");
+        Debug.Log("");
     }
 }

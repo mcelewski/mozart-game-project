@@ -48,10 +48,11 @@ namespace MidiJack
                 var id = GetEndpointIdAtIndex(i);
                 var name = GetEndpointName(id);
                 temp += "\n" + id.ToString("X8") + ": " + name;
+                Debug.Log("Midi connected on: OnUI");
             }
             EditorGUILayout.HelpBox(temp, MessageType.None);
 
-            Debug.Log("Midi connected on: " + this);
+            
             // Message history
             temp = "Recent MIDI messages:";
             foreach (var message in MidiDriver.Instance.History)

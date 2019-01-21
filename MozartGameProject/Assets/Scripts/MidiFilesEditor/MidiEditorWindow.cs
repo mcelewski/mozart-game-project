@@ -6,8 +6,14 @@ using UnityEngine;
 public class MidiEditorWindow : EditorWindow
 {
     [MenuItem("Window/Midi files editor")]
+    
+    public static void  ShowWindow () 
+    {
+        EditorWindow.GetWindow(typeof(MidiEditorWindow));
+    }
     private void OnGUI()
     {
-        EditorGUILayout.HelpBox("ajtam",MessageType.None);
+        GUILayout.Label("Base Settings", EditorStyles.boldLabel);
+        GUILayout.Button("Click me");
     }
 }
