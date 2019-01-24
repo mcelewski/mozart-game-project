@@ -12,28 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7713653fe3228e4f8ee8bd4ae6152c8, type: 3}
   m_Name: NotesDatabase
   m_EditorClassIdentifier: 
-  ItemsDatabase:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  NoteItemsDatabase:
+  - {fileID: 8311860936008209078, guid: cc017447953b7e74cb7620afa5e4996a, type: 3}

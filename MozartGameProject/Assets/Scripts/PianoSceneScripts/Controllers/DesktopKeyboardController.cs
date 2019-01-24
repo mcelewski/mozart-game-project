@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class DesktopKeyboardController : MonoBehaviour
 {
-    public Dictionary<KeyCode, NotesInfo> DesktopNotes = new Dictionary<KeyCode, NotesInfo>();
+    public NotesDatabase notesDB;
 
     public void DetectKey()
     {
-        Debug.Log("");
+        if (notesDB.NoteItemsDatabase == null)
+            Debug.Log("No items in database");
+        else
+        {
+            foreach (var item in notesDB.NoteItemsDatabase)
+            {
+                if (Input.GetKeyDown(item.keyCode))
+                {
+                    item.StartPlaying(0);
+                }
+            }
+        }
     }
 }
