@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 public class MidiEditorWindow : EditorWindow
@@ -9,7 +7,7 @@ public class MidiEditorWindow : EditorWindow
     
     public static void  ShowWindow () 
     {
-        EditorWindow.GetWindow(typeof(MidiEditorWindow));
+        GetWindow(typeof(MidiEditorWindow));
     }
     private void OnGUI()
     {

@@ -10,7 +10,7 @@ using UnityEngine.Experimental.UIElements;
 [RequireComponent(typeof(AudioSource))]
 public class NoteIndicatorKeys : MonoBehaviour
 {
-    public NoteActivated noteActivate;
+   // public NoteActivated noteActivate;
     public KeyboardController keyboard;
     
     public int noteNumber;
@@ -26,8 +26,10 @@ public class NoteIndicatorKeys : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
-        noteActivate = GameObject.FindGameObjectWithTag("Finish").GetComponent<NoteActivated>();
+       // noteActivate = GameObject.FindGameObjectWithTag("Finish").GetComponent<NoteActivated>();
         keyboard = GameObject.FindGameObjectWithTag("Player").GetComponent<KeyboardController>();
+        if (audioSource == null)
+            GetComponent<AudioSource>();
     }
 
     void Update()
@@ -100,7 +102,7 @@ public class NoteIndicatorKeys : MonoBehaviour
 
     private void OnChangeNoteStatus()
     {
-        noteActivate.Number = GetNoteNumber;
+        //noteActivate.Number = GetNoteNumber;
     }
 
     public bool IsWhiteKeyboard

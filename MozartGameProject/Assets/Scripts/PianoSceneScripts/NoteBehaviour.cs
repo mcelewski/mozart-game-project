@@ -19,6 +19,9 @@ public class NoteBehaviour : MonoBehaviour
     ///             set position depend on in scene note position
     /// In method SetNote
     /// </summary>
+   
+    public delegate void OnNoteChanges();
+    public static event OnNoteChanges ChangeNoteStatus;
 
     #region Default values
     private int noteNumber;
@@ -54,9 +57,9 @@ public class NoteBehaviour : MonoBehaviour
 
     #region Private Methods
 
-    private void ChangeNoteScale(bool changeScale)
+    private void ChangeNoteScale(bool c)
     {
-        if (changeScale)
+        if (c == true)
         {
             this.gameObject.transform.localScale += _whiteNoteScale;
         }
@@ -84,6 +87,12 @@ public class NoteBehaviour : MonoBehaviour
             this.gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
     }
 
+    private void NoteBehaviour_ChangeNoteStatus()
+    {
+        // send message note was created
+        Debug.Log("Note Created or disabled");
+    }
+
     #endregion
 
     // Set all info
@@ -94,11 +103,13 @@ public class NoteBehaviour : MonoBehaviour
         SetNoteLenght(lenght);
         NoteNumber = number;
         SetNoteLocation(position, start);
+        ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
     }
 
     public bool DisableNote()
     {
         this.gameObject.SetActive(false);
+        ChangeNoteStatus += NoteBehaviour_ChangeNoteStatus;
         return true;
     }
 }

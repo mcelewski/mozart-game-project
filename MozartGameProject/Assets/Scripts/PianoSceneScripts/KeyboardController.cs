@@ -11,7 +11,7 @@ using UnityEngine;
 ///     Set keystate
 ///     Set note color
 /// </summary>
-
+/// 
 public class KeyboardController : MonoBehaviour
 {
     public List<GameObject> keyboardObjects;

@@ -4,17 +4,97 @@
     <list default="true" id="2889a3aa-c017-4c07-868e-68c4520ee2f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MozartGameProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Database/ItemsDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameObjects/Database/ItemsDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Database/NotesDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameObjects/Database/NotesDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/Keyboard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/Keyboard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/KeyboardMozartHero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/KeyboardMozartHero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/NotesPrefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/NotesPrefabs/C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/NotesPrefabs/C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InGameImages/GameplayObjectImages/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MozartHero.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MozartHero.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MozartHero.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MozartHero.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PianoKeyboard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PianoKeyboard.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MozartHero.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MozartHero/OnSceneLoad.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MozartHero/OnSceneLoad.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PianoKeyboard.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PianoKeyboard.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DeathZoneController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DeathZoneController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/GameObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/KeyboardController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/KeyboardController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteActivated.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteActivated.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteIndicatorKeys.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteIndicatorKeys.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/OnSceneLoad.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/OnSceneLoad.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/SetMidiToScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/SetMidiToScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/SetMidiToScene.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/SetMidiToScene.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PianoSceneUIs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/10_A4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/10_A4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/11_A#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/11_A#4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/12_B4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/12_B4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/13_C5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/13_C5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/14_C#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/14_C#5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/15_D5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/15_D5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/16_D#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/16_D#5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/17_E5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/17_E5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/18_F5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/18_F5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/19_F#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/19_F#5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/1_C4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/1_C4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/20_G5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/20_G5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/21_G#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/21_G#5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/22_A5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/22_A5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/23_A#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/23_A#5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/24_B5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/24_B5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/25_C6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/25_C6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/2_C#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/2_C#4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/3_D4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/3_D4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/4_D#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/4_D#4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/5_E4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/5_E4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/6_F4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/6_F4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/7_F#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/7_F#4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/8_G4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/8_G4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/9_G#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/9_G#4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,94 +120,102 @@
     <favorites_list name="MozartGameProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding>
-                <marker date="1548343721455" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548343721455" expanded="true" signature="134:558" ph="{...}" />
-                <marker date="1548343721455" expanded="true" signature="199:556" ph="{...}" />
-                <marker date="1548343721455" expanded="true" signature="312:550" ph="{...}" />
-                <marker date="1548343721455" expanded="true" signature="382:540" ph="{...}" />
-                <marker date="1548343721455" expanded="true" signature="448:526" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-              <folding>
-                <marker date="1547914025627" expanded="false" signature="6:48" ph="..." />
-                <marker date="1547914025627" expanded="true" signature="106:2132" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="109:259" ph="/// MIDI Keyboard controller supporting PC keyboard controller ... " />
-                <marker date="1547914025627" expanded="true" signature="459:496" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="527:1024" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="575:951" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="620:766" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="793:941" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="964:1018" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="1059:1173" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="1205:1276" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="1315:1497" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="1545:1649" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="1585:1643" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="1683:1967" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="2010:2046" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="2073:2130" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="2154:2171" ph="{...}" />
-                <marker date="1547914025627" expanded="true" signature="2191:2213" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="1" selection-start-line="14" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <marker date="1548270192999" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548270192999" expanded="true" signature="211:377" ph="{...}" />
-                <marker date="1548270192999" expanded="true" signature="329:375" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="799">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding>
-                <marker date="1548346192528" expanded="true" signature="93:934" ph="{...}" />
-                <marker date="1548346192528" expanded="true" signature="212:248" ph="{...}" />
-                <marker date="1548346192528" expanded="true" signature="291:621" ph="{...}" />
-                <marker date="1548346192528" expanded="true" signature="381:615" ph="{...}" />
-                <marker date="1548346192528" expanded="true" signature="652:804" ph="{...}" />
-                <marker date="1548346192528" expanded="true" signature="748:798" ph="{...}" />
-                <marker date="1548346192528" expanded="true" signature="826:932" ph="{...}" />
+                <marker date="1547712292000" expanded="false" signature="6:83" ph="..." />
+                <marker date="1547712292000" expanded="true" signature="85:290" ph="/// PC keyboard: ... " />
+                <marker date="1547712292000" expanded="true" signature="338:1502" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="630:879" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="695:775" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="805:873" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="907:1500" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="952:1494" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1079:1303" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1340:1484" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteActivated.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="136">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
-                <marker date="1548269642517" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548269642517" expanded="true" signature="118:214" ph="{...}" />
+                <marker date="1547712292000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1547712292000" expanded="true" signature="80:176" ph="/// Behaviour to detect and compare selected note and assigment key ... " />
+                <marker date="1547712292000" expanded="true" signature="221:1071" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="325:423" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="429:535" ph="/* private void Update() ... */" />
+                <marker date="1547712292000" expanded="true" signature="584:715" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="763:891" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="939:1069" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-77">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <marker date="1547712292000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1547712292000" expanded="true" signature="122:3051" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="129:704" ph="/// Set note info: ... " />
+                <marker date="1547712292000" expanded="false" signature="812:1095" ph="Default values" />
+                <marker date="1547712292000" expanded="false" signature="1101:1458" ph="Accessors" />
+                <marker date="1547712292000" expanded="true" signature="1145:1228" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1257:1340" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1365:1442" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1464:2536" ph="Private Methods" />
+                <marker date="1547712292000" expanded="false" signature="1529:1755" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1558:1647" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1660:1749" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1806:1904" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="1945:2068" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="2111:2369" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="2420:2520" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="2648:2883" ph="{...}" />
+                <marker date="1547712292000" expanded="true" signature="2914:3049" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <marker date="1548756415220" expanded="false" signature="6:91" ph="..." />
+                <marker date="1548756415220" expanded="true" signature="93:238" ph="/// MIDI Keyboard controller supporting PC keyboard controller ... " />
+                <marker date="1548756415220" expanded="true" signature="325:2771" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="571:600" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="618:963" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="982:1019" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1050:1409" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1096:1222" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1245:1373" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1444:1549" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1581:1643" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1682:1846" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1894:2027" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="1934:2021" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="2061:2336" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="2366:2413" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="2450:2515" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="2554:2613" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="2646:2690" ph="{...}" />
+                <marker date="1548756415220" expanded="true" signature="2733:2769" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -151,49 +239,45 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/MiddleLadder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/Midi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/LowerLadder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsInGameDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/EndLevelUI/EndLevelUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiStateUpdater.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DeathZoneController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/InventorySpace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenuUI/MenuUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Holder/ProjectMidiFilesStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteIndicatorKeys.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/ConvertToBytes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Holder/ConvertMidiToStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/GrandFileFormat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Holder/MidiLocalStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/InventoryDesign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/OpenStream.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/AllowToPickUpItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Matches.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/ActualSceneBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/NesSceneSpawnBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/TorchFuel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsID.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CFD8CFF-15E1-42BB-8AB3-8109B16A9409/5f/ecd0360e/EditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/ConvertToBytes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/PobranePrzegladarki/mozart-game-project-07d97dbe92952c5b9e1f9d8e8fb6aae8acc54f52/mozart-game-project-07d97dbe92952c5b9e1f9d8e8fb6aae8acc54f52/MozartGameProject/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/SetMidiToScene.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CFD8CFF-15E1-42BB-8AB3-8109B16A9409/4c/634e2f9a/MessageType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/GrandFileFormat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GimpyParser/OpenStream.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/NoteToCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/EndCurrentLevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteActivated.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/UpperLadder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsInGameDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/MiddleLadder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Ladder/LowerLadder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/Midi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiStateUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiDriver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Torch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiMaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Matches.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/Editor/MidiJackWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/TorchFuel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/EndLevelUI/EndLevelUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/InventoryDesign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/MainController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/InventorySpace.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -225,7 +309,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/UserInteractListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/TorchFuel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/Matches.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/NesSceneSpawnBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameplayUI/InventoryDesign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndLevelUI/EndLevelUIController.cs" />
@@ -233,15 +316,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Holder/ProjectMidiFilesStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteActivated.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemsInGameDatabase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteActivateBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DeathZoneController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" />
         <option value="$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiDriver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiJack/MidiStateUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiJack/Editor/MidiJackWindow.cs" />
@@ -249,6 +329,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" />
       </list>
     </option>
   </component>
@@ -258,8 +342,8 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-1124" />
+    <option name="y" value="213" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
@@ -335,20 +419,6 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="PianoSceneScripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Controllers" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="PianoSceneScripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Old" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="UI" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
@@ -360,10 +430,10 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,11 +584,18 @@
       <workItem from="1548065452908" duration="1159000" />
       <workItem from="1548267749482" duration="3281000" />
       <workItem from="1548335198215" duration="5054000" />
+      <workItem from="1548354199142" duration="489000" />
+      <workItem from="1548354767100" duration="1599000" />
+      <workItem from="1548753374291" duration="13000" />
+      <workItem from="1548753892836" duration="219000" />
+      <workItem from="1548754573961" duration="12000" />
+      <workItem from="1548754747386" duration="86000" />
+      <workItem from="1548754934160" duration="1838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299435000" />
+    <option name="totallyTimeSpent" value="303691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,10 +607,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-1088" y="-8" width="1096" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48205128" visible="true" weight="0.12789203" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48205128" visible="true" weight="0.18629344" />
       <window_info id="Structure" order="1" sideWeight="0.50490195" side_tool="true" weight="0.18766066" />
       <window_info id="Favorites" order="2" sideWeight="0.51794875" side_tool="true" weight="0.20565553" />
       <window_info id="Image Layers" order="3" />
@@ -545,7 +622,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.6814672" visible="true" weight="0.090174966" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.6814672" visible="true" weight="0.047078844" />
       <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
@@ -610,15 +687,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/Dungeons/ActiveDungeon.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/Player/PlayerMove.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/AllowToPickUpItem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/ActiveObjects/FuelTorch.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AdventureScene/EndCurrentLevelBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -655,13 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -729,8 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteController.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteActivated.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Holder/ConvertMidiToStorage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -796,80 +855,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteBehaviour.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DeathZoneController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <marker date="1547912032531" expanded="false" signature="6:78" ph="..." />
-            <marker date="1547912032531" expanded="true" signature="128:621" ph="{...}" />
-            <marker date="1547912032531" expanded="true" signature="178:284" ph="{...}" />
-            <marker date="1547912032531" expanded="true" signature="332:435" ph="{...}" />
-            <marker date="1547912032531" expanded="true" signature="483:619" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CFD8CFF-15E1-42BB-8AB3-8109B16A9409/5f/ecd0360e/EditorWindow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="950" column="30" lean-forward="true" selection-start-line="950" selection-start-column="30" selection-end-line="950" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CFD8CFF-15E1-42BB-8AB3-8109B16A9409/4c/634e2f9a/MessageType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DeathZoneController.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CFD8CFF-15E1-42BB-8AB3-8109B16A9409/5f/ecd0360e/EditorWindow.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CFD8CFF-15E1-42BB-8AB3-8109B16A9409/4c/634e2f9a/MessageType.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/MidiJack/Editor/MidiJackWindow.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteIndicatorKeys.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
-          <folding>
-            <marker date="1547912382133" expanded="false" signature="6:91" ph="..." />
-            <marker date="1547912382133" expanded="true" signature="93:238" ph="/// MIDI Keyboard controller supporting PC keyboard controller ... " />
-            <marker date="1547912382133" expanded="true" signature="325:2691" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="569:598" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="616:885" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="904:941" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="972:1331" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1018:1144" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1167:1295" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1366:1471" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1503:1565" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1604:1768" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1816:1949" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1856:1943" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="1983:2258" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="2288:2335" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="2372:2437" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="2476:2533" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="2566:2610" ph="{...}" />
-            <marker date="1547912382133" expanded="true" signature="2653:2689" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <marker date="1547915277176" expanded="false" signature="6:97" ph="..." />
-            <marker date="1547915277176" expanded="true" signature="143:445" ph="{...}" />
-            <marker date="1547915277176" expanded="true" signature="232:302" ph="{...}" />
-            <marker date="1547915277176" expanded="true" signature="327:443" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/NoteIndicatorKeys.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MidiJack/Editor/MidiJackWindow.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-242">
@@ -1005,102 +995,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/KeyboardController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1547912121980" expanded="false" signature="6:83" ph="..." />
-            <marker date="1547912121980" expanded="true" signature="85:285" ph="/// PC keyboard: ... " />
-            <marker date="1547912121980" expanded="true" signature="334:1498" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="626:875" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="691:771" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="801:869" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="903:1496" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="948:1490" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="1075:1299" ph="{...}" />
-            <marker date="1547912121980" expanded="true" signature="1336:1480" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding>
-            <marker date="1547914025627" expanded="false" signature="6:48" ph="..." />
-            <marker date="1547914025627" expanded="true" signature="106:2132" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="109:259" ph="/// MIDI Keyboard controller supporting PC keyboard controller ... " />
-            <marker date="1547914025627" expanded="true" signature="459:496" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="527:1024" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="575:951" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="620:766" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="793:941" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="964:1018" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="1059:1173" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="1205:1276" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="1315:1497" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="1545:1649" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="1585:1643" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="1683:1967" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="2010:2046" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="2073:2130" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="2154:2171" ph="{...}" />
-            <marker date="1547914025627" expanded="true" signature="2191:2213" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <marker date="1548343721455" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548343721455" expanded="true" signature="134:558" ph="{...}" />
-            <marker date="1548343721455" expanded="true" signature="199:556" ph="{...}" />
-            <marker date="1548343721455" expanded="true" signature="312:550" ph="{...}" />
-            <marker date="1548343721455" expanded="true" signature="382:540" ph="{...}" />
-            <marker date="1548343721455" expanded="true" signature="448:526" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="1" selection-start-line="14" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1548270192999" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548270192999" expanded="true" signature="211:377" ph="{...}" />
-            <marker date="1548270192999" expanded="true" signature="329:375" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Old/KeyboardController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesDatabase.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/DesktopKeyboardController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Controllers/NoteController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/ItemInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <marker date="1548269642517" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548269642517" expanded="true" signature="118:214" ph="{...}" />
+            <marker date="1548353873833" expanded="true" signature="118:214" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs">
+    <entry file="file://D:/PobranePrzegladarki/mozart-game-project-07d97dbe92952c5b9e1f9d8e8fb6aae8acc54f52/mozart-game-project-07d97dbe92952c5b9e1f9d8e8fb6aae8acc54f52/MozartGameProject/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state>
           <folding>
-            <marker date="1548346192528" expanded="true" signature="93:934" ph="{...}" />
-            <marker date="1548346192528" expanded="true" signature="212:248" ph="{...}" />
-            <marker date="1548346192528" expanded="true" signature="291:621" ph="{...}" />
-            <marker date="1548346192528" expanded="true" signature="381:615" ph="{...}" />
-            <marker date="1548346192528" expanded="true" signature="652:804" ph="{...}" />
-            <marker date="1548346192528" expanded="true" signature="748:798" ph="{...}" />
-            <marker date="1548346192528" expanded="true" signature="826:932" ph="{...}" />
+            <element signature="e#0#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeadControllers/General/CameraBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <marker date="1548753948307" expanded="false" signature="6:40" ph="..." />
+            <marker date="1548753948307" expanded="true" signature="86:1825" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="259:353" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="377:400" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="430:865" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="532:641" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="699:862" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="900:1211" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="962:1208" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="1250:1447" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="1483:1545" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="1593:1641" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="1676:1729" ph="{...}" />
+            <marker date="1548753948307" expanded="true" signature="1766:1822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/GameObjects/NotesInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/DesktopKeyboardController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MidiFilesEditor/MidiEditorWindow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1548753970611" expanded="false" signature="6:37" ph="..." />
+            <marker date="1548753970611" expanded="true" signature="83:372" ph="{...}" />
+            <marker date="1548753970611" expanded="true" signature="172:229" ph="{...}" />
+            <marker date="1548753970611" expanded="true" signature="254:370" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/OnSceneLoad.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <marker date="1547712292000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1547712292000" expanded="true" signature="122:3051" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="129:704" ph="/// Set note info: ... " />
+            <marker date="1547712292000" expanded="false" signature="812:1095" ph="Default values" />
+            <marker date="1547712292000" expanded="false" signature="1101:1458" ph="Accessors" />
+            <marker date="1547712292000" expanded="true" signature="1145:1228" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1257:1340" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1365:1442" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1464:2536" ph="Private Methods" />
+            <marker date="1547712292000" expanded="false" signature="1529:1755" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1558:1647" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1660:1749" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1806:1904" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1945:2068" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="2111:2369" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="2420:2520" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="2648:2883" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="2914:3049" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteIndicatorKeys.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1548756415220" expanded="false" signature="6:91" ph="..." />
+            <marker date="1548756415220" expanded="true" signature="93:238" ph="/// MIDI Keyboard controller supporting PC keyboard controller ... " />
+            <marker date="1548756415220" expanded="true" signature="325:2771" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="571:600" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="618:963" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="982:1019" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1050:1409" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1096:1222" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1245:1373" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1444:1549" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1581:1643" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1682:1846" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1894:2027" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="1934:2021" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="2061:2336" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="2366:2413" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="2450:2515" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="2554:2613" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="2646:2690" ph="{...}" />
+            <marker date="1548756415220" expanded="true" signature="2733:2769" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/NoteActivated.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <marker date="1547712292000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1547712292000" expanded="true" signature="80:176" ph="/// Behaviour to detect and compare selected note and assigment key ... " />
+            <marker date="1547712292000" expanded="true" signature="221:1071" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="325:423" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="429:535" ph="/* private void Update() ... */" />
+            <marker date="1547712292000" expanded="true" signature="584:715" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="763:891" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="939:1069" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/KeyboardController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding>
+            <marker date="1547712292000" expanded="false" signature="6:83" ph="..." />
+            <marker date="1547712292000" expanded="true" signature="85:290" ph="/// PC keyboard: ... " />
+            <marker date="1547712292000" expanded="true" signature="338:1502" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="630:879" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="695:775" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="805:873" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="907:1500" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="952:1494" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1079:1303" ph="{...}" />
+            <marker date="1547712292000" expanded="true" signature="1340:1484" ph="{...}" />
           </folding>
         </state>
       </provider>
