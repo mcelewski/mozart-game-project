@@ -72,9 +72,6 @@
             <e p="MidiLocalStorage.cs" t="Include" />
             <e p="ProjectMidiFilesStorage.cs" t="Include" />
           </e>
-          <e p="MidiFilesEditor" t="Include">
-            <e p="MidiEditorWindow.cs" t="Include" />
-          </e>
           <e p="MidiJack" t="Include">
             <e p="Editor" t="Include">
               <e p="MidiJackWindow.cs" t="Include" />

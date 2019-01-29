@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using MidiJack;
 using System;
-using UnityEngine.Experimental.UIElements;
 
 /// <summary>
 /// MIDI Keyboard controller supporting PC keyboard controller
