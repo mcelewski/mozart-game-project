@@ -15,7 +15,7 @@ public class EndLevelUIController : MonoBehaviour
     public Button mozartHeroBtn;
     public Button endLevelButton;
     
-    static string mozartHeroName = "PianoKeyboard";
+    static string mozartHeroName = "MozartHero";
 
     public void SetEndUI(int notesCount, int totalScore, bool enableUI, bool enableEndBtn)
     {

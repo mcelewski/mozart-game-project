@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AdventureScene.unity
     guid: fdcc399680ddffc4993691c2f68ea5a5
+  - enabled: 1
+    path: Assets/Scenes/MozartHero.unity
+    guid: 21f65ea7895df3846b1c64e97f8e2176
+  - enabled: 1
+    path: Assets/Scenes/HiddenObjects/HouseTestDungeon.unity
+    guid: a21e92101a55f91469707f058586e20a
   m_configObjects: {}
