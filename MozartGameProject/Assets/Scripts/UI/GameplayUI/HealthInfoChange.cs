@@ -11,6 +11,8 @@ public class HealthInfoChange : MonoBehaviour
     public Sprite[] healthStatus = new Sprite[6];
     public Sprite[] poisonStatus = new Sprite[6];
     public List<GameObject> healthHearts = new List<GameObject>();
+    
+ 
 
     private static int index;
     
@@ -162,5 +164,6 @@ public class HealthInfoChange : MonoBehaviour
         return x;
     }
 
+    
     #endregion
 }

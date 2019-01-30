@@ -12,10 +12,9 @@ public class EndLevelUIController : MonoBehaviour
     public Text totalScoreTxt;
     public Text decripctionTxt;
 
-    public Button mozartHeroBtn;
     public Button endLevelButton;
     
-    static string mozartHeroName = "MozartHero";
+    public string mozartHeroName = "MozartHero";
 
     public void SetEndUI(int notesCount, int totalScore, bool enableUI, bool enableEndBtn)
     {

@@ -7,8 +7,9 @@ public class HealthBarBehaviour : MonoBehaviour
     public float hpTimer = .1f;
     public float maxTime;
     public float timeCalc = 1f;
-    public bool beginPoison = false;
+    public bool beginPoison;
     public HealthInfoChange infoChange;
+    [SerializeField] private PlayerHP player;
 
     private void Start()
     {
@@ -67,7 +68,7 @@ public class HealthBarBehaviour : MonoBehaviour
     
     void SetMaxTime()
     {
-        maxTime = PlayerHP.GetMaxHp();
+        maxTime = player.GetPlayerHP();
     }
     
     void ReSetTimer()

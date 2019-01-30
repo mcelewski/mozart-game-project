@@ -1,32 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerHP : MonoBehaviour
 {
-    private static float _playerHP = 100;
-    private static float _playerMaxHP = 100;
-
-    public static float GetPlayerHP()
+    public enum PlayerPoisonStatus
     {
-        return _playerHP;
+        Healty,
+        Poisoned
+    }
+    
+    private float playerLifetime = 100;
+
+    public PlayerPoisonStatus poisonedStatus = PlayerPoisonStatus.Healty;
+
+    public float GetPlayerHP()
+    {
+        return playerLifetime;
     }
 
-    public static float GetMaxHp()
+    public void SetPlayerHP(float amount)
     {
-        return _playerMaxHP;
-    }
-
-    public static void SetPlayerHP(float amount)
-    {
-        if (amount < 20 && _playerHP < _playerMaxHP)
+        if (amount < 20)
         {
-            _playerHP += amount;
+            playerLifetime += amount;
         }
     }
 
-    public static void SetMaximumHP(float maxHp)
+    bool IsPlayerAlive()
     {
-        _playerMaxHP = maxHp;
+        bool alive = false || (playerLifetime > 1 && poisonedStatus == PlayerPoisonStatus.Healty ||
+                               playerLifetime > 1 && poisonedStatus == PlayerPoisonStatus.Poisoned);
+
+        return alive;
+    }
+
+    private void Update()
+    {
+        if (!IsPlayerAlive())
+        {
+            Debug.Log("Mozart gleba ;)");
+        }
     }
 }

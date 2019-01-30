@@ -12,6 +12,7 @@ public class PlayerAnimations : MonoBehaviour
 	private string _jumpAnimation = "Mozart_jump";
 	private string _inventoryAnimation = "Mozart_inventory";
     private string _onLadder = "Mozart_onladder";
+    private string _die = "Mozart_dead";
 
 
 	#region Idle animations
@@ -132,6 +133,26 @@ public class PlayerAnimations : MonoBehaviour
         {
             animator.SetTrigger("Mozart_OnLadder");
         }
+    }
+
+
+    #endregion
+    
+    #region Death animation
+    public void EndDeathAnimation()
+    {
+	    if (animator.GetCurrentAnimatorStateInfo(0).IsName(_die))
+	    {
+		    animator.ResetTrigger("Mozart_Die");
+	    }
+    }
+
+    public void StartDeathAnimation()
+    {
+	    if (animator.GetCurrentAnimatorStateInfo(0).loop)
+	    {
+		    animator.SetTrigger("Mozart_Die");
+	    }
     }
 
 
