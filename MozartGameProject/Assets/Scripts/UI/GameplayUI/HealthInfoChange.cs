@@ -12,10 +12,6 @@ public class HealthInfoChange : MonoBehaviour
     public Sprite[] poisonStatus = new Sprite[6];
     public List<GameObject> healthHearts = new List<GameObject>();
     
- 
-
-    private static int index;
-    
     private void Start()
     {
         if (healthStatus == null || healthHearts == null) Debug.Log("No health sprites added");

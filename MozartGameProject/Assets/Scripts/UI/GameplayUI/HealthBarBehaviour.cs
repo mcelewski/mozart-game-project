@@ -9,24 +9,9 @@ public class HealthBarBehaviour : MonoBehaviour
     public float timeCalc = 1f;
     public bool beginPoison;
     public HealthInfoChange infoChange;
-    [SerializeField] private PlayerHP player;
+    [SerializeField] private PlayerLifeTime player;
 
     private void Start()
-    {
-        SetBar();
-    }
-    
-    public void PausePoison()
-    {
-        beginPoison = false;
-    }
-    
-    public void ResumePoison()
-    {
-        beginPoison = true;
-    }
-
-    public void RestartPoison()
     {
         SetBar();
     }
@@ -40,6 +25,24 @@ public class HealthBarBehaviour : MonoBehaviour
         }
     }
     
+    bool IsPlayerAlive()
+    {
+        return hpTimer > 1f;
+    }
+
+    void SetProperHeartz()
+    {
+        
+    }
+
+    private void Update()
+    {
+        if (!IsPlayerAlive())
+        {
+            Debug.Log("Mozart gleba ;)");
+        }
+    }
+    
     public void BonusTime(float xTime)
     {
         hpTimer += xTime;
@@ -49,11 +52,7 @@ public class HealthBarBehaviour : MonoBehaviour
     {
         hpTimer -= xTime;
     }
-
-    /// <summary>
-    /// Decrease speed of timeleft
-    /// </summary>
-    /// <param name="calc"></param>
+    
     public void SetCalcTime(float calc)
     {
         timeCalc = calc;
@@ -62,22 +61,36 @@ public class HealthBarBehaviour : MonoBehaviour
     void SetBar()
     {
         SetMaxTime();
-        ReSetTimer();
+        ResetTimer();
         ReadyToPoison();
     }
     
     void SetMaxTime()
     {
-        maxTime = player.GetPlayerHP();
+        maxTime = player.GetPlayerTime();
     }
     
-    void ReSetTimer()
+    void ResetTimer()
     {
         hpTimer = maxTime;
     }
 
+    #region Booleans
+
+    public void PausePoison()
+    {
+        beginPoison = false;
+    }
+    
+    public void ResumePoison()
+    {
+        beginPoison = true;
+    }
+    
     void ReadyToPoison()
     {
         beginPoison = true;
     }
+
+    #endregion
 }

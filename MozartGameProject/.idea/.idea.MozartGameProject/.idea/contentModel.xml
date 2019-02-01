@@ -64,7 +64,7 @@
               <e p="PlayerAnimations.cs" t="Include" />
               <e p="PlayerDeatchUI.cs" t="Include" />
               <e p="PlayerGroudDetection.cs" t="Include" />
-              <e p="PlayerHP.cs" t="Include" />
+              <e p="PlayerLifeTime.cs" t="Include" />
               <e p="PlayerMove.cs" t="Include" />
               <e p="UserInteractListener.cs" t="Include" />
             </e>
