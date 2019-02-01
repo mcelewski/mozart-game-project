@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class HealthBarBehaviour : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class HealthBarBehaviour : MonoBehaviour
 
     private void Start()
     {
+        CheckReferences();
         SetBar();
     }
 
@@ -73,6 +75,15 @@ public class HealthBarBehaviour : MonoBehaviour
     void ResetTimer()
     {
         hpTimer = maxTime;
+    }
+
+    void CheckReferences()
+    {
+        if (infoChange == null)
+            infoChange = FindObjectOfType<HealthInfoChange>();
+
+        if (player == null)
+            player = FindObjectOfType<PlayerLifeTime>();
     }
 
     #region Booleans

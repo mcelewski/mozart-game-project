@@ -44,7 +44,8 @@ public class InventorySpace : MonoBehaviour
         slots[index].SetActive(true);
         slots[index].GetComponent<Image>().sprite = SearchForItemSprite(itemId);
         slots[index].GetComponentInChildren<Text>().text = SearchForItemAmount(itemId).ToString();
-        StartCoroutine(DeactivateItemOnScene(itemId));
+        //StartCoroutine(DeactivateItemOnScene(itemId));
+        DeactivateItemOnScene(itemId);
     }
 
     int GetCurrentItemId()
@@ -87,9 +88,9 @@ public class InventorySpace : MonoBehaviour
         return itemID;
     }
 
-    IEnumerator DeactivateItemOnScene(int itemID)
+    void DeactivateItemOnScene(int itemID)
     {
-        yield return new WaitForSeconds(.05f);
+        //yield return new WaitForFixedUpdate();
         GameObject obj = null;
         if (itemID != 0)
         {
@@ -105,6 +106,16 @@ public class InventorySpace : MonoBehaviour
         if (obj != null) 
         {
             obj.SetActive(false);
+            StartCoroutine(DestroyOnScene(obj));
+        }
+    }
+
+    IEnumerator DestroyOnScene(GameObject gameObject)
+    {
+        yield return new WaitForFixedUpdate();
+        if (gameObject != null)
+        {
+            Destroy(gameObject);
         }
     }
 }

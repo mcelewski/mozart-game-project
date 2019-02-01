@@ -73,6 +73,17 @@ public class SceneMovementController : MonoBehaviour
             currentScene = ScenesInGame.Puzzle;
         }
     }
+    
+    /// <summary>
+    /// Print current script data
+    /// </summary>
+
+    public void Print()
+    {
+        Debug.Log("Current scene: " + currentScene +
+                  "\tScene to go: " + sceneToGo + 
+                  "\tLoaded scene: " + sceneLoaded.name);
+    }
 
     private void LoadScene()
     {
@@ -131,6 +142,12 @@ public class SceneMovementController : MonoBehaviour
             currentScene = ScenesInGame.Puzzle;
         }
     }
+
+    public static void SetPauseMenu()
+    {
+        currentScene = ScenesInGame.Paused;
+    }
+
     #region Check currnetly loaded scene type
 
     /// <summary>

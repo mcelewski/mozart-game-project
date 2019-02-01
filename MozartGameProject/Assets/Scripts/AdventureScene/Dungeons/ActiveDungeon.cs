@@ -10,6 +10,7 @@ public class ActiveDungeon : ScriptableObject
     public void Print()
     {
         Debug.Log("Dungeon name: " + name +
-                  "\nDungeon image: " + icon.name);
+                  "\tDungeon image: " + icon.name + 
+                  "\tSprite database path: " + AssetDatabase.GetAssetPath(icon));
     }
 }

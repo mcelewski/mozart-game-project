@@ -18,6 +18,7 @@ public class MenuUIController : MonoBehaviour
      */
     public GameObject menuUI;
     public GameObject gameplayUI;
+    public Button autosaveBtn;
     public Button startBtn;
     public Button storyBtn;
     public Button howtoBtn;
@@ -30,12 +31,12 @@ public class MenuUIController : MonoBehaviour
     private string resume = "Resume";
 
     #region Private Methods
-    private void Start()
+    void Start()
     {
         MenuDefaultSetting();
     }
     
-    private void CheckUIPanelState()
+    void CheckUIPanelState()
     {
         if (storyUI.activeSelf || howToUI.activeSelf)
         {
@@ -44,7 +45,7 @@ public class MenuUIController : MonoBehaviour
         }
     }
 
-    private void SetExitBtnText(bool leaveGame)
+    void SetExitBtnText(bool leaveGame)
     {
         var btnText = leaveBtn.GetComponentInChildren<Text>();
         
@@ -54,18 +55,38 @@ public class MenuUIController : MonoBehaviour
             btnText.text = back;
     }
     
-    private void MenuDefaultSetting()
+    void MenuDefaultSetting()
     {
         CheckUIPanelState();
         DeactivePlayerUI();
         SetExitBtnText(true);
+        AutosaveButtonOnStart();
+        Time.timeScale = 0;
+        SceneMovementController.SetPauseMenu();
     }
 
-    private void ChangeStateMenuButtons(bool enable)
+    void ChangeStateMenuButtons(bool enable)
     {
         startBtn.gameObject.SetActive(enable);
         storyBtn.gameObject.SetActive(enable);
         howtoBtn.gameObject.SetActive(enable);
+    }
+
+    void AutosaveButtonOnStart()
+    {
+        if (autosaveBtn.isActiveAndEnabled)
+        {
+            autosaveBtn.gameObject.SetActive(false);
+            autosaveBtn.enabled = false;
+        }
+    }
+    void AutosaveButtonOnPauseMenu()
+    {
+        if (!autosaveBtn.isActiveAndEnabled)
+        {
+            autosaveBtn.gameObject.SetActive(true);
+            autosaveBtn.enabled = true;
+        }
     }
 
     #endregion
@@ -79,7 +100,12 @@ public class MenuUIController : MonoBehaviour
     {
         gameplayUI.SetActive(true);
     }
-    
+
+    public void OnAutosave()
+    {
+        Debug.Log("autosave load");
+    }
+
     public void OnStart()
     {
         DisableMenu();

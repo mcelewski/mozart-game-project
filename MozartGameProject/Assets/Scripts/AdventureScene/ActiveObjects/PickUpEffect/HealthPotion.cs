@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class HealthPotion : MonoBehaviour
 {
-   public uint amount;
    [SerializeField] private HealthBarBehaviour heathBar;
    [SerializeField] private PlayerLifeTime player;
+   [SerializeField] private ItemInfo item;
    
    private void Start()
    {
@@ -23,8 +23,9 @@ public class HealthPotion : MonoBehaviour
    private void OnTriggerEnter2D(Collider2D other)
    {
       if (!other.CompareTag("Player")) return;
-      
+
+      item.Print();
       player.SetPoisonStatus(PlayerLifeTime.PlayerPoisonStatus.Healty);
-      heathBar.BonusTime(amount);
+      heathBar.BonusTime(item.amount);
    }
 }

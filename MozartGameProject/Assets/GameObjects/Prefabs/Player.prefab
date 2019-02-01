@@ -192,3 +192,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ec107ae30796c4690937f3ccd01614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLifetime: 100
+  poisonedStatus: 0

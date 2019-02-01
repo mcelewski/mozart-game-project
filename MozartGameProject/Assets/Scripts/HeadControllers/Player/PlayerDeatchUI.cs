@@ -10,4 +10,10 @@ public class PlayerDeatchUI : MonoBehaviour
     [SerializeField] private GameObject _scoreUI;
     [SerializeField] private GameObject _deathUI;
 
+
+    public void OnOkButton()
+    {
+        // open main menu
+    }
+
 }
