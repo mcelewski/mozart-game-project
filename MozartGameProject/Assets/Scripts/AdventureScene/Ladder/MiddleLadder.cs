@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MiddleLadder : MonoBehaviour 
 {
-	private static bool activateMiddle;
-	private void OnTriggerEnter2D(Collider2D other)
+	static bool activateMiddle;
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag("Player"))
 			activateMiddle = true;
@@ -13,7 +11,7 @@ public class MiddleLadder : MonoBehaviour
 		//Debug.Log("Middle active");
 	}
 
-	private void OnTriggerExit2D(Collider2D other)
+	void OnTriggerExit2D(Collider2D other)
 	{
 		if (other.CompareTag("Player"))
 			activateMiddle = false;

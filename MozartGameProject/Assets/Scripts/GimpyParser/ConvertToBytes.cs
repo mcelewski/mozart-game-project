@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using UnityEngine;
-
-/// <summary>
+﻿/// <summary>
 ///     Converting file to byte array
 ///         - Send array to forward analyse
 /// 

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryDesign : MonoBehaviour
@@ -9,9 +8,9 @@ public class InventoryDesign : MonoBehaviour
     
     public float smootchTime = 15f;
     public GameObject Inventory;
-    private bool opened;
+    bool opened;
 
-    private void Awake()
+    void Awake()
     {
         Inventory.transform.localPosition = startInventoryUIPosition;
     }

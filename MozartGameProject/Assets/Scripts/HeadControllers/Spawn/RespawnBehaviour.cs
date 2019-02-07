@@ -7,7 +7,7 @@ public class RespawnBehaviour : MonoBehaviour
 	public Transform _respawn;
 	public GameObject hiddenSceneSpawnPref;
 
-	private void Start()
+	void Start()
 	{
 		if (player != null && hiddenSceneSpawnPref != null) return;
 		

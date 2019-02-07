@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour 
 {
 	public Animator animator;
 
-	private string _idleAnimation = "Mozart_idle";
-	private string _climbAnimation = "Mozart_climb";
-	private string _walkAnimation = "Mozart_walk";
-	private string _jumpAnimation = "Mozart_jump";
-	private string _inventoryAnimation = "Mozart_inventory";
-    private string _onLadder = "Mozart_onladder";
-    private string _die = "Mozart_dead";
+	string _idleAnimation = "Mozart_idle";
+	string _climbAnimation = "Mozart_climb";
+	string _walkAnimation = "Mozart_walk";
+	string _jumpAnimation = "Mozart_jump";
+	string _inventoryAnimation = "Mozart_inventory";
+    string _onLadder = "Mozart_onladder";
+    string _die = "Mozart_dead";
 
 
 	#region Idle animations

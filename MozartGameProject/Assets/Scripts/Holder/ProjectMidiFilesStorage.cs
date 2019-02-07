@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.IO;
+﻿using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,13 +11,13 @@ using Object = System.Object;
 
 public class ProjectMidiFilesStorage : MonoBehaviour
 {
-    private string _fdName = "Assets\\MidiFiles";
-    private List<Object> _midiFiles = new List<Object>();
-    private string[] _fNames;
+    string _fdName = "Assets\\MidiFiles";
+    List<Object> _midiFiles = new List<Object>();
+    string[] _fNames;
 
     #region Unity Methods
 
-    private void Awake()
+    void Awake()
     {
         if (_midiFiles.Count < 1)
         {
@@ -30,7 +29,7 @@ public class ProjectMidiFilesStorage : MonoBehaviour
 
     #region Private Methods
 
-    private void SetFiles()
+    void SetFiles()
     {
         _fNames = Directory.GetFiles(_fdName, "*.mid");
         int count = Directory.GetFiles(_fdName, "*.mid").Length;
@@ -42,7 +41,7 @@ public class ProjectMidiFilesStorage : MonoBehaviour
 
     }
 
-    private void CheckFiles()
+    void CheckFiles()
     {
         Debug.Log("Checking files...");
         if (_midiFiles != null)

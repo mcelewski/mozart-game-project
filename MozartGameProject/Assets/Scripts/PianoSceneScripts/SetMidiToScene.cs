@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Mechanic:
@@ -27,7 +25,7 @@ public class SetMidiToScene : MonoBehaviour
      * Get info and set in scene
      */
 
-    private void MakeAction(MidiLocalStorage midiLocal)
+    void MakeAction(MidiLocalStorage midiLocal)
     {
         bool setToUse = false;
         int number = 0;
@@ -46,18 +44,18 @@ public class SetMidiToScene : MonoBehaviour
         }        
     }
     
-    private int CheckNoteVelocity(int velocity, out bool set, int number)
+    int CheckNoteVelocity(int velocity, out bool set, int number)
     {
         set = 70 <= velocity ? set = true : set = false;
         return number;
     }
 
-    private float CalculateLenght(float start, float end)
+    float CalculateLenght(float start, float end)
     {
         return end - start;
     }
 
-    private void SetPrefabToScene(int noteNumber, float noteLenght, float noteStartPos)
+    void SetPrefabToScene(int noteNumber, float noteLenght, float noteStartPos)
     {
         /*
          * Get note to play number

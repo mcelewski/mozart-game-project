@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UpperLadder : MonoBehaviour
 {
-    private static bool activateUpper;
-    private void OnTriggerEnter2D(Collider2D other)
+    static bool activateUpper;
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             activateUpper = true;
@@ -13,7 +11,7 @@ public class UpperLadder : MonoBehaviour
         //Debug.Log("Upper active");
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             activateUpper = false;

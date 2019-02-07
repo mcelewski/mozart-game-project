@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class NoteInfo : MonoBehaviour
@@ -19,7 +17,7 @@ public class NoteInfo : MonoBehaviour
     }
     
     #region Variables
-    private Dictionary<int, NotesInScene> _noteFull = new Dictionary<int, NotesInScene>();
+    Dictionary<int, NotesInScene> _noteFull = new Dictionary<int, NotesInScene>();
     public List<Transform> _notePositionList = new List<Transform>();
 
     public GameObject _main;
@@ -37,7 +35,7 @@ public class NoteInfo : MonoBehaviour
         //CheckNotesList();
     }
 
-    private void SetNoteDictionary()
+    void SetNoteDictionary()
     {
         NotesInScene singleNote = new NotesInScene();
         // j = 1 to skip parent from list
@@ -59,7 +57,7 @@ public class NoteInfo : MonoBehaviour
             _noteFull.Add(i, singleNote);
         }
     }
-    private void GetSceneNotesTransforms()
+    void GetSceneNotesTransforms()
     {
         if (_main != null)
         {
@@ -71,8 +69,7 @@ public class NoteInfo : MonoBehaviour
             }
         }
     }
-    // Run in Start() if needed
-    private void CheckNotesList()
+    void Print()
     {
         foreach (var item in _noteFull)
         {

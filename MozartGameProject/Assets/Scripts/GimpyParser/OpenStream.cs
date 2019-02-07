@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Net;
 using UnityEngine;
 
 /// <summary>
@@ -10,16 +9,16 @@ using UnityEngine;
 
 public class OpenStream
 {
-    private string fPath = "";
-    private int bReaded = 0;
-    private bool openAndCopied = false;
+    string fPath = "";
+    int bReaded = 0;
+    bool openAndCopied = false;
     
     public string SetMidiPath
     {
         set { fPath = value; }
     }
 
-    private FileStream fStream;
+    FileStream fStream;
 
     public bool OpenMidiFile()
     {

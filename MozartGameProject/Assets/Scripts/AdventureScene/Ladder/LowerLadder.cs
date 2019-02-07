@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LowerLadder : MonoBehaviour
 {
-    private static bool turnDeny;
-    private static bool activateLower;
+    static bool turnDeny;
+    static bool activateLower;
     
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             activateLower = true;
@@ -15,7 +13,7 @@ public class LowerLadder : MonoBehaviour
         //Debug.Log("Lower active");
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
             activateLower = false;

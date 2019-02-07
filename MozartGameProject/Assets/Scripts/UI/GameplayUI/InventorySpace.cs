@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +8,7 @@ public class InventorySpace : MonoBehaviour
     public List<GameObject> slots = new List<GameObject>();
     public ItemsInGameDatabase InGameItemsDB;
 
-    private int itemIdToAdd;
+    int itemIdToAdd;
     
     public void AddToInventory()
     {

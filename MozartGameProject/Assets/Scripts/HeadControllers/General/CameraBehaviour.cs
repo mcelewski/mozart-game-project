@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class CameraBehaviour : MonoBehaviour
 {
@@ -9,18 +8,18 @@ public class CameraBehaviour : MonoBehaviour
 
     public float cameraSmotch;
 
-	private void Start()
+	void Start()
 	{
 		if (!gameObject.CompareTag("MainCamera"))
 		Debug.Log("There is no camera at scene");
 	}
 
-	private void Update()
+	void Update()
 	{
 		CameraSetup();
 	}
 	
-	private void CameraSetup()
+	void CameraSetup()
 	{
 		var cam = gameObject.GetComponent<Camera>();
 		if (!CheckIfCanBeOrto() && CheckIfCanBeTracked())
@@ -39,7 +38,7 @@ public class CameraBehaviour : MonoBehaviour
 		}
 	}
 
-	private void CameraOnAdventure()
+	void CameraOnAdventure()
 	{
 		sbyte offset = 50;
 		if (playerRef.transform.hasChanged)
@@ -50,7 +49,7 @@ public class CameraBehaviour : MonoBehaviour
 		}
 	}
 
-	private void CameraOnHiddenObjects()
+	void CameraOnHiddenObjects()
 	{
 		sbyte offset = 2;
 		gameObject.transform.localPosition = new Vector3(hiddenObjectTarget.position.x +offset,
@@ -58,22 +57,22 @@ public class CameraBehaviour : MonoBehaviour
 													-50);
 	}
 
-	private void CameraOnMOzartHero()
+	void CameraOnMOzartHero()
 	{
 		gameObject.transform.position = new Vector3(0,3,-10);
 	}
 
-	private void TrackPlayer(Transform transform)
+	void TrackPlayer(Transform transform)
 	{
 		gameObject.transform.LookAt(transform);
 	}
 	
-	private bool CheckIfCanBeOrto()
+	bool CheckIfCanBeOrto()
 	{
 		return _SceneMovement.IsOnMozartHeroScene();
 	}
 
-	private bool CheckIfCanBeTracked()
+	bool CheckIfCanBeTracked()
 	{
 		return _SceneMovement.IsOnHiddenObjectsScene();
 	}

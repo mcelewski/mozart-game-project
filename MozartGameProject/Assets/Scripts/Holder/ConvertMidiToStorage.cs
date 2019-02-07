@@ -1,10 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
-
 /// <summary>
 /// Think about this way 
 /// </summary>
@@ -12,7 +7,7 @@ public class ConvertMidiToStorage : MonoBehaviour
 {
     public ProjectMidiFilesStorage midiFilesList;
 
-    private void Start()
+    void Start()
     {
         ShowMeTheWay();
     }

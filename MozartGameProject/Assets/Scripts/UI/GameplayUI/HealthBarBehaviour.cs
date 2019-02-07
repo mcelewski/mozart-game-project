@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Networking;
+﻿using UnityEngine;
 
 public class HealthBarBehaviour : MonoBehaviour
 {
     public float hpTimer = .1f;
     public float maxTime;
-    public float timeCalc = 1f;
+    public float timeCalc = 10f;
+    [SerializeField] float extraPenaltyTime;
     public bool beginPoison;
     public HealthInfoChange infoChange;
-    [SerializeField] private PlayerLifeTime player;
+    [SerializeField] PlayerLifeTime player;
 
-    private void Start()
+    void Start()
     {
         CheckReferences();
         SetBar();
@@ -20,9 +18,10 @@ public class HealthBarBehaviour : MonoBehaviour
 
     public void CheckPoison()
     {
+        Debug.Log("calc: " + timeCalc);
         if (beginPoison && hpTimer > 0)
         {
-            hpTimer -= Time.deltaTime / timeCalc;
+            hpTimer -= (Time.deltaTime * extraPenaltyTime)/ timeCalc;
             infoChange.SetHeart(hpTimer);
         }
     }
@@ -32,12 +31,7 @@ public class HealthBarBehaviour : MonoBehaviour
         return hpTimer > 1f;
     }
 
-    void SetProperHeartz()
-    {
-        
-    }
-
-    private void Update()
+    void Update()
     {
         if (!IsPlayerAlive())
         {
@@ -48,16 +42,32 @@ public class HealthBarBehaviour : MonoBehaviour
     public void BonusTime(float xTime)
     {
         hpTimer += xTime;
+        SetCalcTime(10);
     }
     
-    public void DecrementTime(float xTime)
+    public void PenaltyTime(float time)
     {
-        hpTimer -= xTime;
+        FasterTimeFor(ref time);
+        SetCalcTime(1);
     }
     
     public void SetCalcTime(float calc)
     {
         timeCalc = calc;
+    }
+
+    //TODO fixes needed
+    void FasterTimeFor(ref float time)
+    {
+        extraPenaltyTime = time;
+        while (extraPenaltyTime > 0 && !player.IsHealty())
+        {
+            extraPenaltyTime -= Time.deltaTime;
+            hpTimer -= Time.deltaTime / 1f;
+        }
+
+        Debug.Log("out");
+        SetCalcTime(10);
     }
 
     void SetBar()

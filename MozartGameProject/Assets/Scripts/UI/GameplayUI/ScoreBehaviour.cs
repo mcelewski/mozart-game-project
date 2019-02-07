@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreBehaviour : MonoBehaviour
@@ -8,10 +6,10 @@ public class ScoreBehaviour : MonoBehaviour
     public Text actualScore;
     public Text scoreTarget;
 
-    private static int score;
-    private int target;
+    static int score;
+    int target;
 
-    private void Start()
+    void Start()
     {
         DefaultScore();
         //DefaultTarget();

@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
-using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Place where are defined all user actions in game
@@ -22,10 +17,10 @@ public class UserInteractListener : MonoBehaviour
     public InventoryDesign _inventoryDesign;
     public EndLevelUIController EndLevelUI;
 
-    private float mainSpeed = 5.0f;
-    private float jumpHeigh = 50.0f;
+    [SerializeField]float mainSpeed = 5.0f;
+    [SerializeField]float jumpHeigh = 50.0f;
     
-    private void Awake()
+    void Awake()
     {
         SetActionsToDictionary();
     }
@@ -54,7 +49,7 @@ public class UserInteractListener : MonoBehaviour
         }
     }
     
-    private void SetActionsToDictionary()
+    void SetActionsToDictionary()
     {
         if (ActionsDictionary.Count < 0)
             Debug.Log("Actions are empty");
@@ -69,7 +64,7 @@ public class UserInteractListener : MonoBehaviour
         ActionsDictionary.Add(KeyCode.Escape, OpenClosePauseMenu);
     }
 
-    private void OpenClosePauseMenu()
+    void OpenClosePauseMenu()
     {
         if (!_sceneController.IsPaused())
         {
@@ -79,7 +74,7 @@ public class UserInteractListener : MonoBehaviour
 
     #region PlayerMovement
 
-    private void OpenEquipment()
+    void OpenEquipment()
     {
         if (!_sceneController.IsOnMozartHeroScene())
         {
@@ -87,7 +82,7 @@ public class UserInteractListener : MonoBehaviour
         }
     }
 
-    private void UseItem()
+    void UseItem()
     {
         if (_sceneController.IsOnAdventureScene() && EnterOrLeaveDungeon.CanPlayerChangeScene())
         {
@@ -115,7 +110,7 @@ public class UserInteractListener : MonoBehaviour
         }
     }
 
-    private void MoveLeft()
+    void MoveLeft()
     {
         if (!LowerLadder.DenyTurn())
         {
@@ -124,7 +119,7 @@ public class UserInteractListener : MonoBehaviour
             PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Walking;
         }
     }
-    private void MoveRight()
+    void MoveRight()
     {
         if (!LowerLadder.DenyTurn())
         {
@@ -134,7 +129,7 @@ public class UserInteractListener : MonoBehaviour
         }
         
     }
-    private void ClimbUp()
+    void ClimbUp()
     {
         if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
         {
@@ -147,7 +142,7 @@ public class UserInteractListener : MonoBehaviour
         }
     }
     
-    private void ClimbDown()
+    void ClimbDown()
     {
         if (!_sceneController.IsOnHiddenObjectsScene() && LadderObj.AllowUseLadder())
         {
@@ -160,7 +155,7 @@ public class UserInteractListener : MonoBehaviour
         }
     }
 
-    private void Jump()
+    void Jump()
     {
         if (!_sceneController.IsOnMozartHeroScene() && !_sceneController.IsOnHiddenObjectsScene() && PlayerGroudDetection.IsGrounded())
         {
@@ -171,7 +166,7 @@ public class UserInteractListener : MonoBehaviour
 
     #endregion
 
-    private void SetMozartRigidbody()
+    void SetMozartRigidbody()
     {
         var rb = player.GetComponent<Rigidbody2D>();
         if (LadderObj.AllowUseLadder() || _sceneController.IsOnHiddenObjectsScene())

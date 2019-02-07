@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GenerateOnAllScenes : MonoBehaviour 
 {
-    private void Awake()
+    void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
     }

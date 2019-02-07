@@ -1,15 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
-
+﻿using UnityEngine;
 public class PlatformBehaviour : MonoBehaviour 
 {
     public static bool SetPlayerTrigger { get; set; }
 
-    private static Collider2D _gameObjectCollider;
+    static Collider2D _gameObjectCollider;
 
-    private void Start()
+    void Start()
     {
         _gameObjectCollider = gameObject.GetComponent<Collider2D>();
         if (!gameObject.GetComponent<Collider2D>().isTrigger)
@@ -20,7 +16,7 @@ public class PlatformBehaviour : MonoBehaviour
     /// Detect if player moved into a platform and set trigger to false
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         SetPlayerTrigger = false;

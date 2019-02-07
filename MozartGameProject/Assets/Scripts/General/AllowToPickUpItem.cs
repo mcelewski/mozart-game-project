@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AllowToPickUpItem : MonoBehaviour
 {
-    private static bool pickUp;
+    static bool pickUp;
 
-    private void OnTriggerStay2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         pickUp = true;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         //Debug.Log("Deny to pick up");

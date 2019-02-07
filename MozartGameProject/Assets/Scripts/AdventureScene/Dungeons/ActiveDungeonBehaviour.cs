@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(ActiveDungeon))]
 public class ActiveDungeonBehaviour : MonoBehaviour
 {
     public ActiveDungeon dungeon;
 
-    private void Start()
+    void Start()
     {
         if (dungeon.name == string.Empty ||
             dungeon.icon == null ||

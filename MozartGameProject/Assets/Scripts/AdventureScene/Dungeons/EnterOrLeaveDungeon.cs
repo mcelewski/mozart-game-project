@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class EnterOrLeaveDungeon : MonoBehaviour
 {
     public UserInteractListener listener;
-    private static bool canChangeScene;
+    static bool canChangeScene;
     public GameObject sceneToGo;
 
     void Start(){

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class NoteBehaviour : MonoBehaviour
 {
@@ -24,13 +22,13 @@ public class NoteBehaviour : MonoBehaviour
     public static event OnNoteChanges ChangeNoteStatus;
 
     #region Default values
-    private int noteNumber;
-    private float noteLenght;
-    private float startPosition;
-    private bool isWhite;
+    int noteNumber;
+    float noteLenght;
+    float startPosition;
+    bool isWhite;
 
-    private Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
-    private Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
+    Vector3 _whiteNoteScale = new Vector3(4f, 1f, .2f);
+    Vector3 _blackNoteScale = new Vector3(2f, 1f, .1f);
     #endregion
 
     #region Accessors
@@ -57,7 +55,7 @@ public class NoteBehaviour : MonoBehaviour
 
     #region Private Methods
 
-    private void ChangeNoteScale(bool c)
+    void ChangeNoteScale(bool c)
     {
         if (c == true)
         {
@@ -68,17 +66,17 @@ public class NoteBehaviour : MonoBehaviour
             this.gameObject.transform.localScale += _blackNoteScale;
         }
     }
-    private void SetNoteLocation(float x, float p)
+    void SetNoteLocation(float x, float p)
     {
         this.gameObject.transform.position = new Vector3(x, transform.position.y, p);
     }
 
-    private void SetNoteLenght(float l)
+    void SetNoteLenght(float l)
     {
         this.gameObject.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, l);
     }
 
-    private void SetNoteColor(bool color)
+    void SetNoteColor(bool color)
     {
         // if false = black else white
         if (!color)
@@ -87,7 +85,7 @@ public class NoteBehaviour : MonoBehaviour
             this.gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
     }
 
-    private void NoteBehaviour_ChangeNoteStatus()
+    void NoteBehaviour_ChangeNoteStatus()
     {
         // send message note was created
         Debug.Log("Note Created or disabled");

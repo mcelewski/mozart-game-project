@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
  
 public class ItemInfo : MonoBehaviour
 {
-    public string name;
+    public new string name;
     public ushort id;
     public ushort amount;
     public ItemInfo item;

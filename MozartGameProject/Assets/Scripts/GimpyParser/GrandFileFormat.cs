@@ -1,5 +1,3 @@
-using System;
-using UnityEditor;
 using UnityEngine;
 
 /// <summary>
@@ -8,14 +6,14 @@ using UnityEngine;
 
 public class GrandFileFormat
 {
-    private enum MidiFormat
+    enum MidiFormat
     {
         Single_MultiChannelTrack, // Single track
         OneOrMore_simultaneousTrack, // Multiply track, synchronous
         OneOrMore_independentTrack // Multiply track, asynchronous -> usually not in use save drums etc..
     }
 
-    private MidiFormat SetupMidiFormat;
+    MidiFormat SetupMidiFormat;
 
     public void DetectFormat(byte[] file)
     {
@@ -53,7 +51,7 @@ public class GrandFileFormat
     }
     
     // Chunk type in ASCII
-    private static void GetASCIICode(ref byte[] file, int pos, ref string onformat)
+    static void GetASCIICode(ref byte[] file, int pos, ref string onformat)
     {
         char[] type = new char[4];
 
@@ -66,13 +64,13 @@ public class GrandFileFormat
     }
     
     // Determine data length
-    private static void GetSizeOfChunk(ref byte[] file, ref uint data)
+    static void GetSizeOfChunk(ref byte[] file, ref uint data)
     {
         data = ((uint)file[4] << 24) + ((uint)file[5] << 16) + ((uint)file[6] << 8) + ((uint)file[7] << 0);
     }
 
     // Set midi format
-    private static void GetMidiFormatType(ref byte[] file, ref MidiFormat format)
+    static void GetMidiFormatType(ref byte[] file, ref MidiFormat format)
     {
         uint data = ((uint) file[8] << 8) + ((uint) file[9] << 0);
         
@@ -91,14 +89,14 @@ public class GrandFileFormat
     }
     
     // Get amount of tracks
-    private static void GetNumberOfTracks(ref byte[] file, ref uint amount)
+    static void GetNumberOfTracks(ref byte[] file, ref uint amount)
     {
         const uint amountMask = 0xFF;
         amount = (file[10] & amountMask) + (file[11] & amountMask);
     }
     
     // Get time division
-    private static bool GetTimeDivision(ref byte[] file, ref uint division)
+    static bool GetTimeDivision(ref byte[] file, ref uint division)
     {
         /*
          * If the top bit of the word (bit mask 0x8000) is 0,
@@ -126,7 +124,7 @@ public class GrandFileFormat
     }
     
     //Get track chunk
-    private static void GetTrackChunkSize(ref byte[] file, ref uint chunkSize)
+    static void GetTrackChunkSize(ref byte[] file, ref uint chunkSize)
     {
         chunkSize = ((uint) file[18]) + ((uint) file[19]) + ((uint) file[20]) + ((uint) file[21]);
     }

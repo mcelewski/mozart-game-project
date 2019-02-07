@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using MidiJack;
-using System;
 
 /// <summary>
 /// MIDI Keyboard controller supporting PC keyboard controller
@@ -53,17 +52,17 @@ public class NoteIndicatorKeys : MonoBehaviour
         }
         keyboard.DetectKey();
     }
-    private bool WasJustReleased()
+    bool WasJustReleased()
     {
         return MidiMaster.GetKeyUp(noteNumber); //  || MidiMaster.GetKey(noteNumber) < 0.01f
     }
     
-    private bool WasPres()
+    bool WasPres()
     {
         return MidiMaster.GetKeyDown(noteNumber);
     }
     
-    private bool WasJustPressed()
+    bool WasJustPressed()
     {
         if (MidiMaster.GetKey(noteNumber) > 0.5f && keyState == KeyState.Up)
             return true;

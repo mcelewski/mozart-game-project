@@ -1,19 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EndCurrentLevelBehaviour : MonoBehaviour 
 {
     //TODO autosave, show summary level
-    private static bool endScene;
+    static bool endScene;
     
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(!IsPlayer(other)) return;
         AllowToEndScene();
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if(!IsPlayer(other)) return;
         DenyToEndScene();

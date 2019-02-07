@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,8 +16,8 @@ public class SceneMovementController : MonoBehaviour
         Puzzle
     }
     
-    private static string sceneToGoAfterEPress;
-    private static string lastLoadedScene;
+    static string sceneToGoAfterEPress;
+    static string lastLoadedScene;
     public static ScenesInGame currentScene, sceneToGo;
     private Scene sceneLoaded;
     
@@ -85,7 +84,7 @@ public class SceneMovementController : MonoBehaviour
                   "\tLoaded scene: " + sceneLoaded.name);
     }
 
-    private void LoadScene()
+    void LoadScene()
     {
         if (sceneToGoAfterEPress.Length > 6)
         {
@@ -110,7 +109,7 @@ public class SceneMovementController : MonoBehaviour
         currentScene = sceneInfo;
         Debug.Log("set curent");
     }
-    private IEnumerator CheckLoadedScene()
+    IEnumerator CheckLoadedScene()
     {
         yield return new WaitForSeconds(3f);
         GameObject[] gameObjects = SceneManager.GetSceneByName(lastLoadedScene).GetRootGameObjects();
@@ -121,7 +120,7 @@ public class SceneMovementController : MonoBehaviour
     /// Set up basic new scene info
     /// </summary>
     /// <param name="sceneInfo">Game object holding scene information</param>
-    private static void SetSceneToGoInfo(GameObject sceneInfo)
+    static void SetSceneToGoInfo(GameObject sceneInfo)
     {
         sceneToGoAfterEPress = sceneInfo.name;
         

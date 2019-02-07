@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Hold midi file information
@@ -20,7 +18,7 @@ using UnityEngine;
 
 public class MidiLocalStorage
 {
-    private struct MidiNoteTempStruct
+    struct MidiNoteTempStruct
     {
         public static float noteOnTick;
         public static float noteOffTick;
@@ -29,7 +27,7 @@ public class MidiLocalStorage
         public static bool readyToSet;
     }
     
-    private struct MidiFileOverallInfo
+    struct MidiFileOverallInfo
     {
         public static float midiFileLength;
         public static int totalNotesAmount;

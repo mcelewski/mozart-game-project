@@ -5,17 +5,15 @@ using Button = UnityEngine.UI.Button;
 /// <summary>
 /// Main UI panel for began of game and in game
 /// 
-///     Default settings: Story, How to panels are disabled
+///     Default settings: Story, How to panels, Autosave are disabled
 ///     Changes will take place in buttons:
 ///         Start -> Continue
 ///         Leave -> Back
+///         Autosave: Disabled -> Enabled
 /// 
 /// </summary>
 public class MenuUIController : MonoBehaviour 
 {
-    /*
-     * Get all UI objects
-     */
     public GameObject menuUI;
     public GameObject gameplayUI;
     public Button autosaveBtn;
@@ -26,9 +24,9 @@ public class MenuUIController : MonoBehaviour
     public GameObject storyUI;
     public GameObject howToUI;
 
-    private string leave = "Leave";
-    private string back = "Back";
-    private string resume = "Resume";
+    string leave = "Leave";
+    string back = "Back";
+    string resume = "Resume";
 
     #region Private Methods
     void Start()

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.Experimental.UIElements;
+﻿using UnityEngine;
 
 ///<summary>
 ///My publisher
@@ -27,7 +22,7 @@ public class PlayerMove : MonoBehaviour
         Torch
     }
     //TODO Keyboard input for all scenes including pause menu
-    private void Update()
+    void Update()
     {
         if (!sceneController.IsPaused())
         {

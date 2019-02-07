@@ -1,13 +1,12 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HealthPotion : MonoBehaviour
 {
-   [SerializeField] private HealthBarBehaviour heathBar;
-   [SerializeField] private PlayerLifeTime player;
-   [SerializeField] private ItemInfo item;
+   [SerializeField] HealthBarBehaviour heathBar;
+   [SerializeField] PlayerLifeTime player;
+   [SerializeField] ItemInfo item;
    
-   private void Start()
+   void Start()
    {
       if (heathBar == null)
       {
@@ -20,7 +19,7 @@ public class HealthPotion : MonoBehaviour
       }
    }
 
-   private void OnTriggerEnter2D(Collider2D other)
+   void OnTriggerEnter2D(Collider2D other)
    {
       if (!other.CompareTag("Player")) return;
 

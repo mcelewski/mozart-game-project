@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class NoteToCollectBehaviour : MonoBehaviour
 {
@@ -8,7 +6,7 @@ public class NoteToCollectBehaviour : MonoBehaviour
 
     public ScoreBehaviour score;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         

@@ -1,19 +1,18 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(ActiveObjects))]
 public class ActiveObjectsBehaviour : MonoBehaviour
 {
     public ActiveObjects item;
-    private int itemId;
+    int itemId;
 
-    private void Awake()
+    void Awake()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = item.Icon;
         itemId = item.ID;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
     }
