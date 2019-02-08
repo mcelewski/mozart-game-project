@@ -43,7 +43,6 @@
             <e p="AllowToPickUpItem.cs" t="Include" />
             <e p="GameObjects" t="Include">
               <e p="ItemInfo.cs" t="Include" />
-              <e p="ItemsID.cs" t="Include" />
               <e p="ItemsInGameDatabase.cs" t="Include" />
             </e>
             <e p="GenerateOnAllScenes.cs" t="Include" />
