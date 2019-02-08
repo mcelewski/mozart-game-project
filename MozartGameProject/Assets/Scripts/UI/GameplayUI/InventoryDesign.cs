@@ -24,7 +24,7 @@ public class InventoryDesign : MonoBehaviour
     void OnClose()
     {
         //yield return new WaitForSeconds(.5f);
-        Inventory.transform.position =h
+        Inventory.transform.position =
             Vector3.Lerp(Inventory.transform.position, startInventoryUIPosition, Time.deltaTime / smootchTime);
         inventoryStatus = InventoryStat.Closed;
     }
