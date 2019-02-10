@@ -2100,6 +2100,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1150b1c3f0b4993428960a8e1eade856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1295154904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2341080924056555241, guid: 995c7afe758adf144b27261fb77b8e55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1670136473}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07011c460fee5c0459fbf346a1eeb401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1325354942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,6 +2708,11 @@ PrefabInstance:
       propertyPath: _inventoryDesign
       value: 
       objectReference: {fileID: 1696733979}
+    - target: {fileID: 114107235287919224, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 3}
+      propertyPath: playerLifeTime
+      value: 
+      objectReference: {fileID: 106299619}
     - target: {fileID: 114567938948568586, guid: 995c7afe758adf144b27261fb77b8e55,
         type: 3}
       propertyPath: healthHearts.Array.data[0]
@@ -2746,6 +2763,17 @@ PrefabInstance:
       propertyPath: _deathUI
       value: 
       objectReference: {fileID: 1972226505}
+    - target: {fileID: 2341080924056555241, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1357015155}
+    - target: {fileID: 2341080924056555241, guid: 995c7afe758adf144b27261fb77b8e55,
+        type: 3}
+      propertyPath: _deatch
+      value: 
+      objectReference: {fileID: 21300000, guid: 16bf8c5848bcc0a4db2f84fa14140294,
+        type: 3}
     - target: {fileID: 3325304160284212293, guid: 995c7afe758adf144b27261fb77b8e55,
         type: 3}
       propertyPath: MenuUI
@@ -3422,6 +3450,16 @@ PrefabInstance:
       propertyPath: infoChange
       value: 
       objectReference: {fileID: 1095365614}
+    - target: {fileID: 114482907192001608, guid: dbb1d38e0f6db064b9f81510de751155,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 106299619}
+    - target: {fileID: 114482907192001608, guid: dbb1d38e0f6db064b9f81510de751155,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 1295154904}
     - target: {fileID: 4136872963991606, guid: dbb1d38e0f6db064b9f81510de751155, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

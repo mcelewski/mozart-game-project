@@ -14,6 +14,11 @@ public class PlayerLifeTime : MonoBehaviour
         return poisonedStatus == PlayerPoisonStatus.Healty;
     }
 
+    public bool IsDead()
+    {
+        return poisonedStatus == PlayerPoisonStatus.Dead;
+    }
+
     public PlayerPoisonStatus GetPlayerStatus()
     {
         return poisonedStatus;
@@ -27,6 +32,7 @@ public class PlayerLifeTime : MonoBehaviour
     public enum PlayerPoisonStatus
     {
         Healty,
-        Poisoned
+        Poisoned,
+        Dead
     }
 }

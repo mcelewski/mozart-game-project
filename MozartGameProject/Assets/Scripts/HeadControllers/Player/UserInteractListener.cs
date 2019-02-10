@@ -10,12 +10,11 @@ public class UserInteractListener : MonoBehaviour
     public GameObject player;
     public GameObject MainMenuUI;
     public Dictionary<KeyCode, Action> ActionsDictionary = new Dictionary<KeyCode, Action>();
-
     public SceneMovementController _sceneController;
     public RespawnBehaviour _spawnController;
-    public InventorySpace _inventory;
     public InventoryDesign _inventoryDesign;
     public EndLevelUIController EndLevelUI;
+    public PlayerLifeTime playerLifeTime;
 
     [SerializeField]float mainSpeed = 5.0f;
     [SerializeField]float jumpHeigh = 50.0f;
@@ -28,21 +27,19 @@ public class UserInteractListener : MonoBehaviour
     public void TakeActionOnKeyPress()
     {
         SetMozartRigidbody();
-        //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
-        //Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
-        //Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
-        //Debug.Log("Current scene: " + SceneMovementController.currentScene);
+        //Print();
+        
         foreach (KeyCode key in ActionsDictionary.Keys)
         {
-            if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene())
+            if (Input.GetKey(key) && !_sceneController.IsOnMozartHeroScene() && !playerLifeTime.IsDead())
             {
                 ActionsDictionary[key].Invoke();
             }
-            else if (Input.GetKeyUp(key) && PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Climbing)
+            else if (Input.GetKeyUp(key) && PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Climbing && !playerLifeTime.IsDead())
             {
                 PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.ClimbingIdle;
             }
-            else if (Input.GetKeyUp(key))
+            else if (Input.GetKeyUp(key)&& !playerLifeTime.IsDead())
             {
                 PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Idle;
             }
@@ -102,7 +99,7 @@ public class UserInteractListener : MonoBehaviour
         }
         else if(_sceneController.IsOnAdventureScene() && AllowToPickUpItem.AllowToPickUp())
         {
-            _inventory.AddToInventory();
+            _inventoryDesign.AddToInventory();
         }
         else if (_sceneController.IsOnAdventureScene())
         {
@@ -177,5 +174,13 @@ public class UserInteractListener : MonoBehaviour
         {
             rb.gravityScale = 1;
         }
+    }
+
+    void Print()
+    {
+        Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
+        Debug.Log("Adventure scene + " + _sceneController.IsOnAdventureScene());
+        Debug.Log("Scene to go + " + SceneMovementController.sceneToGo);
+        Debug.Log("Current scene: " + SceneMovementController.currentScene);
     }
 }

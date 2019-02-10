@@ -520,6 +520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac58bb12e0cfabe42b8bcfe04fde6175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryStatus: 1
+  _inventory: {fileID: 114681115907165242}
   smootchTime: 15
   Inventory: {fileID: 1199345564415976}
 --- !u!1 &1235473457722138
@@ -614,8 +616,10 @@ MonoBehaviour:
   hpTimer: 0
   maxTime: 0
   timeCalc: 1
+  extraPenaltyTime: 0
   beginPoison: 0
   infoChange: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &1331466738210020
 GameObject:
   m_ObjectHideFlags: 0

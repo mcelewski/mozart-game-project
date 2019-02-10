@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class InventoryDesign : MonoBehaviour
 {
-    readonly Vector3 startInventoryUIPosition = new Vector3(0,-300,0);
-    readonly Vector3 openInventoryPosition = new Vector3(0,300,0);
+    readonly Vector3 startInventoryUIPosition = new Vector3(0,-250,0);
+    readonly Vector3 openInventoryPosition = new Vector3(0,-150,0);
     [SerializeField] private InventoryStat inventoryStatus = InventoryStat.Closed;
-    
+    public InventorySpace _inventory;
     enum InventoryStat
     {
         Opened,
@@ -21,19 +21,19 @@ public class InventoryDesign : MonoBehaviour
         Inventory.transform.localPosition = startInventoryUIPosition;
     }
 
-    void OnClose()
+    IEnumerator OnClose()
     {
-        //yield return new WaitForSeconds(.5f);
-        Inventory.transform.position =
-            Vector3.Lerp(Inventory.transform.position, startInventoryUIPosition, Time.deltaTime / smootchTime);
+        yield return new WaitForSeconds(.5f);
+        Inventory.transform.localPosition = startInventoryUIPosition;
+           // Vector3.Lerp(Inventory.transform.position, startInventoryUIPosition, Time.deltaTime / smootchTime);
         inventoryStatus = InventoryStat.Closed;
     }
 
-    void OnOpen()
+    IEnumerator OnOpen()
     {
-        //yield return new WaitForSeconds(.5f);
-        Inventory.transform.position = 
-            Vector3.Lerp(Inventory.transform.position,openInventoryPosition,Time.deltaTime / smootchTime);
+        yield return new WaitForSeconds(.5f);
+        Inventory.transform.localPosition = openInventoryPosition;
+           // Vector3.Lerp(Inventory.transform.position,openInventoryPosition,Time.deltaTime / smootchTime);
         inventoryStatus = InventoryStat.Opened;
     }
 
@@ -51,17 +51,16 @@ public class InventoryDesign : MonoBehaviour
     public void OpenCloseInventory()
     {
         //TODO fix locations
-        /*
-        if (!opened)
+
+        if (!IsOpened())
             StartCoroutine(OnOpen());
         else
             StartCoroutine(OnClose());
-         */
-        
-        if(!IsOpened())
-            OnOpen();
-        else
-            OnClose();
+    }
+
+    public void AddToInventory()
+    {
+        _inventory.AddToInventory();
     }
 
     bool IsOpened()

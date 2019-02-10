@@ -9,6 +9,7 @@ public class HealthBarBehaviour : MonoBehaviour
     public bool beginPoison;
     public HealthInfoChange infoChange;
     [SerializeField] PlayerLifeTime player;
+    public PlayerDeatchUI dead;
 
     void Start()
     {
@@ -35,7 +36,8 @@ public class HealthBarBehaviour : MonoBehaviour
     {
         if (!IsPlayerAlive())
         {
-            Debug.Log("Mozart gleba ;)");
+            player.SetPoisonStatus(PlayerLifeTime.PlayerPoisonStatus.Dead);
+            dead.OnUIShow();
         }
     }
     
