@@ -90,6 +90,9 @@
           </e>
           <e p="PianoSceneScripts" t="Include">
             <e p="DeathZoneController.cs" t="Include" />
+            <e p="Enemys" t="Include">
+              <e p="OveralMoving.cs" t="Include" />
+            </e>
             <e p="KeyboardController.cs" t="Include" />
             <e p="NoteActivated.cs" t="Include" />
             <e p="NoteBehaviour.cs" t="Include" />

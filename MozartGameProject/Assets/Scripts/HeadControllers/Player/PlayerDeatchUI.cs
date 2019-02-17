@@ -12,6 +12,7 @@ public class PlayerDeatchUI : MonoBehaviour
     
     public void OnOkButton()
     {
+       Debug.Log("okbtn clicked");
        SetMenuUI(true);
        DisableGameplayUIs();
        SetDeadUI(false);
