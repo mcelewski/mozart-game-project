@@ -44,6 +44,7 @@
             <e p="GameObjects" t="Include">
               <e p="ItemInfo.cs" t="Include" />
               <e p="ItemsInGameDatabase.cs" t="Include" />
+              <e p="NotesInfo.cs" t="Include" />
             </e>
             <e p="GenerateOnAllScenes.cs" t="Include" />
             <e p="HoldSceneLocation.cs" t="Include" />
@@ -91,6 +92,7 @@
           <e p="PianoSceneScripts" t="Include">
             <e p="DeathZoneController.cs" t="Include" />
             <e p="Enemys" t="Include">
+              <e p="EnemyController.cs" t="Include" />
               <e p="OveralMoving.cs" t="Include" />
             </e>
             <e p="KeyboardController.cs" t="Include" />

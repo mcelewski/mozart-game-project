@@ -4,7 +4,7 @@ using UnityEngine;
 public class OveralMoving : MonoBehaviour
 {
     [SerializeField] GameObject enemyGround;
-
+    [SerializeField] float movingSpeed;
     void Start()
     {
         if(!IsNullReference())
@@ -25,7 +25,7 @@ public class OveralMoving : MonoBehaviour
     IEnumerator StartMoving()
     {
         yield return new WaitForSeconds(.2f);
-        enemyGround.transform.localPosition = new Vector3(0,enemyGround.transform.localPosition.y,enemyGround.transform.localPosition.z -14 * Time.deltaTime);
+        enemyGround.transform.localPosition = new Vector3(0,enemyGround.transform.localPosition.y,enemyGround.transform.localPosition.z - movingSpeed * Time.deltaTime);
     }
 
     bool IsNullReference()
