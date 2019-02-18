@@ -1149,6 +1149,11 @@ PrefabInstance:
       propertyPath: keyboard
       value: 
       objectReference: {fileID: 233755286}
+    - target: {fileID: 7127425753472758762, guid: d41029174e6b837478dfb5a06a74e7c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d41029174e6b837478dfb5a06a74e7c3, type: 3}
 --- !u!1001 &5170693784066412115

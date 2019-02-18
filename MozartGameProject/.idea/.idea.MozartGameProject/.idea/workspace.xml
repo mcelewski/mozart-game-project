@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2889a3aa-c017-4c07-868e-68c4520ee2f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/KeyboardMozartHero.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameObjects/Prefabs/KeyboardMozartHero.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MozartHero.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MozartHero.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Enemys/OveralMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PianoSceneScripts/Enemys/OveralMoving.cs" afterDir="false" />
-    </list>
+    <list default="true" id="2889a3aa-c017-4c07-868e-68c4520ee2f8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
