@@ -101,6 +101,10 @@
             <e p="NoteIndicatorKeys.cs" t="Include" />
             <e p="NoteInfo.cs" t="Include" />
             <e p="OnSceneLoad.cs" t="Include" />
+            <e p="Pointing" t="Include">
+              <e p="SameNoteDetect.cs" t="Include" />
+              <e p="SetPoint.cs" t="Include" />
+            </e>
             <e p="SetMidiToScene.cs" t="Include" />
           </e>
           <e p="UI" t="Include">

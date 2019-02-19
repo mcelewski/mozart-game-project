@@ -5,20 +5,36 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] NotesInfo info;
+    [SerializeField] SetPoint setPoint;
     void Start()
     {
         info.SetInfo();
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Finish")) return;
 
+        setPoint.UpdateIfNeed(0);
         Debug.Log("Entered: " + info.item.id);
     }
 
-    private void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        Debug.Log("sadsadsadsa");
+        if (!other.CompareTag("Finish")) return;
+        
+        if(info.isWhite)
+            setPoint.UpdateIfNeed(1);
+        if(!info.isWhite)
+            setPoint.UpdateIfNeed(3);
+        Debug.Log("Stay: " + info.item.id);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Finish")) return;
+        
+        setPoint.UpdateIfNeed(0);
+        Debug.Log("Exit: " + info.item.id);
     }
 }

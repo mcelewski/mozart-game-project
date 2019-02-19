@@ -283,9 +283,6 @@ namespace MidiJack
                     if (Application.isPlaying)
                         MidiStateUpdater.CreateGameObject(
                             new MidiStateUpdater.Callback(_instance.Update));
-                    
-                    
-                    Debug.Log("Midi connected: Instance");
                 }
                 return _instance;
             }
