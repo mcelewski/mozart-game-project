@@ -4,28 +4,17 @@ using UnityEngine;
 public class OveralMoving : MonoBehaviour
 {
     [SerializeField] GameObject enemyGround;
-    [SerializeField] float movingSpeed;
-    void Start()
-    {
-        if(!IsNullReference())
-            StartCoroutine(StartMoving());
-        else
-        {
-            enemyGround = gameObject.GetComponent<GameObject>();
-            Start();
-        }
-    }
-
+    [SerializeField] private float movingSpeed;
+    Vector3 finish = new Vector3(0, 0, -2000);
     void Update()
     {
         if (!IsNullReference())
-            StartCoroutine(StartMoving());
+            StartMoving();
     }
 
-    IEnumerator StartMoving()
+    void StartMoving()
     {
-        yield return new WaitForSeconds(.2f);
-        enemyGround.transform.localPosition = new Vector3(0,enemyGround.transform.localPosition.y,enemyGround.transform.localPosition.z - movingSpeed * Time.deltaTime);
+        enemyGround.transform.position = Vector3.MoveTowards(transform.position, finish, movingSpeed);
     }
 
     bool IsNullReference()

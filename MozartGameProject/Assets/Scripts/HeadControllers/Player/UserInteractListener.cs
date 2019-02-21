@@ -17,7 +17,7 @@ public class UserInteractListener : MonoBehaviour
     public PlayerLifeTime playerLifeTime;
 
     [SerializeField]float mainSpeed = 5.0f;
-    [SerializeField]float jumpHeigh = 50.0f;
+    [SerializeField]float jumpHeigh = 3.0f;
     
     void Awake()
     {
