@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class InventoryDesign : MonoBehaviour
 {
-    readonly Vector3 startInventoryUIPosition = new Vector3(0,-250,0);
-    readonly Vector3 openInventoryPosition = new Vector3(0,-150,0);
+    readonly Vector3 startInventoryUIPosition = new Vector3(0,-450,0);
+    readonly Vector3 openInventoryPosition = new Vector3(0,-300,0);
     [SerializeField] private InventoryStat inventoryStatus = InventoryStat.Closed;
     public InventorySpace _inventory;
     enum InventoryStat

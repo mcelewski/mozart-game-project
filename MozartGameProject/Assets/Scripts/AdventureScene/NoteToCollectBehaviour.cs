@@ -10,7 +10,19 @@ public class NoteToCollectBehaviour : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         
-        score.SetActualScore(itemAmount);
+        if(!IsScoreNullReference())
+            score.SetActualScore(itemAmount);
+        else
+        {
+            score = FindObjectOfType<ScoreBehaviour>();
+            score.SetActualScore(itemAmount);
+        }
+
         gameObject.SetActive(false);
+    }
+
+    bool IsScoreNullReference()
+    {
+        return score == null;
     }
 }
