@@ -154,11 +154,19 @@ public class UserInteractListener : MonoBehaviour
 
     void Jump()
     {
+        if (IsPlayerJumping())
+            return;
         if (!_sceneController.IsOnMozartHeroScene() && !_sceneController.IsOnHiddenObjectsScene() && PlayerGroudDetection.IsGrounded())
         {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0,jumpHeigh * mainSpeed * Time.deltaTime,0) ;
+            Debug.Log("jump");
+            player.GetComponent<Rigidbody2D>().velocity = new Vector3(0, jumpHeigh * mainSpeed * Time.deltaTime*30, 0);
             PlayerMove.currentPlayerAction = PlayerMove.PlayerStates.Jumping;
         }
+    }
+
+    private static bool IsPlayerJumping()
+    {
+        return PlayerMove.currentPlayerAction == PlayerMove.PlayerStates.Jumping;
     }
 
     #endregion
