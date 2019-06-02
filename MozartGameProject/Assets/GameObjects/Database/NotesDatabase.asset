@@ -9,8 +9,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7713653fe3228e4f8ee8bd4ae6152c8, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d4476fcddb49f4ab40d9aafd382761, type: 3}
   m_Name: NotesDatabase
   m_EditorClassIdentifier: 
-  NoteItemsDatabase:
-  - {fileID: 8311860936008209078, guid: cc017447953b7e74cb7620afa5e4996a, type: 3}
+  ItemsDatabase:
+  - {fileID: 586210763, guid: 9f925a516aab19a41ae0e920e3a359eb, type: 3}
+  - {fileID: 255029202, guid: 3e9e28b27d46aa64eb85c9bc1a41d842, type: 3}
+  - {fileID: 608127297, guid: 8df9f3d57f2dabf41b3a4eaba1495985, type: 3}
+  - {fileID: 1020374159, guid: d6c39e9d9e9d44949833ab61d7decd51, type: 3}
+  - {fileID: 1041500974, guid: 3670244d81cc8f84ca0aa780b61f2613, type: 3}
+  - {fileID: 2125497084, guid: 8add5001dbb6f3f4db8caf32e80433ab, type: 3}
+  - {fileID: 1306426295, guid: 45054d99234fbef49839e4f1a7cbb0cd, type: 3}
+  - {fileID: 1403803578, guid: a06b16c77e5cdc34688e1b6889c1293a, type: 3}
+  - {fileID: 1443411738, guid: 526e071822c3a5640b09f9f25bd08752, type: 3}
+  - {fileID: 842362568, guid: fc21a22310f35ff40831b69c6accb33c, type: 3}
+  - {fileID: 1334498965, guid: 37b605d71a7ca0f45b34b5293930cab4, type: 3}
+  - {fileID: 1392792745, guid: 70ebd5942a39a9e429589e7c36e6c7f7, type: 3}
+  - {fileID: 1210437912, guid: b6870319b01e79947bc8a744df6092a7, type: 3}
+  - {fileID: 577940632, guid: 3effbd071d1ebd346a356a922c55603c, type: 3}
+  - {fileID: 2002276463, guid: 795e36cfeff64ac43a4a41e7d207fc47, type: 3}
+  - {fileID: 1355866938, guid: 12afc32dfd4563c42b583c8c6f06a3b3, type: 3}
+  - {fileID: 1962383702, guid: d7de3256b2ed6514bb6cecd832b94bc0, type: 3}
+  - {fileID: 1860521299, guid: cd21f0da738d01941a4472086268f7cc, type: 3}
+  - {fileID: 1726535671, guid: fe6b26cb1e02c7147b62bf757068d8f3, type: 3}
+  - {fileID: 1643786440, guid: 13a946564a5f8484c9caec9024058806, type: 3}
+  - {fileID: 1831650509, guid: 553e8f5876be70f419338cad77a1bbe4, type: 3}
+  - {fileID: 1869721499, guid: 74d70739dce880d458f9fe3075e30aed, type: 3}
+  - {fileID: 618201964, guid: 59240997f74c34548a946b8a2bc93aee, type: 3}
+  - {fileID: 1975407693, guid: a502dafc81ebd71498b724c5800e19d7, type: 3}
+  - {fileID: 232456356, guid: 763a399bd9be0e040a4e2928243f4860, type: 3}
