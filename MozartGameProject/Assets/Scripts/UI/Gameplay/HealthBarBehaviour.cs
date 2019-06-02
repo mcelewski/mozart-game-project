@@ -19,7 +19,7 @@ public class HealthBarBehaviour : MonoBehaviour
 
     public void CheckPoison()
     {
-        Debug.Log("calc: " + timeCalc);
+        //Debug.Log("calc: " + timeCalc);
         if (beginPoison && hpTimer > 0)
         {
             hpTimer -= (Time.deltaTime * extraPenaltyTime)/ timeCalc;
